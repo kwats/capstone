@@ -1,9 +1,3 @@
----
-output:
-  pdf_document: default
-  html_document: default
----
-
 ## Global Affairs Capstone 2017
 # Code for Data Cleaning
 
