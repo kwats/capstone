@@ -90,7 +90,7 @@ z_new <- z
 z_new[,1:ncol(z_new)] <- 
   lapply(z_new[,1:ncol(z_new)], gsub, pattern = "[\r|\n]+", replacement = " ", ignore.case=TRUE)
 
-write.csv(z_new, "./merged/original/newest_merge.csv", row.names=FALSE, fileEncoding="UTF-8")
+write.csv(z_new, "./csv/original/newest_merge.csv", row.names=FALSE, fileEncoding="UTF-8")
 stop("End of work for now.")
 
 

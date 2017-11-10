@@ -275,4 +275,6 @@ for(j in grep(pattern="(^.*date$)|(^date.*$)", x=colnames(new_m), value=TRUE)) {
     }
   }
 }
+
+write.csv(new_m, "csv/clean/newest_clean.csv", row.names=FALSE, fileEncoding="UTF-8")
 ```

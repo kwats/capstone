@@ -1,6 +1,6 @@
 knitr::opts_chunk$set(eval = FALSE, tidy = FALSE)
 setwd("/Users/Katie/Desktop/capstone")
-m <- read.csv("/Users/Katie/Desktop/capstone/merged/original/newest_merge.csv", as.is = TRUE)
+m <- read.csv("/Users/Katie/Desktop/capstone/csv/original/newest_merge.csv", as.is = TRUE)
 
 new_m <- m[ , -which(names(m) %in% c("X.1500", "column1"))]   
 new_m <- new_m[, -grep("^column", colnames(new_m))]
