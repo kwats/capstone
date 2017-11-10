@@ -1,5 +1,7 @@
-#' Katherine Watson
-#' Global Affairs Capstone 2017
+---
+Katherine Watson
+title: Global Affairs Capstone 2017
+---
 ```{r}
 knitr::opts_chunk$set(eval = FALSE, tidy = FALSE)
 ```
