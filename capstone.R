@@ -86,6 +86,8 @@ for (i in 1:ncol(z)) {
 }
 
 list_countries <- split(z, as.factor(z$country))
+
+
 write.csv(z, "./csv/original/newest_merge.csv", row.names=FALSE, fileEncoding="UTF-8")
 stop("End of work for now.")
 

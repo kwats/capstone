@@ -33,9 +33,9 @@ new_m[,1:ncol(new_m)] <- lapply(new_m[,1:ncol(new_m)], sub, pattern = "^[_4o]+f.
 
 new_m[,1:ncol(new_m)] <- lapply(new_m[,1:ncol(new_m)], sub, pattern = "(^Ons$|^[EO]N.*SIT.*)", 
                                 replacement = "On_site", ignore.case=TRUE)
-new_m[,1:ncol(new_m)] <- lapply(new_m[,1:ncol(new_m)], sub, pattern = "1__onsite|(^[YS]*[EI].*[OE]N.*SITE*[IO]*)$", 
+new_m[,1:ncol(new_m)] <- lapply(new_m[,1:ncol(new_m)], sub, pattern = "[_1-9yes]+on_*site|(^[YS]*[EI].*[OE]N.*SITE*[IO]*)$", 
                                 replacement = "On_site", ignore.case=TRUE)
-new_m[,1:ncol(new_m)] <- lapply(new_m[,1:ncol(new_m)], sub, pattern = "2__offsite|2__yes_offsite|(^[o|]+ff+.*site+.*)|(^fuera.*sitio.*)", 
+new_m[,1:ncol(new_m)] <- lapply(new_m[,1:ncol(new_m)], sub, pattern = "[1-9]__offsite|[1-9]__yes_o[f]+site|(^[o|]+ff+.*site+.*)|(^fuera.*sitio.*)", 
                                 replacement = "Off_site", ignore.case=TRUE)
 new_m[,1:ncol(new_m)] <- lapply(new_m[,1:ncol(new_m)], sub, pattern = "^[Yy]*[ES][SI]+.*[F]+.*site*[io]*$", 
                                 replacement = "Off_site", ignore.case=TRUE)
@@ -189,23 +189,9 @@ write.csv(new_m, "csv/clean/newest_clean.csv", row.names=FALSE, fileEncoding="UT
 
 
 list_countries <- split(new_m, as.factor(new_m$country))
+for (i in list_countries) {
+  tmp = paste("./csv/clean/countries/", i$country[1], "_dta.csv", sep = "")
+  write.csv(i, tmp, row.names=FALSE, fileEncoding="UTF-8")
+}
 
                         
-country_dta<-  z[z$country %in% c("Nepal","nepal"),] {
-  write.csv(nepal_dta, "merged/nepal_dta.csv", row.names=FALSE, fileEncoding="UTF-8")
-}
-# write.csv(nepal_dta, "merged/nepal_dta.csv", row.names=FALSE, fileEncoding="UTF-8")
-
-
-
-# z <- read.csv("merged/nepal_dta.csv")
-# for (j in 1:ncol(z)){
-#  for (i in 1:nrow(z)) {
-#    z[i,j] <-gsub("\r?\n|\r", " ", z[i,j])
-#  }
-#}
-
-
-# peru_dta <- new_m[new_m$country %in% c("Peru", "peru"),]
-write.csv(new_m, "csv/clean/newest_clean.csv", row.names=FALSE, fileEncoding="UTF-8")
-
