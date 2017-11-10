@@ -185,6 +185,27 @@ for(j in grep(pattern="(^.*date$)|(^date.*$)", x=colnames(new_m), value=TRUE)) {
   }
 }
 
+write.csv(new_m, "csv/clean/newest_clean.csv", row.names=FALSE, fileEncoding="UTF-8")
+
+
+list_countries <- split(new_m, as.factor(new_m$country))
+
+                        
+country_dta<-  z[z$country %in% c("Nepal","nepal"),] {
+  write.csv(nepal_dta, "merged/nepal_dta.csv", row.names=FALSE, fileEncoding="UTF-8")
+}
+# write.csv(nepal_dta, "merged/nepal_dta.csv", row.names=FALSE, fileEncoding="UTF-8")
+
+
+
+# z <- read.csv("merged/nepal_dta.csv")
+# for (j in 1:ncol(z)){
+#  for (i in 1:nrow(z)) {
+#    z[i,j] <-gsub("\r?\n|\r", " ", z[i,j])
+#  }
+#}
+
+
 # peru_dta <- new_m[new_m$country %in% c("Peru", "peru"),]
 write.csv(new_m, "csv/clean/newest_clean.csv", row.names=FALSE, fileEncoding="UTF-8")
 

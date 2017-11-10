@@ -85,12 +85,8 @@ for (i in 1:ncol(z)) {
   }
 }
 
-z_new <- z
-# BUG CSV ends up with embedded line breaks? Unsure how to fix, the below doesn't work.
-z_new[,1:ncol(z_new)] <- 
-  lapply(z_new[,1:ncol(z_new)], gsub, pattern = "[\r|\n]+", replacement = " ", ignore.case=TRUE)
-
-write.csv(z_new, "./csv/original/newest_merge.csv", row.names=FALSE, fileEncoding="UTF-8")
+list_countries <- split(z, as.factor(z$country))
+write.csv(z, "./csv/original/newest_merge.csv", row.names=FALSE, fileEncoding="UTF-8")
 stop("End of work for now.")
 
 
@@ -98,12 +94,5 @@ stop("End of work for now.")
 # z <- read.csv("../merged/merged.csv", as.is = TRUE)
 # nepal_dta<-  z[z$country %in% c("Nepal","nepal"),]
 # write.csv(nepal_dta, "merged/nepal_dta.csv", row.names=FALSE, fileEncoding="UTF-8")
-
-# z <- read.csv("merged/nepal_dta.csv")
-# for (j in 1:ncol(z)){
-#  for (i in 1:nrow(z)) {
-#    z[i,j] <-gsub("\r?\n|\r", " ", z[i,j])
-#  }
-#}
 
 
