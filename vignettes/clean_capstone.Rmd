@@ -64,7 +64,7 @@ new_m[,1:ncol(new_m)] <- lapply(new_m[,1:ncol(new_m)], sub,
 
 ```
 ### STANDARDIZE *Distance*
-There are two different types of responses. To prevent loss of data, keep both types. If one needs to do analysis across both types, "On-site (< 3km)" can be switched to On-site/Off-site, or to "Less/More_3km"  \
+There are two different types of responses. To prevent loss of data, keep both types. If one needs to do analysis across both types, "On-site (< 3km)" can be switched to On-site/Off-site, or to "Less/More_3km"  
 ```{r}
 new_m[,1:ncol(new_m)] <- lapply(new_m[,1:ncol(new_m)], sub,
                                 pattern = "^.*(<|less|menos).*2.*km.*",
@@ -102,7 +102,7 @@ new_m[,1:ncol(new_m)] <- lapply(new_m[,1:ncol(new_m)], sub,
 
 ```
 ### STANDARDIZE *On-site, Off-site*
-Certain variables, such as 'edu_access_f', have categorical rather than binary responses. Code snippet below the following has code to run if you want to keep in binary. Otherwise, don't run. \
+Certain variables, such as 'edu_access_f', have categorical rather than binary responses. Code snippet below the following has code to run if you want to keep in binary. Otherwise, don't run.  
 ```{r}
 new_m[,1:ncol(new_m)] <- lapply(new_m[,1:ncol(new_m)], sub,
                                 pattern = "(^Ons$|^[EO]N.*SIT.*)", 
@@ -151,7 +151,7 @@ new_m[,1:ncol(new_m)] <- lapply(new_m[,1:ncol(new_m)], sub, pattern = "(^[_7N]+.
 
 ```
 ### STANDARDIZE *Health*
-There are certain discrepencies I chose to not consolidate (flu-like illnesses, colds) because I am not sure whether they represent the same category of illness. \
+There are certain discrepencies I chose to not consolidate (flu-like illnesses, colds) because I am not sure whether they represent the same category of illness.  
 ```{r}
 new_m[,1:ncol(new_m)] <- lapply(new_m[,1:ncol(new_m)], sub, pattern = "(CH*OLERA)", replacement = "Cholera", ignore.case=TRUE)
 new_m[,1:ncol(new_m)] <- lapply(new_m[,1:ncol(new_m)], sub, pattern = "(DIAR+H*EA)", replacement = "Diarrhea", ignore.case=TRUE)
@@ -199,8 +199,7 @@ new_m[,1:ncol(new_m)] <- lapply(new_m[,1:ncol(new_m)], sub, pattern = "save.*chi
 
 ```
 ### STANDARDIZE *Formatting*
-Fix spacing between backslashes, commas and & signs. Standardize separator character to ','
-  
+Fix spacing between backslashes, commas and & signs. Standardize separator character to ','  
 ```{r}
 new_m[,1:ncol(new_m)] <- lapply(new_m[,1:ncol(new_m)], gsub, pattern = "(\\s*&\\s)|(\\s*,\\s*)", replacement = ",", ignore.case=TRUE)
 new_m[,1:ncol(new_m)] <- lapply(new_m[,1:ncol(new_m)], gsub, pattern = "(\\s*/\\s)", replacement = "/", ignore.case=TRUE)
