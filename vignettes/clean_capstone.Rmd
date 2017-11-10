@@ -140,7 +140,7 @@ new_m[,1:ncol(new_m)] <- lapply(new_m[,1:ncol(new_m)], gsub,
                                 pattern = "^females$", replacement = "Women")
 
 ```
-# STANDARDIZE *Intervals*
+### STANDARDIZE *Intervals*
 ```{r}
 new_m[,1:ncol(new_m)] <- lapply(new_m[,1:ncol(new_m)], sub, pattern = "Diaria|(^[1_E]+veryday$)", replacement = "Everyday", ignore.case=TRUE)
 new_m[,1:ncol(new_m)] <- lapply(new_m[,1:ncol(new_m)], sub, pattern = "(^([_3O]+nce|Una).*(semana|WE+K)$)", replacement = "Once a week", ignore.case=TRUE)
