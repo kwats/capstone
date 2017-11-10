@@ -1,0 +1,22 @@
+{
+    "collab_server" : "",
+    "contents" : "",
+    "created" : 1510087908930.000,
+    "dirty" : false,
+    "encoding" : "UTF-8",
+    "folds" : "",
+    "hash" : "0",
+    "id" : "3D0297BC",
+    "lastKnownWriteTime" : 1510173166,
+    "last_content_update" : 1510173166948,
+    "path" : "~/Desktop/capstone/clean_capstone_cp.R",
+    "project_path" : "clean_capstone_cp.R",
+    "properties" : {
+        "cursorPosition" : "8,30",
+        "scrollLine" : "0"
+    },
+    "relative_order" : 4,
+    "source_on_save" : false,
+    "source_window" : "",
+    "type" : "r_source"
+}

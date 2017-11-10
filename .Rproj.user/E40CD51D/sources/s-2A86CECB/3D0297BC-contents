@@ -1,0 +1,169 @@
+#' Katherine Watson, Global Affairs Capstone 2017
+
+#' Input dirty merged file
+m <- read.csv("./merged/newest_merge.csv", 
+              row.names = NULL, as.is=TRUE)
+
+#' Get rid of "X.1500, column error
+new_m <- m[ , -which(names(m) %in% c("X.1500", "column1"))]   
+new_m <- new_m[, -grep("^column", colnames(new_m))]
+names <- names(new_m)
+
+# Change all 'NA' to missing
+new_m[] <- lapply(new_m, as.character)
+new_m <- as.data.frame(lapply(new_m, function(x){
+  x <- replace(x, x %in% c("NA", "N/A", ".", "na","-", "8__unknown", "dont_know", "5__unknown","Do_not_know", "No Response", "no responde","No sabe", "no sabe", "no_responde", "Not specified.","", "no answer", "No answer", "sin respuesta", 
+                           "Sin respuesta", "Sin Informacion", "Unknown", "UNKNOWN", "unknown", "Unkown", "unkown", "Not Specified", "Desconocido","desconocido", "6__unknown", "7__no_answer", "NULL", "Sin respuesta, Por que?", "NO ANSWER"), NA)
+  }))
+
+# Change all 'None' to 'None'
+new_m[] <- lapply(new_m, as.character)
+new_m <- as.data.frame(lapply(new_m, function(x){
+  x <- replace(x, x %in% c("3__none", "5__none", "NONE", "none", "Ninguno"), "None")
+}))
+
+# Change all 'Other' to 'Other'
+new_m[] <- lapply(new_m, as.character)
+new_m <- as.data.frame(lapply(new_m, function(x){
+  x <- replace(x, x %in% c("other", "OTHER", "Otro"), "Other")
+}))
+
+# Change all 'Yes' to 'Yes'
+new_m[,1:ncol(new_m)] <- lapply(new_m[,1:ncol(new_m)], sub, pattern = "^(yes|si|true)$", replacement = "Yes", ignore.case=TRUE)
+
+# Change all 'No' to 'No'
+new_m[,1:ncol(new_m)] <- lapply(new_m[,1:ncol(new_m)], sub, pattern = "^[3_nf]+o\\?*$", replacement = "No", ignore.case=TRUE)
+
+# Standardize Distances
+new_m[,1:ncol(new_m)] <- lapply(new_m[,1:ncol(new_m)], sub, pattern = "^.*(<|less|menos).*2.*km.*", replacement = "Less_2km", ignore.case=TRUE)
+new_m[,1:ncol(new_m)] <- lapply(new_m[,1:ncol(new_m)], sub, pattern = "^.*(<|less|menos).*5.*km.*", replacement = "Less_5km", ignore.case=TRUE)
+new_m[,1:ncol(new_m)] <- lapply(new_m[,1:ncol(new_m)], sub, pattern = "^.*(<|less|menos).*10.*k+m.*", replacement = "Less_10km", ignore.case=TRUE)
+new_m[,1:ncol(new_m)] <- lapply(new_m[,1:ncol(new_m)], sub, pattern = "^.*(<|less|menos).*1[^0]*km.*", replacement = "Less_1km", ignore.case=TRUE)
+new_m[,1:ncol(new_m)] <- lapply(new_m[,1:ncol(new_m)], sub, pattern = "^.*(>|more|mas).*2.*km.*", replacement = "More_2km", ignore.case=TRUE)
+new_m[,1:ncol(new_m)] <- lapply(new_m[,1:ncol(new_m)], sub, pattern = "^.*(>|more|mas).*5.*km.*", replacement = "More_5km", ignore.case=TRUE)
+new_m[,1:ncol(new_m)] <- lapply(new_m[,1:ncol(new_m)], sub, pattern = "^.*(>|more|mas).*10.*k+m.*", replacement = "More_10km", ignore.case=TRUE)
+new_m[,1:ncol(new_m)] <- lapply(new_m[,1:ncol(new_m)], sub, pattern = "^[_1o]+n.*3.*$", replacement = "On-site (< 3km)", ignore.case=TRUE)
+new_m[,1:ncol(new_m)] <- lapply(new_m[,1:ncol(new_m)], sub, pattern = "^[_2o]+n.*3.*$", replacement = "On-site (> 3km)", ignore.case=TRUE)
+new_m[,1:ncol(new_m)] <- lapply(new_m[,1:ncol(new_m)], sub, pattern = "^[_3o]+f.*3.*$", replacement = "Off-site (< 3km)", ignore.case=TRUE)
+new_m[,1:ncol(new_m)] <- lapply(new_m[,1:ncol(new_m)], sub, pattern = "^[_4o]+f.*3.*$", replacement = "Off-site (> 3km)", ignore.case=TRUE)
+
+
+# Standardize On/Off-site
+new_m[,1:ncol(new_m)] <- lapply(new_m[,1:ncol(new_m)], sub, pattern = "(^Ons$|^[EO]N.*SIT.*)", replacement = "On_site", ignore.case=TRUE)
+new_m[,1:ncol(new_m)] <- lapply(new_m[,1:ncol(new_m)], sub, pattern = "1__onsite|(^[YS]*[EI].*[OE]N.*SITE*[IO]*)$", replacement = "On_site", ignore.case=TRUE)
+new_m[,1:ncol(new_m)] <- lapply(new_m[,1:ncol(new_m)], sub, pattern = "2__offsite|2__yes_offsite|(^[o|O]+ff+.*site+.*)|(^fuera.*sitio.*)", replacement = "Off_site", ignore.case=TRUE)
+new_m[,1:ncol(new_m)] <- lapply(new_m[,1:ncol(new_m)], sub, pattern = "^[Yy]*[EeSs][sSIi]+.*[fF]+.*[sS][iI][tT][eE]*[iOo]*$", replacement = "Off_site", ignore.case=TRUE)
+
+# Standardize On/Off-Site, when presented with binary options
+new_m$edu_access_f <-  sub(new_m$edu_access_f, pattern = "Yes", replacement = "On_site", ignore.case=TRUE)
+new_m$edu_access_f <-  sub(new_m$edu_access_f, pattern = "None", replacement = "No", ignore.case=TRUE)
+
+# Standardize Gender
+new_m[,1:ncol(new_m)] <- lapply(new_m[,1:ncol(new_m)], sub, pattern = "^F.*(emale|emenino)$", replacement = "Female", ignore.case=TRUE)
+new_m[,1:ncol(new_m)] <- lapply(new_m[,1:ncol(new_m)], sub, pattern = "^M.*(ale|asculino)$", replacement = "Male", ignore.case=TRUE)
+new_m[,1:ncol(new_m)] <- lapply(new_m[,1:ncol(new_m)], gsub, pattern = "^males$", replacement = "Men")
+new_m[,1:ncol(new_m)] <- lapply(new_m[,1:ncol(new_m)], gsub, pattern = "^females$", replacement = "Women")
+
+# Standardize Intervals
+new_m[,1:ncol(new_m)] <- lapply(new_m[,1:ncol(new_m)], sub, pattern = "Diaria|(^[1_E]+veryday$)", replacement = "Everyday", ignore.case=TRUE)
+new_m[,1:ncol(new_m)] <- lapply(new_m[,1:ncol(new_m)], sub, pattern = "(^([_3O]+nce|Una).*(semana|WE+K)$)", replacement = "Once a week", ignore.case=TRUE)
+new_m[,1:ncol(new_m)] <- lapply(new_m[,1:ncol(new_m)], sub, pattern = "^((Una|Once).*M[OE][SN].*$)", replacement = "Once a month", ignore.case=TRUE)
+new_m[,1:ncol(new_m)] <- lapply(new_m[,1:ncol(new_m)], sub, pattern = "4__every_2_weeks|(^E.*2.*WE+K$)|(^(Cada|Dos).*semana.*$)", replacement = "Every 2 weeks", ignore.case=TRUE)
+new_m[,1:ncol(new_m)] <- lapply(new_m[,1:ncol(new_m)], sub, pattern = "^[_6Ii]+rregular$", replacement = "Irregular", ignore.case=TRUE)
+new_m[,1:ncol(new_m)] <- lapply(new_m[,1:ncol(new_m)], sub, pattern = "(^[_7N]+.*(unca|ever))$", replacement = "Never", ignore.case=TRUE)
+
+#Standardize Health
+new_m[,1:ncol(new_m)] <- lapply(new_m[,1:ncol(new_m)], sub, pattern = "(CH*OLERA)", replacement = "Cholera", ignore.case=TRUE)
+new_m[,1:ncol(new_m)] <- lapply(new_m[,1:ncol(new_m)], sub, pattern = "([DIAR+H*EA)", replacement = "Diarrhea", ignore.case=TRUE)
+new_m[,1:ncol(new_m)] <- lapply(new_m[,1:ncol(new_m)], sub, pattern = "([Malnutri[tc]ion)", replacement = "Malnutrition", ignore.case=TRUE)
+new_m[,1:ncol(new_m)] <- lapply(new_m[,1:ncol(new_m)], sub, pattern = "Conju[n]*ctivit[e|i][s]*", replacement = "Conjuctivitis", ignore.case=TRUE)
+new_m[,1:ncol(new_m)] <- lapply(new_m[,1:ncol(new_m)], sub, pattern = "^(Common\\s)*cold[s]*$", replacement = "Colds", ignore.case=TRUE)
+new_m[,1:ncol(new_m)] <- lapply(new_m[,1:ncol(new_m)], sub, pattern = "(infecciones de la piel)|(^Skin\\s(infec[ct]ions|disease)$)", replacement = "Skin infections", ignore.case=TRUE)
+new_m[,1:ncol(new_m)] <- lapply(new_m[,1:ncol(new_m)], sub, pattern = "^Measles$", replacement = "Measles", ignore.case=TRUE)
+new_m[,1:ncol(new_m)] <- lapply(new_m[,1:ncol(new_m)], sub, pattern = "^Dysent[e]*ry$", replacement = "Dysentery", ignore.case=TRUE)
+
+table(new_m[,62]) # Spanish
+
+#Mobile Clinic
+new_m[,1:ncol(new_m)] <- lapply(new_m[,1:ncol(new_m)], sub, pattern = "^[6_mM]+.*clinic$", replacement = "Mobile clinic", ignore.case=TRUE)
+
+# Fix error for "health_medicine"
+new_m$health_medicine <-  sub(new_m$health_medicine, pattern = "^[^NY].*", replacement = NA, ignore.case=TRUE)
+
+# "Health_net_by"
+new_m[,1:ncol(new_m)] <- lapply(new_m[,1:ncol(new_m)], sub, pattern = "Office[/.]*$", replacement = "office", ignore.case=TRUE)
+new_m[,1:ncol(new_m)] <- lapply(new_m[,1:ncol(new_m)], sub, pattern = "He[al]+th", replacement = "health", ignore.case=TRUE)
+new_m[,1:ncol(new_m)] <- lapply(new_m[,1:ncol(new_m)], sub, pattern = "[ThHeERr]+[eE]*[dD]+\\sc[rROo]+[se]+[/.]*", replacement = "Red Cross", ignore.case=TRUE)
+new_m[,1:ncol(new_m)] <- lapply(new_m[,1:ncol(new_m)], sub, pattern = "Burea[u]*", replacement = "bureau", ignore.case=TRUE)
+new_m[,1:ncol(new_m)] <- lapply(new_m[,1:ncol(new_m)], sub, pattern = "Center", replacement = "center", ignore.case=TRUE)
+new_m[,1:ncol(new_m)] <- lapply(new_m[,1:ncol(new_m)], sub, pattern = "(^Woreda\\s+health\\s(office|center|Post)$)|(^By Woreda$)", replacement = "Woreda Health Office", ignore.case=TRUE)
+new_m[,1:ncol(new_m)] <- lapply(new_m[,1:ncol(new_m)], sub, pattern = "(Gobierno|^goven*ment[.]*$)|(^gover[ne]*ment[.]*.*(RHB|DPPO)*$)", replacement = "Government", ignore.case=TRUE)
+
+# "Health Provider"
+new_m[,1:ncol(new_m)] <- lapply(new_m[,1:ncol(new_m)], sub, pattern = "^[2_iINnO]+[GN][OGN]S*$", replacement = "NGO", ignore.case=TRUE)
+new_m[,1:ncol(new_m)] <- lapply(new_m[,1:ncol(new_m)], sub, pattern = "^ONG Int.$", replacement = "International NGO", ignore.case=TRUE)
+new_m[,1:ncol(new_m)] <- lapply(new_m[,1:ncol(new_m)], sub, pattern = "Centro de salud local|^[7_L]+OCAL.*clinic", replacement = "Local clinic", ignore.case=TRUE)
+new_m[,1:ncol(new_m)] <- lapply(new_m[,1:ncol(new_m)], sub, pattern = "clinic", replacement = "clinic", ignore.case=TRUE)
+new_m[,1:ncol(new_m)] <- lapply(new_m[,1:ncol(new_m)], sub, pattern = "organi[zs]ation", replacement = "organization", ignore.case=TRUE)
+new_m[,1:ncol(new_m)] <- lapply(new_m[,1:ncol(new_m)], sub, pattern = "Local clinic/med.*practitioners.*$", replacement = "Local clinic, medical practitioners", ignore.case=TRUE)
+new_m[,1:ncol(new_m)] <- lapply(new_m[,1:ncol(new_m)], sub, pattern = "^[4_O]+ther$|Otro, especificar", replacement = "Other", ignore.case=TRUE)
+new_m[,1:ncol(new_m)] <- lapply(new_m[,1:ncol(new_m)], sub, pattern = "^church$", replacement = "Church", ignore.case=TRUE)
+
+# Non-profits
+new_m[,1:ncol(new_m)] <- lapply(new_m[,1:ncol(new_m)], sub, pattern = "UNICEF", replacement = "UNICEF", ignore.case=TRUE)
+new_m[,1:ncol(new_m)] <- lapply(new_m[,1:ncol(new_m)], sub, pattern = "save.*children.*", replacement = "Save the Children", ignore.case=TRUE)
+
+#standardize spacing commas
+new_m[,1:ncol(new_m)] <- lapply(new_m[,1:ncol(new_m)], gsub, pattern = "(\\s*&\\s)|(\\s*,\\s*)", replacement = ",", ignore.case=TRUE)
+
+# TODO "hyg_station" Split in two, one fo Number, one for yes/no
+
+# Disposal Method
+new_m[,1:ncol(new_m)] <- lapply(new_m[,1:ncol(new_m)], gsub, pattern = "^No.*sist.*residuos$|^No System$|^[1N_]+o.*Waste.*Disposal.*$", replacement = "No waste disposal system", ignore.case=TRUE)
+new_m[,1:ncol(new_m)] <- lapply(new_m[,1:ncol(new_m)], gsub, pattern = "Quema de residuos|^[3_B]+urning$", replacement = "Burning", ignore.case=TRUE)
+new_m[,1:ncol(new_m)] <- lapply(new_m[,1:ncol(new_m)], gsub, pattern =  "Fosa de residuos|^[2G_]+arbage.*pit$", replacement = "Garbage pit", ignore.case=TRUE)
+
+# TODO "hyg_waste_remark, info_add, info_main, info_src, job_main_other, latrine_cond_remark, lattrine_light_remark,149, 274=77"
+
+# Levels
+new_m[,1:ncol(new_m)] <- lapply(new_m[,1:ncol(new_m)], gsub, pattern = "^medium", replacement = "Medium", ignore.case=TRUE)
+new_m[,1:ncol(new_m)] <- lapply(new_m[,1:ncol(new_m)], gsub, pattern = "^high", replacement = "High", ignore.case=TRUE)
+new_m[,1:ncol(new_m)] <- lapply(new_m[,1:ncol(new_m)], gsub, pattern = "^very.*high", replacement = "Very high", ignore.case=TRUE)
+new_m[,1:ncol(new_m)] <- lapply(new_m[,1:ncol(new_m)], gsub, pattern = "^low$", replacement = "Low", ignore.case=TRUE)
+new_m[,1:ncol(new_m)] <- lapply(new_m[,1:ncol(new_m)], gsub, pattern = "^V.*low$", replacement = "Very low", ignore.case=TRUE)
+new_m[,1:ncol(new_m)] <- lapply(new_m[,1:ncol(new_m)], gsub, pattern = "^[1G_]+ood$", replacement = "Good", ignore.case=TRUE)
+new_m[,1:ncol(new_m)] <- lapply(new_m[,1:ncol(new_m)], gsub, pattern = "^Buenas(\\s\\(Higienica\\))$|^[1G_]+ood(\\s[\\(]*Hygienic[\\)]*)*$", replacement = "Good", ignore.case=TRUE)
+new_m[,1:ncol(new_m)] <- lapply(new_m[,1:ncol(new_m)], gsub, pattern = "Regular\\s\\(No\\smuy\\shigienicas\\)$|not_so_good|^Not\\sso\\sgood(\\s\\(Not\\shygienic\\)*)$", replacement = "Not so good", ignore.case=TRUE)
+new_m[,1:ncol(new_m)] <- lapply(new_m[,1:ncol(new_m)], gsub, pattern = "[3_N]+o[n_]+usable$", replacement = "Non_usable", ignore.case=TRUE)
+new_m[,1:ncol(new_m)] <- lapply(new_m[,1:ncol(new_m)], gsub, pattern = "Malas\\s\\(No\\shay\\shigiene\\)", replacement = "Bad", ignore.case=TRUE)
+new_m[,1:ncol(new_m)] <- lapply(new_m[,1:ncol(new_m)], gsub, pattern = "Latrines|toilets$", replacement = "latrines", ignore.case=TRUE)
+
+# Info Source / info src
+new_m[,1:ncol(new_m)] <- lapply(new_m[,1:ncol(new_m)], gsub, pattern = "Autoridades", replacement = "Authorities", ignore.case=TRUE)
+new_m[,1:ncol(new_m)] <- lapply(new_m[,1:ncol(new_m)], gsub, pattern = "Families,friends", replacement = "Families/friends", ignore.case=TRUE)
+new_m[,1:ncol(new_m)] <- lapply(new_m[,1:ncol(new_m)], gsub, pattern = "Social Media", replacement = "Social media", ignore.case=TRUE)
+new_m[,1:ncol(new_m)] <- lapply(new_m[,1:ncol(new_m)], gsub, pattern = "mobile phone", replacement = "Mobile phone", ignore.case=TRUE)
+new_m[,1:ncol(new_m)] <- lapply(new_m[,1:ncol(new_m)], gsub, pattern = "(\\s*/\\s)", replacement = "/", ignore.case=TRUE)
+new_m[,1:ncol(new_m)] <- lapply(new_m[,1:ncol(new_m)], gsub, pattern = "boca a boca", replacement = "Word of mouth")
+new_m[,1:ncol(new_m)] <- lapply(new_m[,1:ncol(new_m)], gsub, pattern = "Family member/relative$", replacement = "Family member")
+new_m[,1:ncol(new_m)] <- lapply(new_m[,1:ncol(new_m)], gsub, pattern = "En persona", replacement = "In person")
+
+# Separate Job Farm (Ethiopia = Yes/No, Haiti = %)
+test <- new_m[new_m$job_farm=="0%",]
+new_m$job_farm <-  sub(new_m$job_farm, pattern="^[^NY].*", replacement = NA)
+
+new_m[,1:ncol(new_m)] <- lapply(new_m[,1:ncol(new_m)], gsub, pattern = "Agricultur[ea]|^Farming$", replacement = "Agriculture", ignore.case=TRUE)
+new_m[,1:ncol(new_m)] <- lapply(new_m[,1:ncol(new_m)], gsub, pattern = "Agro-pastoralism|^Agriculture/Livestock$", replacement = "Agro-Pastoralism")
+new_m[,1:ncol(new_m)] <- lapply(new_m[,1:ncol(new_m)], gsub, pattern = "trabajador.*diario|^daily.*laborer$", replacement = "Daily Laborer")
+new_m[,1:ncol(new_m)] <- lapply(new_m[,1:ncol(new_m)], gsub, pattern = "Craftsm[ea]n", replacement = "Craftsman")
+new_m[,1:ncol(new_m)] <- lapply(new_m[,1:ncol(new_m)], gsub, pattern = "Comercio minorista|^Trade$", replacement = "Petty Trade")
+new_m[,1:ncol(new_m)] <- lapply(new_m[,1:ncol(new_m)], gsub, pattern = "Pesca", replacement = "Fishing")
+
+
+new_m[,1:ncol(new_m)] <- lapply(new_m[,1:ncol(new_m)], gsub, pattern = "No Sabe|No_answer|^unknown$", replacement = NA)
+new_m[,1:ncol(new_m)] <- lapply(new_m[,1:ncol(new_m)], gsub, pattern = "^No hay$", replacement = "No")
+new_m[,1:ncol(new_m)] <- lapply(new_m[,1:ncol(new_m)], gsub, pattern = "HWS", replacement = " Hand Washing Station")
+
+#263, need_Edu mixed yes/no high/low/med
+
+# Percentages
