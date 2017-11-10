@@ -186,5 +186,5 @@ for(j in grep(pattern="(^.*date$)|(^date.*$)", x=colnames(new_m), value=TRUE)) {
 }
 
 # peru_dta <- new_m[new_m$country %in% c("Peru", "peru"),]
-write.csv(new_m, "merged/clean/newest_merge.csv", row.names=FALSE, fileEncoding="UTF-8")
+write.csv(new_m, "csv/clean/newest_clean.csv", row.names=FALSE, fileEncoding="UTF-8")
 

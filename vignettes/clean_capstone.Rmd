@@ -1,23 +1,23 @@
 
-# title: Global Affairs Capstone 2017
+# Global Affairs Capstone 2017
 
 ```{r}
 knitr::opts_chunk$set(eval = FALSE, tidy = FALSE)
 ```
-#' Input dirty merged file
+### Input dirty merged file
 ```{r}
 setwd("/Users/Katie/Desktop/capstone")
 m <- read.csv("/Users/Katie/Desktop/capstone/merged/newest_merge.csv", as.is = TRUE)
 
 ```
-#' Get rid of "X.1500" and other column errors
+### Get rid of "X.1500" and other column errors
 ```{r}
 new_m <- m[ , -which(names(m) %in% c("X.1500", "column1"))]   
 new_m <- new_m[, -grep("^column", colnames(new_m))]
 names <- names(new_m)
 
 ```
-#' STANDARDIZE (Missing)
+### STANDARDIZE (Missing)
 ```{r}
 new_m[] <- lapply(new_m, as.character)
 new_m <- as.data.frame(lapply(new_m, function(x){
@@ -25,29 +25,28 @@ new_m <- as.data.frame(lapply(new_m, function(x){
   }))
 
 ```
-#' STANDARDIZE (Yes)
+### STANDARDIZE (Yes)
 ```{r}
 new_m[,1:ncol(new_m)] <- lapply(new_m[,1:ncol(new_m)], sub, pattern = "^(yes|si|true)$", replacement = "Yes", ignore.case=TRUE)
 
 ```
-#' STANDARDIZE (No)
+### STANDARDIZE (No)
 ```{r}
 new_m[,1:ncol(new_m)] <- lapply(new_m[,1:ncol(new_m)], sub, pattern = "^false$|^[3_nf]+o\\?*$", replacement = "No", ignore.case=TRUE)
 
 ```
-#' STANDARDIZE (None)
+### STANDARDIZE (None)
 ```{r}
 new_m[,1:ncol(new_m)] <- lapply(new_m[,1:ncol(new_m)], sub, pattern = "^[35_n]+[oi]n(|guno)*$", replacement = "No", ignore.case=TRUE)
 
 ```
-#' STANDARDIZE (Other)
+### STANDARDIZE (Other)
 ```{r}
 new_m[,1:ncol(new_m)] <- lapply(new_m[,1:ncol(new_m)], sub, pattern = "^(other|otro)$", replacement = "Other", ignore.case=TRUE)
 
 ```
-#' STANDARDIZE (Distance)
-#' There are two different types of responses. To prevent loss of data, keep both types. If one needs to do 
-#' analysis across both types, "On-site (< 3km)" can be switched to On-site/Off-site, or to "Less/More_3km"
+### STANDARDIZE (Distance)
+There are two different types of responses. To prevent loss of data, keep both types. If one needs to do analysis across both types, "On-site (< 3km)" can be switched to On-site/Off-site, or to "Less/More_3km"
 ```{r}
 new_m[,1:ncol(new_m)] <- lapply(new_m[,1:ncol(new_m)], sub, pattern = "^.*(<|less|menos).*2.*km.*", replacement = "Less_2km", ignore.case=TRUE)
 new_m[,1:ncol(new_m)] <- lapply(new_m[,1:ncol(new_m)], sub, pattern = "^.*(<|less|menos).*5.*km.*", replacement = "Less_5km", ignore.case=TRUE)
@@ -62,9 +61,8 @@ new_m[,1:ncol(new_m)] <- lapply(new_m[,1:ncol(new_m)], sub, pattern = "^[_3o]+f.
 new_m[,1:ncol(new_m)] <- lapply(new_m[,1:ncol(new_m)], sub, pattern = "^[_4o]+f.*3.*$", replacement = "Off-site (> 3km)", ignore.case=TRUE)
 
 ```
-#' STANDARDIZE (On-site, Off-site)
-#' Certain variables, such as 'edu_access_f', have categorical rather than binary responses. Code snippet below the following has
-#' code to run if you want to keep in binary. Otherwise, don't run.
+### STANDARDIZE (On-site, Off-site)
+Certain variables, such as 'edu_access_f', have categorical rather than binary responses. Code snippet below the following has code to run if you want to keep in binary. Otherwise, don't run.
 ```{r}
 new_m[,1:ncol(new_m)] <- lapply(new_m[,1:ncol(new_m)], sub, pattern = "(^Ons$|^[EO]N.*SIT.*)", 
                                 replacement = "On_site", ignore.case=TRUE)
@@ -75,14 +73,14 @@ new_m[,1:ncol(new_m)] <- lapply(new_m[,1:ncol(new_m)], sub, pattern = "2__offsit
 new_m[,1:ncol(new_m)] <- lapply(new_m[,1:ncol(new_m)], sub, pattern = "^Y*[ES][SI]+.*F+.*site*[io]*$", 
                                 replacement = "Off_site", ignore.case=TRUE)
 ```
-#' Optional, specific variable fixes
+### Optional, specific variable fixes
 ```{r}
 new_m$edu_access_f <-  sub(new_m$edu_access_f, pattern = "Yes", replacement = "On_site", ignore.case=TRUE)
 new_m$edu_access_f <-  sub(new_m$edu_access_f, pattern = "None", replacement = "No", ignore.case=TRUE)
 new_m$job_farm <-  sub(new_m$job_farm, pattern="^[^NY].*", replacement = NA)
 
 ```
-#' STANDARDIZE (Gender)
+### STANDARDIZE (Gender)
 ```{r}
 new_m[,1:ncol(new_m)] <- lapply(new_m[,1:ncol(new_m)], sub, pattern = "^F.*(emale|emenino)$", replacement = "Female", ignore.case=TRUE)
 new_m[,1:ncol(new_m)] <- lapply(new_m[,1:ncol(new_m)], sub, pattern = "^M.*(ale|asculino)$", replacement = "Male", ignore.case=TRUE)
@@ -90,7 +88,7 @@ new_m[,1:ncol(new_m)] <- lapply(new_m[,1:ncol(new_m)], gsub, pattern = "^males$"
 new_m[,1:ncol(new_m)] <- lapply(new_m[,1:ncol(new_m)], gsub, pattern = "^females$", replacement = "Women")
 
 ```
-#' STANDARDIZE (Intervals)
+# STANDARDIZE (Intervals)
 ```{r}
 new_m[,1:ncol(new_m)] <- lapply(new_m[,1:ncol(new_m)], sub, pattern = "Diaria|(^[1_E]+veryday$)", replacement = "Everyday", ignore.case=TRUE)
 new_m[,1:ncol(new_m)] <- lapply(new_m[,1:ncol(new_m)], sub, pattern = "(^([_3O]+nce|Una).*(semana|WE+K)$)", replacement = "Once a week", ignore.case=TRUE)
@@ -100,9 +98,8 @@ new_m[,1:ncol(new_m)] <- lapply(new_m[,1:ncol(new_m)], sub, pattern = "^[_6Ii]+r
 new_m[,1:ncol(new_m)] <- lapply(new_m[,1:ncol(new_m)], sub, pattern = "(^[_7N]+.*(unca|ever))$", replacement = "Never", ignore.case=TRUE)
 
 ```
-#' STANDARDIZE (Health)
-#' There are certain discrepencies I chose to not consolidate (flu-like illnesses, colds) because I am not sure whether they
-#' represent the same category of illness.
+### STANDARDIZE (Health)
+There are certain discrepencies I chose to not consolidate (flu-like illnesses, colds) because I am not sure whether they represent the same category of illness.
 ```{r}
 new_m[,1:ncol(new_m)] <- lapply(new_m[,1:ncol(new_m)], sub, pattern = "(CH*OLERA)", replacement = "Cholera", ignore.case=TRUE)
 new_m[,1:ncol(new_m)] <- lapply(new_m[,1:ncol(new_m)], sub, pattern = "(DIAR+H*EA)", replacement = "Diarrhea", ignore.case=TRUE)
@@ -114,17 +111,17 @@ new_m[,1:ncol(new_m)] <- lapply(new_m[,1:ncol(new_m)], sub, pattern = "^Measles$
 new_m[,1:ncol(new_m)] <- lapply(new_m[,1:ncol(new_m)], sub, pattern = "^Dysent[e]*ry$", replacement = "Dysentery", ignore.case=TRUE)
 
 ```
-#' Mobile Clinic
+### Mobile Clinic
 ```{r}
 new_m[,1:ncol(new_m)] <- lapply(new_m[,1:ncol(new_m)], sub, pattern = "^[6_M]+.*clinic$", replacement = "Mobile clinic", ignore.case=TRUE)
 
 ```
-#' Fix Health Variable Errors
+### Fix Health Variable Errors
 ```{r}
 new_m$health_medicine <-  sub(new_m$health_medicine, pattern = "^[^NY].*", replacement = NA, ignore.case=TRUE)
 
 ```
-#' STANDARDIZE (Health Providers)
+### STANDARDIZE (Health Providers)
 ```{r}
 new_m[,1:ncol(new_m)] <- lapply(new_m[,1:ncol(new_m)], sub, pattern = "Office[/.]*$", replacement = "office", ignore.case=TRUE)
 new_m[,1:ncol(new_m)] <- lapply(new_m[,1:ncol(new_m)], sub, pattern = "He[al]+th", replacement = "health", ignore.case=TRUE)
@@ -143,27 +140,27 @@ new_m[,1:ncol(new_m)] <- lapply(new_m[,1:ncol(new_m)], sub, pattern = "^[4_O]+th
 new_m[,1:ncol(new_m)] <- lapply(new_m[,1:ncol(new_m)], sub, pattern = "^church$", replacement = "Church", ignore.case=TRUE)
 
 ```
-#' STANDARDIZE (Non Profit Groups)
+### STANDARDIZE (Non Profit Groups)
 ```{r}
 new_m[,1:ncol(new_m)] <- lapply(new_m[,1:ncol(new_m)], sub, pattern = "UNICEF", replacement = "UNICEF", ignore.case=TRUE)
 new_m[,1:ncol(new_m)] <- lapply(new_m[,1:ncol(new_m)], sub, pattern = "save.*children.*", replacement = "Save the Children", ignore.case=TRUE)
 
 ```
-#' STANDARDIZE (Formatting)
-#' Fix spacing between backslashes, commas and & signs. Standardize separator character to ','
+### STANDARDIZE (Formatting)
+Fix spacing between backslashes, commas and & signs. Standardize separator character to ','
 ```{r}
 new_m[,1:ncol(new_m)] <- lapply(new_m[,1:ncol(new_m)], gsub, pattern = "(\\s*&\\s)|(\\s*,\\s*)", replacement = ",", ignore.case=TRUE)
 new_m[,1:ncol(new_m)] <- lapply(new_m[,1:ncol(new_m)], gsub, pattern = "(\\s*/\\s)", replacement = "/", ignore.case=TRUE)
 
 ```
-#' STANDARDIZE (Waste Disposal Mechanisms)
+### STANDARDIZE (Waste Disposal Mechanisms)
 ```{r}
 new_m[,1:ncol(new_m)] <- lapply(new_m[,1:ncol(new_m)], gsub, pattern = "^No.*sist.*residuos$|^No System$|^[1N_]+o.*Waste.*Disposal.*$", replacement = "No waste disposal system", ignore.case=TRUE)
 new_m[,1:ncol(new_m)] <- lapply(new_m[,1:ncol(new_m)], gsub, pattern = "Quema de residuos|^[3_B]+urning$", replacement = "Burning", ignore.case=TRUE)
 new_m[,1:ncol(new_m)] <- lapply(new_m[,1:ncol(new_m)], gsub, pattern =  "Fosa de residuos|^[2G_]+arbage.*pit$", replacement = "Garbage pit", ignore.case=TRUE)
 
 ```
-#' STANDARDIZE (Levels and Hygiene)
+### STANDARDIZE (Levels and Hygiene)
 ```{r}
 new_m[,1:ncol(new_m)] <- lapply(new_m[,1:ncol(new_m)], gsub, pattern = "^medium", replacement = "Medium", ignore.case=TRUE)
 new_m[,1:ncol(new_m)] <- lapply(new_m[,1:ncol(new_m)], gsub, pattern = "^high", replacement = "High", ignore.case=TRUE)
@@ -181,7 +178,7 @@ new_m[,1:ncol(new_m)] <- lapply(new_m[,1:ncol(new_m)], gsub, pattern = "^No hay$
 new_m[,1:ncol(new_m)] <- lapply(new_m[,1:ncol(new_m)], gsub, pattern = "HWS", replacement = " Hand Washing Station", ignore.case=TRUE)
 
 ```
-#' STANDARDIZE (Info Source)
+### STANDARDIZE (Info Source)
 ```{r}
 new_m[,1:ncol(new_m)] <- lapply(new_m[,1:ncol(new_m)], gsub, pattern = "Autoridades", replacement = "Authorities", ignore.case=TRUE)
 new_m[,1:ncol(new_m)] <- lapply(new_m[,1:ncol(new_m)], gsub, pattern = "Families,friends", replacement = "Families/friends", ignore.case=TRUE)
@@ -192,7 +189,7 @@ new_m[,1:ncol(new_m)] <- lapply(new_m[,1:ncol(new_m)], gsub, pattern = "Family m
 new_m[,1:ncol(new_m)] <- lapply(new_m[,1:ncol(new_m)], gsub, pattern = "En persona", replacement = "In person", ignore.case=TRUE)
 
 ```
-# STANDARDIZE (Occupations)
+### STANDARDIZE (Occupations)
 ```{r}
 new_m[,1:ncol(new_m)] <- lapply(new_m[,1:ncol(new_m)], gsub, pattern = "Agricultur[ea]|^Farming$", replacement = "Agriculture", ignore.case=TRUE)
 new_m[,1:ncol(new_m)] <- lapply(new_m[,1:ncol(new_m)], gsub, pattern = "Agro-pastoralism|^Agriculture/Livestock$", replacement = "Agro-Pastoralism", ignore.case=TRUE)
@@ -202,9 +199,9 @@ new_m[,1:ncol(new_m)] <- lapply(new_m[,1:ncol(new_m)], gsub, pattern = "Comercio
 new_m[,1:ncol(new_m)] <- lapply(new_m[,1:ncol(new_m)], gsub, pattern = "Pesca", replacement = "Fishing", ignore.case=TRUE)
 
 ```
-#' STANDARDIZE(dates)
-#` Function that takes in differently formatted dates and outputs them as (DD/MM/YY)
-#` Should run through once more after
+### STANDARDIZE(dates)
+Function that takes in differently formatted dates and outputs them as (DD/MM/YY)
+Should run through once more after
 ```{r}
 library(stringi)
 new_m <- new_m[order(new_m$country),] 
