@@ -188,11 +188,14 @@ for(j in grep(pattern="(^.*date$)|(^date.*$)", x=colnames(new_m), value=TRUE)) {
 write.csv(new_m, "csv/clean/newest_clean.csv", row.names=FALSE, fileEncoding="UTF-8")
 m <- read.csv("/Users/Katie/Desktop/capstone/csv/clean/newest_clean.csv", as.is = TRUE)
 
+first <- which(names(m)=="site_zone")
+print(first)
+
 '%ni%' <- Negate('%in%')
 i = 1;
 j = 1;
 n = 1;
-for (i in 1:ncol(m)) {
+for (i in 484:ncol(m)) {
   out<-capture.output(print(colnames(m)[i]))
   cat(out,file="/Users/Katie/Desktop/capstone/var_list.txt",sep=",",append=TRUE)
   countries<-c()

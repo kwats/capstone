@@ -1,5 +1,6 @@
 
-files <- dir("./alldat", pattern=".csv$", full.names = TRUE, recursive= TRUE)
+setwd("/Users/Katie/Desktop/capstone")
+files <- dir("./data", pattern=".csv$", full.names = TRUE, recursive= TRUE)
 
 country <- gsub(".+/+|_.*.csv", "", files) 
 
@@ -11,7 +12,7 @@ firstup <- function(x) {                          # Capitalize first letter of C
 }
 
 fileinfo <- data.frame(filename = files,
-                       country = country,
+                       country = firstup(country),
                        roundcode = roundcode,
                        listid = paste0(firstup(country), ", Round ", roundcode),
                        stringsAsFactors = FALSE)
