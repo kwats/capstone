@@ -9,3 +9,5 @@ Merged data:  csv/orignal
 
 
 Cleaned data: csv/clean
+
+Commented code: pdfs/clean_capstone.pdf
