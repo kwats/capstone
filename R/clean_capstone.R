@@ -7,8 +7,8 @@ new_m <- new_m[, -grep("^column", colnames(new_m))]
 names <- names(new_m)
 
 new_m[] <- lapply(new_m, as.character)
-new_m <- as.data.frame(lapply(new_m, function(x){
-  x <- replace(x, x %in% c("NA", "N/A", ".", "na","-", "8__unknown", "dont_know", "5__unknown","Do_not_know", "No Response", "no responde","No sabe", "Don't know","no sabe", "no_responde", "Not specified.","", "no answer", "No answer", "sin respuesta", "Sin respuesta", "Sin Informacion", "Unknown", "UNKNOWN", "unknown", "Unkown", "unkown", "Not Specified", "Desconocido","desconocido", "6__unknown", "7__no_answer", "NULL", "Sin respuesta, Por que?", "NO ANSWER"), NA)
+m <- as.data.frame(lapply(m, function(x){
+  x <- replace(x, x %in% c("NA", "N/A", ".", "", "na","-", "8__unknown", "dont_know", "5__unknown","Do_not_know", "No Response", "no responde","No sabe", "Don't know","no sabe", "no_responde", "Not specified.","", "no answer", "No answer", "sin respuesta", "Sin respuesta", "Sin Informacion", "Unknown", "UNKNOWN", "unknown", "Unkown", "unkown", "Not Specified", "Desconocido","desconocido", "6__unknown", "7__no_answer", "NULL", "Sin respuesta, Por que?", "NO ANSWER"), NA)
   }))
 
 new_m[,1:ncol(new_m)] <- lapply(new_m[,1:ncol(new_m)], sub, pattern = "^(yes|si|true)$", replacement = "Yes", ignore.case=TRUE)
@@ -186,6 +186,33 @@ for(j in grep(pattern="(^.*date$)|(^date.*$)", x=colnames(new_m), value=TRUE)) {
 }
 
 write.csv(new_m, "csv/clean/newest_clean.csv", row.names=FALSE, fileEncoding="UTF-8")
+m <- read.csv("/Users/Katie/Desktop/capstone/csv/clean/newest_clean.csv", as.is = TRUE)
+
+'%ni%' <- Negate('%in%')
+i = 1;
+j = 1;
+n = 1;
+for (i in 1:ncol(m)) {
+  out<-capture.output(print(colnames(m)[i]))
+  cat(out,file="/Users/Katie/Desktop/capstone/var_list.txt",sep=",",append=TRUE)
+  countries<-c()
+  for (j in 1:nrow(m)) {
+    if (m[j, i] %ni% c(NA, "NA", "") & !is.na(m[j,i])) {
+      out<-capture.output(print(m[j, 14],  max.levels=0))
+      out <- substr(out, 5, nchar(out))
+      if (out %ni% countries) {
+        countries<-c(countries, out)
+      }
+    }
+  }
+  out<-capture.output(length(countries))
+  cat(out,file="/Users/Katie/Desktop/capstone/var_list.txt",sep="",append=TRUE)
+  countries <- as.matrix(as.data.frame(countries))
+  out<-capture.output(knitr::kable(countries))
+  cat(out,file="/Users/Katie/Desktop/capstone/var_list.txt",sep="\n",append=TRUE)
+  out<-"\n"
+  cat(out,file="/Users/Katie/Desktop/capstone/var_list.txt",sep="\n",append=TRUE)
+}
 
 
 list_countries <- split(new_m, as.factor(new_m$country))
@@ -194,4 +221,3 @@ for (i in list_countries) {
   write.csv(i, tmp, row.names=FALSE, fileEncoding="UTF-8")
 }
 
-                        

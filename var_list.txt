@@ -1,0 +1,4728 @@
+VAR access_constraint_vul = 1
+
+|countries |
+|:---------|
+|Ethiopia  |
+
+
+VAR arrival_date = 1
+
+|countries |
+|:---------|
+|Ethiopia  |
+
+
+VAR asset_lost = 1
+
+|countries |
+|:---------|
+|Ethiopia  |
+
+
+VAR avoid_female = 1
+
+|countries |
+|:---------|
+|Ethiopia  |
+
+
+VAR avoid_female_where = 1
+
+|countries |
+|:---------|
+|Ethiopia  |
+
+
+VAR bathing_gender = 6
+
+|countries  |
+|:----------|
+|Nigeria    |
+|Ethiopia   |
+|Haiti      |
+|Peru       |
+|Bangladesh |
+|Nepal      |
+
+
+VAR child_leaving = 1
+
+|countries |
+|:---------|
+|Ethiopia  |
+
+
+VAR child_protect = 1
+
+|countries |
+|:---------|
+|Ethiopia  |
+
+
+VAR child_protect_identify = 1
+
+|countries |
+|:---------|
+|Ethiopia  |
+
+
+VAR child_protect_none = 1
+
+|countries |
+|:---------|
+|Ethiopia  |
+
+
+VAR child_protect_refer = 1
+
+|countries |
+|:---------|
+|Ethiopia  |
+
+
+VAR child_protect_reunify = 1
+
+|countries |
+|:---------|
+|Ethiopia  |
+
+
+VAR child_protect_tracing = 1
+
+|countries |
+|:---------|
+|Ethiopia  |
+
+
+VAR country = 8
+
+|countries  |
+|:----------|
+|Nigeria    |
+|Bangladesh |
+|Ecuador    |
+|Ethiopia   |
+|Haiti      |
+|Malawi     |
+|Peru       |
+|Nepal      |
+
+
+VAR displace_reason = 1
+
+|countries |
+|:---------|
+|Ethiopia  |
+
+
+VAR edu_access = 6
+
+|countries |
+|:---------|
+|Nigeria   |
+|Ecuador   |
+|Ethiopia  |
+|Malawi    |
+|Peru      |
+|Nepal     |
+
+
+VAR edu_access_f = 3
+
+|countries  |
+|:----------|
+|Ethiopia   |
+|Bangladesh |
+|Nepal      |
+
+
+VAR edu_access_i = 3
+
+|countries  |
+|:----------|
+|Haiti      |
+|Bangladesh |
+|Nepal      |
+
+
+VAR edu_adult = 1
+
+|countries |
+|:---------|
+|Ethiopia  |
+
+
+VAR edu_distance = 5
+
+|countries |
+|:---------|
+|Nigeria   |
+|Ethiopia  |
+|Haiti     |
+|Peru      |
+|Nepal     |
+
+
+VAR edu_location = 3
+
+|countries |
+|:---------|
+|Peru      |
+|Nigeria   |
+|Ethiopia  |
+
+
+VAR educ_access_f = 1
+
+|countries  |
+|:----------|
+|Bangladesh |
+
+
+VAR educ_access_i = 1
+
+|countries  |
+|:----------|
+|Bangladesh |
+
+
+VAR enum_name = 1
+
+|countries |
+|:---------|
+|Peru      |
+
+
+VAR enum_sex = 3
+
+|countries |
+|:---------|
+|Ethiopia  |
+|Peru      |
+|Nepal     |
+
+
+VAR food_access = 6
+
+|countries |
+|:---------|
+|Nigeria   |
+|Ethiopia  |
+|Malawi    |
+|Peru      |
+|Ecuador   |
+|Nepal     |
+
+
+VAR food_freq = 4
+
+|countries |
+|:---------|
+|Nigeria   |
+|Ethiopia  |
+|Haiti     |
+|Peru      |
+
+
+VAR food_fuel = 1
+
+|countries |
+|:---------|
+|Nepal     |
+
+
+VAR food_fuel_main = 2
+
+|countries  |
+|:----------|
+|Bangladesh |
+|Ethiopia   |
+
+
+VAR food_kit = 1
+
+|countries |
+|:---------|
+|Ethiopia  |
+
+
+VAR food_kit_by = 1
+
+|countries |
+|:---------|
+|Ethiopia  |
+
+
+VAR food_kit_date = 1
+
+|countries |
+|:---------|
+|Ethiopia  |
+
+
+VAR food_land = 2
+
+|countries |
+|:---------|
+|Peru      |
+|Nepal     |
+
+
+VAR food_market = 5
+
+|countries  |
+|:----------|
+|Ethiopia   |
+|Peru       |
+|Nigeria    |
+|Bangladesh |
+|Nepal      |
+
+
+VAR food_school = 1
+
+|countries |
+|:---------|
+|Ethiopia  |
+
+
+VAR food_source = 6
+
+|countries  |
+|:----------|
+|Ethiopia   |
+|Haiti      |
+|Peru       |
+|Nigeria    |
+|Bangladesh |
+|Nepal      |
+
+
+VAR food_sup_child = 6
+
+|countries  |
+|:----------|
+|Nigeria    |
+|Ethiopia   |
+|Haiti      |
+|Peru       |
+|Bangladesh |
+|Nepal      |
+
+
+VAR food_sup_lac = 6
+
+|countries  |
+|:----------|
+|Nigeria    |
+|Ethiopia   |
+|Haiti      |
+|Peru       |
+|Bangladesh |
+|Nepal      |
+
+
+VAR friction = 1
+
+|countries  |
+|:----------|
+|Bangladesh |
+
+
+VAR garbage_manage = 1
+
+|countries  |
+|:----------|
+|Bangladesh |
+
+
+VAR garbage_problem = 2
+
+|countries |
+|:---------|
+|Nigeria   |
+|Ethiopia  |
+
+
+VAR gbv_exist = 1
+
+|countries |
+|:---------|
+|Peru      |
+
+
+VAR gbv_issue = 1
+
+|countries |
+|:---------|
+|Ethiopia  |
+
+
+VAR gbv_issue_denial = 1
+
+|countries |
+|:---------|
+|Ethiopia  |
+
+
+VAR gbv_issue_marriage = 1
+
+|countries |
+|:---------|
+|Ethiopia  |
+
+
+VAR gbv_issue_none = 1
+
+|countries |
+|:---------|
+|Ethiopia  |
+
+
+VAR gbv_issue_phys = 1
+
+|countries |
+|:---------|
+|Ethiopia  |
+
+
+VAR gbv_issue_pysc = 1
+
+|countries |
+|:---------|
+|Ethiopia  |
+
+
+VAR gbv_issue_rape = 1
+
+|countries |
+|:---------|
+|Ethiopia  |
+
+
+VAR gbv_issue_sex = 1
+
+|countries |
+|:---------|
+|Ethiopia  |
+
+
+VAR gbv_report = 5
+
+|countries  |
+|:----------|
+|Ethiopia   |
+|Haiti      |
+|Peru       |
+|Bangladesh |
+|Nepal      |
+
+
+VAR has_id = 2
+
+|countries |
+|:---------|
+|Ethiopia  |
+|Peru      |
+
+
+VAR health_antenat = 1
+
+|countries |
+|:---------|
+|Nepal     |
+
+
+VAR health_center = 5
+
+|countries  |
+|:----------|
+|Ethiopia   |
+|Peru       |
+|Nigeria    |
+|Nepal      |
+|Bangladesh |
+
+
+VAR health_center_dist = 3
+
+|countries |
+|:---------|
+|Ethiopia  |
+|Peru      |
+|Nepal     |
+
+
+VAR health_cmr = 1
+
+|countries |
+|:---------|
+|Ethiopia  |
+
+
+VAR health_delivery = 1
+
+|countries |
+|:---------|
+|Ethiopia  |
+
+
+VAR health_gbv = 1
+
+|countries |
+|:---------|
+|Ethiopia  |
+
+
+VAR health_issue = 6
+
+|countries  |
+|:----------|
+|Nigeria    |
+|Ethiopia   |
+|Haiti      |
+|Peru       |
+|Bangladesh |
+|Nepal      |
+
+
+VAR health_issue_b = 5
+
+|countries |
+|:---------|
+|Nigeria   |
+|Ethiopia  |
+|Haiti     |
+|Peru      |
+|Nepal     |
+
+
+VAR health_issue_c = 4
+
+|countries |
+|:---------|
+|Nigeria   |
+|Ethiopia  |
+|Peru      |
+|Nepal     |
+
+
+VAR health_issue_other = 1
+
+|countries |
+|:---------|
+|Peru      |
+
+
+VAR health_location = 2
+
+|countries  |
+|:----------|
+|Nigeria    |
+|Bangladesh |
+
+
+VAR health_medicine = 3
+
+|countries |
+|:---------|
+|Nigeria   |
+|Ethiopia  |
+|Nepal     |
+
+
+VAR health_medicine.1 = 1
+
+|countries |
+|:---------|
+|Nigeria   |
+
+
+VAR health_net = 1
+
+|countries |
+|:---------|
+|Ethiopia  |
+
+
+VAR health_net_by = 1
+
+|countries |
+|:---------|
+|Ethiopia  |
+
+
+VAR health_net_date = 1
+
+|countries |
+|:---------|
+|Ethiopia  |
+
+
+VAR health_net.1 = 1
+
+|countries |
+|:---------|
+|Ethiopia  |
+
+
+VAR health_pfa = 1
+
+|countries |
+|:---------|
+|Ethiopia  |
+
+
+VAR health_provider = 4
+
+|countries |
+|:---------|
+|Nigeria   |
+|Ethiopia  |
+|Peru      |
+|Nepal     |
+
+
+VAR health_psych = 2
+
+|countries  |
+|:----------|
+|Bangladesh |
+|Nepal      |
+
+
+VAR health_psych_rem = 1
+
+|countries |
+|:---------|
+|Nepal     |
+
+
+VAR health_pwd = 1
+
+|countries  |
+|:----------|
+|Bangladesh |
+
+
+VAR health_referral = 1
+
+|countries |
+|:---------|
+|Nigeria   |
+
+
+VAR health_screen = 3
+
+|countries |
+|:---------|
+|Nigeria   |
+|Ethiopia  |
+|Peru      |
+
+
+VAR health_srh = 1
+
+|countries |
+|:---------|
+|Ethiopia  |
+
+
+VAR health_support = 1
+
+|countries |
+|:---------|
+|Nigeria   |
+
+
+VAR hyg_drainage = 1
+
+|countries |
+|:---------|
+|Nigeria   |
+
+
+VAR hyg_evidence = 4
+
+|countries |
+|:---------|
+|Ethiopia  |
+|Peru      |
+|Nigeria   |
+|Nepal     |
+
+
+VAR hyg_f_product = 4
+
+|countries  |
+|:----------|
+|Ethiopia   |
+|Peru       |
+|Bangladesh |
+|Nepal      |
+
+
+VAR hyg_f_product_by = 1
+
+|countries |
+|:---------|
+|Ethiopia  |
+
+
+VAR hyg_f_product_date = 1
+
+|countries |
+|:---------|
+|Ethiopia  |
+
+
+VAR hyg_f_remark = 1
+
+|countries |
+|:---------|
+|Peru      |
+
+
+VAR hyg_kit_soap = 2
+
+|countries  |
+|:----------|
+|Ethiopia   |
+|Bangladesh |
+
+
+VAR hyg_kit_soap_by = 1
+
+|countries |
+|:---------|
+|Ethiopia  |
+
+
+VAR hyg_kit_soap_date = 1
+
+|countries |
+|:---------|
+|Ethiopia  |
+
+
+VAR hyg_open_def = 4
+
+|countries |
+|:---------|
+|Ethiopia  |
+|Peru      |
+|Nigeria   |
+|Nepal     |
+
+
+VAR hyg_promotion = 3
+
+|countries |
+|:---------|
+|Ethiopia  |
+|Peru      |
+|Nigeria   |
+
+
+VAR hyg_station = 3
+
+|countries |
+|:---------|
+|Peru      |
+|Nigeria   |
+|Nepal     |
+
+
+VAR hyg_waste = 4
+
+|countries |
+|:---------|
+|Nigeria   |
+|Ethiopia  |
+|Peru      |
+|Nepal     |
+
+
+VAR hyg_waste_remark = 1
+
+|countries |
+|:---------|
+|Peru      |
+
+
+VAR idp_leaving = 1
+
+|countries |
+|:---------|
+|Haiti     |
+
+
+VAR inc_source_1 = 1
+
+|countries  |
+|:----------|
+|Bangladesh |
+
+
+VAR inc_source_2 = 1
+
+|countries  |
+|:----------|
+|Bangladesh |
+
+
+VAR inc_source_3 = 1
+
+|countries  |
+|:----------|
+|Bangladesh |
+
+
+VAR info_add = 1
+
+|countries |
+|:---------|
+|Ethiopia  |
+
+
+VAR info_add_distribute = 1
+
+|countries |
+|:---------|
+|Ethiopia  |
+
+
+VAR info_add_how = 1
+
+|countries |
+|:---------|
+|Ethiopia  |
+
+
+VAR info_add_none = 1
+
+|countries |
+|:---------|
+|Ethiopia  |
+
+
+VAR info_add_origin = 1
+
+|countries |
+|:---------|
+|Ethiopia  |
+
+
+VAR info_add_register = 1
+
+|countries |
+|:---------|
+|Ethiopia  |
+
+
+VAR info_add_relief = 1
+
+|countries |
+|:---------|
+|Ethiopia  |
+
+
+VAR info_add_sec = 1
+
+|countries |
+|:---------|
+|Ethiopia  |
+
+
+VAR info_add_services = 1
+
+|countries |
+|:---------|
+|Ethiopia  |
+
+
+VAR info_add_shelter = 1
+
+|countries |
+|:---------|
+|Ethiopia  |
+
+
+VAR info_complaint = 1
+
+|countries |
+|:---------|
+|Nepal     |
+
+
+VAR info_credibility = 1
+
+|countries  |
+|:----------|
+|Bangladesh |
+
+
+VAR info_doc = 1
+
+|countries  |
+|:----------|
+|Bangladesh |
+
+
+VAR info_free = 2
+
+|countries  |
+|:----------|
+|Bangladesh |
+|Nepal      |
+
+
+VAR info_gbv = 1
+
+|countries  |
+|:----------|
+|Bangladesh |
+
+
+VAR info_live = 1
+
+|countries  |
+|:----------|
+|Bangladesh |
+
+
+VAR info_main = 4
+
+|countries  |
+|:----------|
+|Haiti      |
+|Peru       |
+|Bangladesh |
+|Nepal      |
+
+
+VAR info_pt_origin = 1
+
+|countries  |
+|:----------|
+|Bangladesh |
+
+
+VAR info_src = 5
+
+|countries  |
+|:----------|
+|Nigeria    |
+|Ethiopia   |
+|Peru       |
+|Bangladesh |
+|Nepal      |
+
+
+VAR info_src_authority = 1
+
+|countries |
+|:---------|
+|Peru      |
+
+
+VAR info_src_cell = 1
+
+|countries |
+|:---------|
+|Peru      |
+
+
+VAR info_src_fam_friend = 1
+
+|countries |
+|:---------|
+|Peru      |
+
+
+VAR info_src_female = 1
+
+|countries |
+|:---------|
+|Nepal     |
+
+
+VAR info_src_leaders = 1
+
+|countries |
+|:---------|
+|Peru      |
+
+
+VAR info_src_male = 1
+
+|countries |
+|:---------|
+|Nepal     |
+
+
+VAR info_src_televison = 1
+
+|countries |
+|:---------|
+|Peru      |
+
+
+VAR job_abr = 4
+
+|countries |
+|:---------|
+|Haiti     |
+|Malawi    |
+|Nigeria   |
+|Nepal     |
+
+
+VAR job_abr_family = 1
+
+|countries |
+|:---------|
+|Nepal     |
+
+
+VAR job_abr_in = 3
+
+|countries |
+|:---------|
+|Peru      |
+|Nigeria   |
+|Nepal     |
+
+
+VAR job_abr_prom = 1
+
+|countries |
+|:---------|
+|Nigeria   |
+
+
+VAR job_access = 4
+
+|countries |
+|:---------|
+|Ethiopia  |
+|Peru      |
+|Nigeria   |
+|Nepal     |
+
+
+VAR job_business = 1
+
+|countries |
+|:---------|
+|Haiti     |
+
+
+VAR job_cattle = 1
+
+|countries |
+|:---------|
+|Haiti     |
+
+
+VAR job_cattle_site = 4
+
+|countries |
+|:---------|
+|Nigeria   |
+|Ethiopia  |
+|Peru      |
+|Nepal     |
+
+
+VAR job_farm = 1
+
+|countries |
+|:---------|
+|Ethiopia  |
+
+
+VAR job_fishing = 1
+
+|countries |
+|:---------|
+|Haiti     |
+
+
+VAR job_main = 3
+
+|countries |
+|:---------|
+|Ethiopia  |
+|Peru      |
+|Nepal     |
+
+
+VAR job_main_other = 2
+
+|countries |
+|:---------|
+|Peru      |
+|Nepal     |
+
+
+VAR job_offer = 2
+
+|countries |
+|:---------|
+|Peru      |
+|Nepal     |
+
+
+VAR job_offer_how = 2
+
+|countries |
+|:---------|
+|Peru      |
+|Nepal     |
+
+
+VAR job_offer_to = 1
+
+|countries |
+|:---------|
+|Nepal     |
+
+
+VAR job_offer_where = 1
+
+|countries |
+|:---------|
+|Peru      |
+
+
+VAR job_recruit = 1
+
+|countries |
+|:---------|
+|Nepal     |
+
+
+VAR last_arrival_date = 1
+
+|countries |
+|:---------|
+|Ethiopia  |
+
+
+VAR latrine_cond = 4
+
+|countries |
+|:---------|
+|Ethiopia  |
+|Peru      |
+|Nigeria   |
+|Nepal     |
+
+
+VAR latrine_cond_remark = 1
+
+|countries |
+|:---------|
+|Peru      |
+
+
+VAR latrine_condition = 1
+
+|countries |
+|:---------|
+|Nigeria   |
+
+
+VAR latrine_gender = 8
+
+|countries  |
+|:----------|
+|Nigeria    |
+|Ecuador    |
+|Ethiopia   |
+|Haiti      |
+|Malawi     |
+|Peru       |
+|Bangladesh |
+|Nepal      |
+
+
+VAR latrine_install = 1
+
+|countries |
+|:---------|
+|Nepal     |
+
+
+VAR latrine_light = 5
+
+|countries  |
+|:----------|
+|Nigeria    |
+|Ethiopia   |
+|Peru       |
+|Bangladesh |
+|Nepal      |
+
+
+VAR latrine_light_remark = 1
+
+|countries |
+|:---------|
+|Peru      |
+
+
+VAR latrine_lock = 4
+
+|countries |
+|:---------|
+|Ethiopia  |
+|Peru      |
+|Nigeria   |
+|Nepal     |
+
+
+VAR latrine_lock_remark = 1
+
+|countries |
+|:---------|
+|Peru      |
+
+
+VAR latrine_site = 1
+
+|countries |
+|:---------|
+|Nepal     |
+
+
+VAR latrine_time = 1
+
+|countries |
+|:---------|
+|Nepal     |
+
+
+VAR multi_roof = 1
+
+|countries |
+|:---------|
+|Peru      |
+
+
+VAR n_18to59yr_female = 1
+
+|countries  |
+|:----------|
+|Bangladesh |
+
+
+VAR n_18to59yr_male = 1
+
+|countries  |
+|:----------|
+|Bangladesh |
+
+
+VAR n_1to5yr_female = 1
+
+|countries  |
+|:----------|
+|Bangladesh |
+
+
+VAR n_1to5yr_male = 1
+
+|countries  |
+|:----------|
+|Bangladesh |
+
+
+VAR n_1yr_female = 1
+
+|countries  |
+|:----------|
+|Bangladesh |
+
+
+VAR n_1yr_male = 1
+
+|countries  |
+|:----------|
+|Bangladesh |
+
+
+VAR n_60plusyr_female = 1
+
+|countries  |
+|:----------|
+|Bangladesh |
+
+
+VAR n_60plusyr_male = 1
+
+|countries  |
+|:----------|
+|Bangladesh |
+
+
+VAR n_6to17yr_female = 1
+
+|countries  |
+|:----------|
+|Bangladesh |
+
+
+VAR n_6to17yr_male = 1
+
+|countries  |
+|:----------|
+|Bangladesh |
+
+
+VAR n_adult = 3
+
+|countries |
+|:---------|
+|Ethiopia  |
+|Nigeria   |
+|Nepal     |
+
+
+VAR n_adult_female = 4
+
+|countries |
+|:---------|
+|Nigeria   |
+|Ethiopia  |
+|Haiti     |
+|Nepal     |
+
+
+VAR n_adult_male = 4
+
+|countries |
+|:---------|
+|Nigeria   |
+|Ethiopia  |
+|Haiti     |
+|Nepal     |
+
+
+VAR n_adult_single = 1
+
+|countries |
+|:---------|
+|Peru      |
+
+
+VAR n_bath = 1
+
+|countries  |
+|:----------|
+|Bangladesh |
+
+
+VAR n_bath_female = 1
+
+|countries  |
+|:----------|
+|Bangladesh |
+
+
+VAR n_bath_male = 1
+
+|countries  |
+|:----------|
+|Bangladesh |
+
+
+VAR n_boy_sep = 1
+
+|countries |
+|:---------|
+|Ecuador   |
+
+
+VAR n_boy_unacc = 1
+
+|countries |
+|:---------|
+|Ecuador   |
+
+
+VAR n_child = 4
+
+|countries  |
+|:----------|
+|Bangladesh |
+|Ethiopia   |
+|Nigeria    |
+|Nepal      |
+
+
+VAR n_child_a_none = 1
+
+|countries |
+|:---------|
+|Peru      |
+
+
+VAR n_child_a_unrel = 1
+
+|countries |
+|:---------|
+|Peru      |
+
+
+VAR n_child_female = 4
+
+|countries |
+|:---------|
+|Nigeria   |
+|Ethiopia  |
+|Haiti     |
+|Nepal     |
+
+
+VAR n_child_male = 4
+
+|countries |
+|:---------|
+|Nigeria   |
+|Ethiopia  |
+|Haiti     |
+|Nepal     |
+
+
+VAR n_child_sep = 4
+
+|countries |
+|:---------|
+|Ethiopia  |
+|Haiti     |
+|Nigeria   |
+|Nepal     |
+
+
+VAR n_child_unacc = 3
+
+|countries |
+|:---------|
+|Ethiopia  |
+|Haiti     |
+|Nigeria   |
+
+
+VAR n_child.1 = 1
+
+|countries |
+|:---------|
+|Ethiopia  |
+
+
+VAR n_chron_b = 1
+
+|countries |
+|:---------|
+|Ecuador   |
+
+
+VAR n_chron_g = 1
+
+|countries |
+|:---------|
+|Ecuador   |
+
+
+VAR n_chron_m = 1
+
+|countries |
+|:---------|
+|Ecuador   |
+
+
+VAR n_chron_w = 1
+
+|countries |
+|:---------|
+|Ecuador   |
+
+
+VAR n_chronic_ill = 5
+
+|countries |
+|:---------|
+|Ethiopia  |
+|Haiti     |
+|Peru      |
+|Nepal     |
+|Nigeria   |
+
+
+VAR n_depart = 1
+
+|countries  |
+|:----------|
+|Bangladesh |
+
+
+VAR n_elder = 4
+
+|countries  |
+|:----------|
+|Ethiopia   |
+|Nigeria    |
+|Nepal      |
+|Bangladesh |
+
+
+VAR n_elder_f_alone = 1
+
+|countries |
+|:---------|
+|Ecuador   |
+
+
+VAR n_elder_female = 5
+
+|countries |
+|:---------|
+|Nigeria   |
+|Ecuador   |
+|Ethiopia  |
+|Haiti     |
+|Nepal     |
+
+
+VAR n_elder_m_alone = 1
+
+|countries |
+|:---------|
+|Ecuador   |
+
+
+VAR n_elder_male = 5
+
+|countries |
+|:---------|
+|Nigeria   |
+|Ecuador   |
+|Ethiopia  |
+|Haiti     |
+|Nepal     |
+
+
+VAR n_ethnicmin_b = 1
+
+|countries |
+|:---------|
+|Ecuador   |
+
+
+VAR n_ethnicmin_g = 1
+
+|countries |
+|:---------|
+|Ecuador   |
+
+
+VAR n_ethnicmin_m = 1
+
+|countries |
+|:---------|
+|Ecuador   |
+
+
+VAR n_ethnicmin_w = 1
+
+|countries |
+|:---------|
+|Ecuador   |
+
+
+VAR n_fam_depart = 1
+
+|countries  |
+|:----------|
+|Bangladesh |
+
+
+VAR n_family = 7
+
+|countries  |
+|:----------|
+|Nigeria    |
+|Bangladesh |
+|Ecuador    |
+|Ethiopia   |
+|Haiti      |
+|Malawi     |
+|Nepal      |
+
+
+VAR n_female = 7
+
+|countries  |
+|:----------|
+|Bangladesh |
+|Ecuador    |
+|Ethiopia   |
+|Malawi     |
+|Peru       |
+|Nepal      |
+|Nigeria    |
+
+
+VAR n_garbage = 2
+
+|countries |
+|:---------|
+|Nigeria   |
+|Ethiopia  |
+
+
+VAR n_girl_sep = 1
+
+|countries |
+|:---------|
+|Ecuador   |
+
+
+VAR n_girl_unacc = 1
+
+|countries |
+|:---------|
+|Ecuador   |
+
+
+VAR n_hh_income = 4
+
+|countries |
+|:---------|
+|Nigeria   |
+|Malawi    |
+|Peru      |
+|Nepal     |
+
+
+VAR n_hoh_boy = 1
+
+|countries |
+|:---------|
+|Ecuador   |
+
+
+VAR n_hoh_child = 6
+
+|countries  |
+|:----------|
+|Bangladesh |
+|Ethiopia   |
+|Haiti      |
+|Peru       |
+|Nigeria    |
+|Nepal      |
+
+
+VAR n_hoh_elder = 1
+
+|countries |
+|:---------|
+|Nepal     |
+
+
+VAR n_hoh_elderly = 1
+
+|countries  |
+|:----------|
+|Bangladesh |
+
+
+VAR n_hoh_female = 7
+
+|countries  |
+|:----------|
+|Bangladesh |
+|Ethiopia   |
+|Haiti      |
+|Malawi     |
+|Peru       |
+|Nigeria    |
+|Nepal      |
+
+
+VAR n_hoh_girl = 1
+
+|countries |
+|:---------|
+|Ecuador   |
+
+
+VAR n_hoh_male = 4
+
+|countries |
+|:---------|
+|Ethiopia  |
+|Haiti     |
+|Peru      |
+|Nigeria   |
+
+
+VAR n_hyg_station = 1
+
+|countries  |
+|:----------|
+|Bangladesh |
+
+
+VAR n_infants = 3
+
+|countries |
+|:---------|
+|Ethiopia  |
+|Nigeria   |
+|Nepal     |
+
+
+VAR n_infants_female = 4
+
+|countries |
+|:---------|
+|Nigeria   |
+|Ethiopia  |
+|Haiti     |
+|Nepal     |
+
+
+VAR n_infants_male = 4
+
+|countries |
+|:---------|
+|Nigeria   |
+|Ethiopia  |
+|Haiti     |
+|Nepal     |
+
+
+VAR n_lactating = 6
+
+|countries  |
+|:----------|
+|Nigeria    |
+|Bangladesh |
+|Ecuador    |
+|Ethiopia   |
+|Haiti      |
+|Nepal      |
+
+
+VAR n_latrine = 6
+
+|countries  |
+|:----------|
+|Nigeria    |
+|Ethiopia   |
+|Haiti      |
+|Peru       |
+|Bangladesh |
+|Nepal      |
+
+
+VAR n_latrine_child = 1
+
+|countries |
+|:---------|
+|Ethiopia  |
+
+
+VAR n_latrine_disability = 1
+
+|countries |
+|:---------|
+|Ethiopia  |
+
+
+VAR n_latrine_disable = 2
+
+|countries |
+|:---------|
+|Ethiopia  |
+|Nepal     |
+
+
+VAR n_latrine_female = 3
+
+|countries  |
+|:----------|
+|Ethiopia   |
+|Bangladesh |
+|Nepal      |
+
+
+VAR n_latrine_male = 3
+
+|countries  |
+|:----------|
+|Ethiopia   |
+|Bangladesh |
+|Nepal      |
+
+
+VAR n_male = 7
+
+|countries  |
+|:----------|
+|Bangladesh |
+|Ecuador    |
+|Ethiopia   |
+|Malawi     |
+|Peru       |
+|Nepal      |
+|Nigeria    |
+
+
+VAR n_mental_dis = 1
+
+|countries |
+|:---------|
+|Haiti     |
+
+
+VAR n_min_ethnic = 2
+
+|countries |
+|:---------|
+|Ethiopia  |
+|Nepal     |
+
+
+VAR n_min_religion = 1
+
+|countries |
+|:---------|
+|Ethiopia  |
+
+
+VAR n_multi_roof = 1
+
+|countries |
+|:---------|
+|Peru      |
+
+
+VAR n_orphan = 4
+
+|countries |
+|:---------|
+|Ethiopia  |
+|Haiti     |
+|Peru      |
+|Nigeria   |
+
+
+VAR n_orphan_b = 1
+
+|countries |
+|:---------|
+|Ecuador   |
+
+
+VAR n_orphan_g = 1
+
+|countries |
+|:---------|
+|Ecuador   |
+
+
+VAR n_physical_dis = 1
+
+|countries |
+|:---------|
+|Haiti     |
+
+
+VAR n_pregnant = 4
+
+|countries  |
+|:----------|
+|Nigeria    |
+|Bangladesh |
+|Haiti      |
+|Nepal      |
+
+
+VAR n_pregnant_adult = 4
+
+|countries |
+|:---------|
+|Ecuador   |
+|Ethiopia  |
+|Peru      |
+|Nepal     |
+
+
+VAR n_pregnant_youth = 4
+
+|countries |
+|:---------|
+|Ecuador   |
+|Ethiopia  |
+|Peru      |
+|Nepal     |
+
+
+VAR n_pwd = 3
+
+|countries  |
+|:----------|
+|Bangladesh |
+|Nigeria    |
+|Nepal      |
+
+
+VAR n_pwd_adult = 1
+
+|countries |
+|:---------|
+|Ethiopia  |
+
+
+VAR n_pwd_youth = 1
+
+|countries |
+|:---------|
+|Ethiopia  |
+
+
+VAR n_pwmd_b = 1
+
+|countries |
+|:---------|
+|Ecuador   |
+
+
+VAR n_pwmd_g = 1
+
+|countries |
+|:---------|
+|Ecuador   |
+
+
+VAR n_pwmd_m = 1
+
+|countries |
+|:---------|
+|Ecuador   |
+
+
+VAR n_pwmd_w = 1
+
+|countries |
+|:---------|
+|Ecuador   |
+
+
+VAR n_pwpd_b = 1
+
+|countries |
+|:---------|
+|Ecuador   |
+
+
+VAR n_pwpd_g = 1
+
+|countries |
+|:---------|
+|Ecuador   |
+
+
+VAR n_pwpd_m = 1
+
+|countries |
+|:---------|
+|Ecuador   |
+
+
+VAR n_pwpd_w = 1
+
+|countries |
+|:---------|
+|Ecuador   |
+
+
+VAR n_relmin_m = 1
+
+|countries |
+|:---------|
+|Ecuador   |
+
+
+VAR n_relmin_w = 1
+
+|countries |
+|:---------|
+|Ecuador   |
+
+
+VAR n_sec_arm_conflict = 1
+
+|countries |
+|:---------|
+|Peru      |
+
+
+VAR n_sec_crime = 1
+
+|countries |
+|:---------|
+|Peru      |
+
+
+VAR n_sec_host = 1
+
+|countries |
+|:---------|
+|Peru      |
+
+
+VAR n_sec_none = 1
+
+|countries |
+|:---------|
+|Peru      |
+
+
+VAR n_sec_onsite = 1
+
+|countries |
+|:---------|
+|Peru      |
+
+
+VAR n_sec_other = 1
+
+|countries |
+|:---------|
+|Peru      |
+
+
+VAR n_sec_substance = 1
+
+|countries |
+|:---------|
+|Peru      |
+
+
+VAR n_sec_theft = 1
+
+|countries |
+|:---------|
+|Peru      |
+
+
+VAR n_single_fathers = 1
+
+|countries |
+|:---------|
+|Ecuador   |
+
+
+VAR n_single_mothers = 1
+
+|countries |
+|:---------|
+|Ecuador   |
+
+
+VAR n_space_child = 5
+
+|countries  |
+|:----------|
+|Nigeria    |
+|Ethiopia   |
+|Peru       |
+|Nepal      |
+|Bangladesh |
+
+
+VAR n_space_female = 5
+
+|countries  |
+|:----------|
+|Ethiopia   |
+|Peru       |
+|Nigeria    |
+|Nepal      |
+|Bangladesh |
+
+
+VAR n_tents = 1
+
+|countries |
+|:---------|
+|Ecuador   |
+
+
+VAR n_total = 8
+
+|countries  |
+|:----------|
+|Nigeria    |
+|Bangladesh |
+|Ecuador    |
+|Ethiopia   |
+|Haiti      |
+|Malawi     |
+|Peru       |
+|Nepal      |
+
+
+VAR n_water_operational = 2
+
+|countries  |
+|:----------|
+|Peru       |
+|Bangladesh |
+
+
+VAR n_youth = 3
+
+|countries |
+|:---------|
+|Ethiopia  |
+|Nigeria   |
+|Nepal     |
+
+
+VAR n_youth_female = 4
+
+|countries |
+|:---------|
+|Nigeria   |
+|Ethiopia  |
+|Haiti     |
+|Nepal     |
+
+
+VAR n_youth_male = 4
+
+|countries |
+|:---------|
+|Nigeria   |
+|Ethiopia  |
+|Haiti     |
+|Nepal     |
+
+
+VAR need_edu = 2
+
+|countries  |
+|:----------|
+|Bangladesh |
+|Ethiopia   |
+
+
+VAR need_food = 2
+
+|countries  |
+|:----------|
+|Bangladesh |
+|Ethiopia   |
+
+
+VAR need_health = 2
+
+|countries  |
+|:----------|
+|Bangladesh |
+|Ethiopia   |
+
+
+VAR need_info = 1
+
+|countries  |
+|:----------|
+|Bangladesh |
+
+
+VAR need_live = 2
+
+|countries  |
+|:----------|
+|Bangladesh |
+|Ethiopia   |
+
+
+VAR need_nfi = 1
+
+|countries  |
+|:----------|
+|Bangladesh |
+
+
+VAR need_protect = 2
+
+|countries  |
+|:----------|
+|Bangladesh |
+|Ethiopia   |
+
+
+VAR need_psych = 1
+
+|countries  |
+|:----------|
+|Bangladesh |
+
+
+VAR need_shelter = 2
+
+|countries  |
+|:----------|
+|Bangladesh |
+|Ethiopia   |
+
+
+VAR need_wash = 2
+
+|countries  |
+|:----------|
+|Bangladesh |
+|Ethiopia   |
+
+
+VAR need_water = 1
+
+|countries  |
+|:----------|
+|Bangladesh |
+
+
+VAR nfi_a = 4
+
+|countries |
+|:---------|
+|Peru      |
+|Nigeria   |
+|Nepal     |
+|Ethiopia  |
+
+
+VAR nfi_b = 4
+
+|countries |
+|:---------|
+|Peru      |
+|Nigeria   |
+|Nepal     |
+|Ethiopia  |
+
+
+VAR nfi_c = 4
+
+|countries |
+|:---------|
+|Peru      |
+|Nigeria   |
+|Nepal     |
+|Ethiopia  |
+
+
+VAR nfi_other = 3
+
+|countries |
+|:---------|
+|Peru      |
+|Ethiopia  |
+|Nigeria   |
+
+
+VAR nfo_src_male = 1
+
+|countries |
+|:---------|
+|Nepal     |
+
+
+VAR origin_district = 5
+
+|countries  |
+|:----------|
+|Nigeria    |
+|Bangladesh |
+|Ethiopia   |
+|Haiti      |
+|Nepal      |
+
+
+VAR origin_municipality = 3
+
+|countries  |
+|:----------|
+|Bangladesh |
+|Ethiopia   |
+|Nepal      |
+
+
+VAR origin_province = 3
+
+|countries  |
+|:----------|
+|Nigeria    |
+|Bangladesh |
+|Haiti      |
+
+
+VAR origin_region = 4
+
+|countries |
+|:---------|
+|Nigeria   |
+|Ethiopia  |
+|Haiti     |
+|Nepal     |
+
+
+VAR origin_zone = 2
+
+|countries |
+|:---------|
+|Ethiopia  |
+|Nepal     |
+
+
+VAR pe_hh_tents = 1
+
+|countries |
+|:---------|
+|Nepal     |
+
+
+VAR per_child = 1
+
+|countries  |
+|:----------|
+|Bangladesh |
+
+
+VAR per_div_diet = 1
+
+|countries  |
+|:----------|
+|Bangladesh |
+
+
+VAR per_elder = 1
+
+|countries  |
+|:----------|
+|Bangladesh |
+
+
+VAR per_hh_electricity = 4
+
+|countries |
+|:---------|
+|Nigeria   |
+|Ethiopia  |
+|Peru      |
+|Nepal     |
+
+
+VAR per_hh_eletricity = 1
+
+|countries |
+|:---------|
+|Nepal     |
+
+
+VAR per_hh_income = 3
+
+|countries |
+|:---------|
+|Ecuador   |
+|Ethiopia  |
+|Nepal     |
+
+
+VAR per_hh_indoors = 5
+
+|countries |
+|:---------|
+|Nigeria   |
+|Ethiopia  |
+|Peru      |
+|Nepal     |
+|Haiti     |
+
+
+VAR per_hh_makeshift = 5
+
+|countries |
+|:---------|
+|Nigeria   |
+|Ethiopia  |
+|Haiti     |
+|Peru      |
+|Nepal     |
+
+
+VAR per_hh_nets = 3
+
+|countries |
+|:---------|
+|Peru      |
+|Nigeria   |
+|Ethiopia  |
+
+
+VAR per_hh_nfi = 1
+
+|countries |
+|:---------|
+|Ethiopia  |
+
+
+VAR per_hh_no_shelter = 1
+
+|countries |
+|:---------|
+|Nigeria   |
+
+
+VAR per_hh_outside = 6
+
+|countries |
+|:---------|
+|Nigeria   |
+|Ethiopia  |
+|Haiti     |
+|Malawi    |
+|Peru      |
+|Nepal     |
+
+
+VAR per_hh_private = 2
+
+|countries |
+|:---------|
+|Nigeria   |
+|Peru      |
+
+
+VAR per_hh_safe_cooking = 1
+
+|countries |
+|:---------|
+|Nigeria   |
+
+
+VAR per_hh_safecook = 3
+
+|countries |
+|:---------|
+|Nigeria   |
+|Peru      |
+|Nepal     |
+
+
+VAR per_hh_tents = 5
+
+|countries |
+|:---------|
+|Ethiopia  |
+|Haiti     |
+|Peru      |
+|Nigeria   |
+|Nepal     |
+
+
+VAR per_hh_tentsmakeshift = 1
+
+|countries |
+|:---------|
+|Nigeria   |
+
+
+VAR per_hoh_child = 1
+
+|countries  |
+|:----------|
+|Bangladesh |
+
+
+VAR per_hoh_female = 1
+
+|countries  |
+|:----------|
+|Bangladesh |
+
+
+VAR per_one_meal = 1
+
+|countries  |
+|:----------|
+|Bangladesh |
+
+
+VAR per_sch = 3
+
+|countries |
+|:---------|
+|Nigeria   |
+|Ethiopia  |
+|Haiti     |
+
+
+VAR per_sch_female = 3
+
+|countries |
+|:---------|
+|Ethiopia  |
+|Peru      |
+|Nepal     |
+
+
+VAR per_sch_male = 2
+
+|countries |
+|:---------|
+|Peru      |
+|Nepal     |
+
+
+VAR per_school = 1
+
+|countries |
+|:---------|
+|Nigeria   |
+
+
+VAR per_sleep_site = 1
+
+|countries |
+|:---------|
+|Nepal     |
+
+
+VAR per_two_meal = 1
+
+|countries  |
+|:----------|
+|Bangladesh |
+
+
+VAR pre_displaced = 1
+
+|countries |
+|:---------|
+|Nigeria   |
+
+
+VAR prev_displaced = 3
+
+|countries |
+|:---------|
+|Ethiopia  |
+|Peru      |
+|Nepal     |
+
+
+VAR prev_own = 1
+
+|countries |
+|:---------|
+|Nepal     |
+
+
+VAR regist_activity = 4
+
+|countries  |
+|:----------|
+|Nigeria    |
+|Bangladesh |
+|Ethiopia   |
+|Nepal      |
+
+
+VAR rel_com = 1
+
+|countries |
+|:---------|
+|Ethiopia  |
+
+
+VAR rel_host = 1
+
+|countries |
+|:---------|
+|Peru      |
+
+
+VAR rel_idp = 2
+
+|countries |
+|:---------|
+|Ethiopia  |
+|Peru      |
+
+
+VAR repair_need = 2
+
+|countries |
+|:---------|
+|Peru      |
+|Ethiopia  |
+
+
+VAR return_area = 4
+
+|countries |
+|:---------|
+|Ethiopia  |
+|Haiti     |
+|Peru      |
+|Nepal     |
+
+
+VAR return_area_child = 1
+
+|countries |
+|:---------|
+|Ethiopia  |
+
+
+VAR return_district = 1
+
+|countries |
+|:---------|
+|Peru      |
+
+
+VAR return_plan = 1
+
+|countries |
+|:---------|
+|Peru      |
+
+
+VAR return_plan_place = 1
+
+|countries |
+|:---------|
+|Peru      |
+
+
+VAR return_pop_area = 1
+
+|countries |
+|:---------|
+|Peru      |
+
+
+VAR return_prevent = 3
+
+|countries |
+|:---------|
+|Ethiopia  |
+|Peru      |
+|Nepal     |
+
+
+VAR return_prevent_access = 1
+
+|countries |
+|:---------|
+|Ethiopia  |
+
+
+VAR return_prevent_food = 1
+
+|countries |
+|:---------|
+|Ethiopia  |
+
+
+VAR return_prevent_house = 1
+
+|countries |
+|:---------|
+|Ethiopia  |
+
+
+VAR return_prevent_infra = 1
+
+|countries |
+|:---------|
+|Ethiopia  |
+
+
+VAR return_prevent_live = 1
+
+|countries |
+|:---------|
+|Ethiopia  |
+
+
+VAR return_prevent_none = 1
+
+|countries |
+|:---------|
+|Ethiopia  |
+
+
+VAR return_prevent_sec = 1
+
+|countries |
+|:---------|
+|Ethiopia  |
+
+
+VAR return_province = 1
+
+|countries |
+|:---------|
+|Peru      |
+
+
+VAR return_region = 1
+
+|countries |
+|:---------|
+|Peru      |
+
+
+VAR risk_access = 1
+
+|countries |
+|:---------|
+|Ethiopia  |
+
+
+VAR risk_access_edu = 1
+
+|countries |
+|:---------|
+|Ethiopia  |
+
+
+VAR risk_access_food = 1
+
+|countries |
+|:---------|
+|Ethiopia  |
+
+
+VAR risk_access_health = 1
+
+|countries |
+|:---------|
+|Ethiopia  |
+
+
+VAR risk_access_live = 1
+
+|countries |
+|:---------|
+|Ethiopia  |
+
+
+VAR risk_access_nfi = 1
+
+|countries |
+|:---------|
+|Ethiopia  |
+
+
+VAR risk_access_none = 1
+
+|countries |
+|:---------|
+|Ethiopia  |
+
+
+VAR risk_access_wash = 1
+
+|countries |
+|:---------|
+|Ethiopia  |
+
+
+VAR risk_factor = 1
+
+|countries |
+|:---------|
+|Ethiopia  |
+
+
+VAR risk_factor_design = 1
+
+|countries |
+|:---------|
+|Ethiopia  |
+
+
+VAR risk_factor_dist = 1
+
+|countries |
+|:---------|
+|Ethiopia  |
+
+
+VAR risk_factor_lighting = 1
+
+|countries |
+|:---------|
+|Ethiopia  |
+
+
+VAR risk_factor_mines = 1
+
+|countries |
+|:---------|
+|Ethiopia  |
+
+
+VAR risk_factor_safety = 1
+
+|countries |
+|:---------|
+|Ethiopia  |
+
+
+VAR risk_factor_sep_access = 2
+
+|countries |
+|:---------|
+|Ethiopia  |
+|Peru      |
+
+
+VAR round = 8
+
+|countries  |
+|:----------|
+|Nigeria    |
+|Bangladesh |
+|Ecuador    |
+|Ethiopia   |
+|Haiti      |
+|Malawi     |
+|Peru       |
+|Nepal      |
+
+
+VAR safe_boy = 1
+
+|countries |
+|:---------|
+|Ethiopia  |
+
+
+VAR safe_child = 3
+
+|countries  |
+|:----------|
+|Ethiopia   |
+|Bangladesh |
+|Nepal      |
+
+
+VAR safe_female = 3
+
+|countries  |
+|:----------|
+|Ethiopia   |
+|Bangladesh |
+|Nepal      |
+
+
+VAR safe_girl = 1
+
+|countries |
+|:---------|
+|Ethiopia  |
+
+
+VAR safe_male = 3
+
+|countries  |
+|:----------|
+|Ethiopia   |
+|Bangladesh |
+|Nepal      |
+
+
+VAR sch_shelter = 1
+
+|countries |
+|:---------|
+|Peru      |
+
+
+VAR sec_address = 1
+
+|countries  |
+|:----------|
+|Bangladesh |
+
+
+VAR sec_child_abandon = 1
+
+|countries |
+|:---------|
+|Ethiopia  |
+
+
+VAR sec_child_issue = 2
+
+|countries |
+|:---------|
+|Ethiopia  |
+|Nigeria   |
+
+
+VAR sec_child_issue_abduct = 1
+
+|countries |
+|:---------|
+|Ethiopia  |
+
+
+VAR sec_child_issue_abuse = 1
+
+|countries |
+|:---------|
+|Ethiopia  |
+
+
+VAR sec_child_issue_labor = 1
+
+|countries |
+|:---------|
+|Ethiopia  |
+
+
+VAR sec_child_issue_none = 1
+
+|countries |
+|:---------|
+|Ethiopia  |
+
+
+VAR sec_child_issue_psyc = 1
+
+|countries |
+|:---------|
+|Ethiopia  |
+
+
+VAR sec_child_issue_recruit = 1
+
+|countries |
+|:---------|
+|Ethiopia  |
+
+
+VAR sec_child_issue_sep = 1
+
+|countries |
+|:---------|
+|Ethiopia  |
+
+
+VAR sec_child_issue_sex = 1
+
+|countries |
+|:---------|
+|Ethiopia  |
+
+
+VAR sec_child_issues = 1
+
+|countries |
+|:---------|
+|Nigeria   |
+
+
+VAR sec_child_marriage = 1
+
+|countries |
+|:---------|
+|Ethiopia  |
+
+
+VAR sec_child_missing = 1
+
+|countries |
+|:---------|
+|Ethiopia  |
+
+
+VAR sec_concern_accident = 1
+
+|countries  |
+|:----------|
+|Bangladesh |
+
+
+VAR sec_concern_friction = 1
+
+|countries  |
+|:----------|
+|Bangladesh |
+
+
+VAR sec_concern_kidnapping = 1
+
+|countries  |
+|:----------|
+|Bangladesh |
+
+
+VAR sec_concern_missing_fam = 1
+
+|countries  |
+|:----------|
+|Bangladesh |
+
+
+VAR sec_concern_sex = 1
+
+|countries  |
+|:----------|
+|Bangladesh |
+
+
+VAR sec_concern_theft = 1
+
+|countries  |
+|:----------|
+|Bangladesh |
+
+
+VAR sec_concern_trafficking = 1
+
+|countries  |
+|:----------|
+|Bangladesh |
+
+
+VAR sec_concern_work = 1
+
+|countries  |
+|:----------|
+|Bangladesh |
+
+
+VAR sec_concerns = 1
+
+|countries  |
+|:----------|
+|Bangladesh |
+
+
+VAR sec_gbv = 1
+
+|countries |
+|:---------|
+|Nigeria   |
+
+
+VAR sec_issue = 4
+
+|countries |
+|:---------|
+|Ethiopia  |
+|Peru      |
+|Nigeria   |
+|Nepal     |
+
+
+VAR sec_issue_alc = 1
+
+|countries |
+|:---------|
+|Ethiopia  |
+
+
+VAR sec_issue_armed = 1
+
+|countries |
+|:---------|
+|Ethiopia  |
+
+
+VAR sec_issue_assault = 1
+
+|countries |
+|:---------|
+|Ethiopia  |
+
+
+VAR sec_issue_host = 1
+
+|countries |
+|:---------|
+|Ethiopia  |
+
+
+VAR sec_issue_none = 1
+
+|countries |
+|:---------|
+|Ethiopia  |
+
+
+VAR sec_issue_res = 1
+
+|countries |
+|:---------|
+|Ethiopia  |
+
+
+VAR sec_issue_theft = 2
+
+|countries  |
+|:----------|
+|Ethiopia   |
+|Bangladesh |
+
+
+VAR sec_mech = 1
+
+|countries  |
+|:----------|
+|Bangladesh |
+
+
+VAR sec_mens_seg = 1
+
+|countries |
+|:---------|
+|Nepal     |
+
+
+VAR sec_min_discriminate = 1
+
+|countries |
+|:---------|
+|Nepal     |
+
+
+VAR sec_missing = 1
+
+|countries |
+|:---------|
+|Ethiopia  |
+
+
+VAR sec_missing_report = 1
+
+|countries |
+|:---------|
+|Ethiopia  |
+
+
+VAR sec_missing_service = 1
+
+|countries |
+|:---------|
+|Ethiopia  |
+
+
+VAR sec_phys_violence = 1
+
+|countries |
+|:---------|
+|Nigeria   |
+
+
+VAR sec_pol_court = 1
+
+|countries  |
+|:----------|
+|Bangladesh |
+
+
+VAR sec_provided = 8
+
+|countries  |
+|:----------|
+|Nigeria    |
+|Ecuador    |
+|Ethiopia   |
+|Haiti      |
+|Malawi     |
+|Peru       |
+|Nepal      |
+|Bangladesh |
+
+
+VAR sec_provider = 5
+
+|countries  |
+|:----------|
+|Ethiopia   |
+|Peru       |
+|Nigeria    |
+|Bangladesh |
+|Nepal      |
+
+
+VAR sec_report_to = 1
+
+|countries |
+|:---------|
+|Ethiopia  |
+
+
+VAR sec_report_to_auth = 1
+
+|countries |
+|:---------|
+|Ethiopia  |
+
+
+VAR sec_report_to_ngo = 1
+
+|countries |
+|:---------|
+|Ethiopia  |
+
+
+VAR sec_report_to_site = 1
+
+|countries |
+|:---------|
+|Ethiopia  |
+
+
+VAR sec_reported = 5
+
+|countries  |
+|:----------|
+|Ethiopia   |
+|Haiti      |
+|Peru       |
+|Nepal      |
+|Bangladesh |
+
+
+VAR sec_restrict = 1
+
+|countries  |
+|:----------|
+|Bangladesh |
+
+
+VAR sec_tradition = 2
+
+|countries |
+|:---------|
+|Ethiopia  |
+|Nigeria   |
+
+
+VAR sec_tradition_childmar = 1
+
+|countries |
+|:---------|
+|Ethiopia  |
+
+
+VAR sec_tradition_exploit = 1
+
+|countries |
+|:---------|
+|Ethiopia  |
+
+
+VAR sec_tradition_famsep = 1
+
+|countries |
+|:---------|
+|Ethiopia  |
+
+
+VAR sec_tradition_fgm = 1
+
+|countries |
+|:---------|
+|Ethiopia  |
+
+
+VAR sec_tradition_forcedmar = 1
+
+|countries |
+|:---------|
+|Ethiopia  |
+
+
+VAR sec_vul_group = 1
+
+|countries  |
+|:----------|
+|Bangladesh |
+
+
+VAR sec_vul_help = 1
+
+|countries  |
+|:----------|
+|Bangladesh |
+
+
+VAR security_provider = 1
+
+|countries |
+|:---------|
+|Nigeria   |
+
+
+VAR shelter_concern = 1
+
+|countries |
+|:---------|
+|Ethiopia  |
+
+
+VAR shelter_concern_breakin = 1
+
+|countries |
+|:---------|
+|Ethiopia  |
+
+
+VAR shelter_concern_door = 1
+
+|countries |
+|:---------|
+|Ethiopia  |
+
+
+VAR shelter_concern_light = 2
+
+|countries  |
+|:----------|
+|Ethiopia   |
+|Bangladesh |
+
+
+VAR shelter_concern_lock = 2
+
+|countries  |
+|:----------|
+|Ethiopia   |
+|Bangladesh |
+
+
+VAR shelter_concern_sharing = 1
+
+|countries |
+|:---------|
+|Ethiopia  |
+
+
+VAR shelter_concern_weather = 1
+
+|countries |
+|:---------|
+|Ethiopia  |
+
+
+VAR shelter_kit = 2
+
+|countries  |
+|:----------|
+|Ethiopia   |
+|Bangladesh |
+
+
+VAR shelter_kit_by = 2
+
+|countries  |
+|:----------|
+|Ethiopia   |
+|Bangladesh |
+
+
+VAR shelter_kit_date = 1
+
+|countries |
+|:---------|
+|Ethiopia  |
+
+
+VAR shelter_lock = 1
+
+|countries |
+|:---------|
+|Peru      |
+
+
+VAR shelter_rem = 1
+
+|countries |
+|:---------|
+|Haiti     |
+
+
+VAR sight_lighting = 1
+
+|countries |
+|:---------|
+|Nepal     |
+
+
+VAR site_access = 5
+
+|countries  |
+|:----------|
+|Nigeria    |
+|Ethiopia   |
+|Peru       |
+|Bangladesh |
+|Nepal      |
+
+
+VAR site_altitude = 2
+
+|countries  |
+|:----------|
+|Bangladesh |
+|Ecuador    |
+
+
+VAR site_area = 4
+
+|countries |
+|:---------|
+|Nigeria   |
+|Ethiopia  |
+|Peru      |
+|Ecuador   |
+
+
+VAR site_area_unit = 1
+
+|countries |
+|:---------|
+|Ecuador   |
+
+
+VAR site_block = 1
+
+|countries  |
+|:----------|
+|Bangladesh |
+
+
+VAR site_block_id = 1
+
+|countries  |
+|:----------|
+|Bangladesh |
+
+
+VAR site_cardinal = 1
+
+|countries |
+|:---------|
+|Nigeria   |
+
+
+VAR site_census = 1
+
+|countries |
+|:---------|
+|Peru      |
+
+
+VAR site_center = 2
+
+|countries  |
+|:----------|
+|Peru       |
+|Bangladesh |
+
+
+VAR site_class = 3
+
+|countries |
+|:---------|
+|Nigeria   |
+|Haiti     |
+|Nepal     |
+
+
+VAR site_classification = 1
+
+|countries |
+|:---------|
+|Ethiopia  |
+
+
+VAR site_cmc = 2
+
+|countries  |
+|:----------|
+|Nigeria    |
+|Bangladesh |
+
+
+VAR site_community = 1
+
+|countries |
+|:---------|
+|Nepal     |
+
+
+VAR site_date_close = 3
+
+|countries  |
+|:----------|
+|Peru       |
+|Bangladesh |
+|Nepal      |
+
+
+VAR site_date_close_exp = 2
+
+|countries |
+|:---------|
+|Ethiopia  |
+|Nepal     |
+
+
+VAR site_date_open = 5
+
+|countries |
+|:---------|
+|Nigeria   |
+|Ethiopia  |
+|Peru      |
+|Nepal     |
+|Ecuador   |
+
+
+VAR site_debris = 1
+
+|countries |
+|:---------|
+|Nigeria   |
+
+
+VAR site_dist_origin = 3
+
+|countries  |
+|:----------|
+|Peru       |
+|Bangladesh |
+|Nepal      |
+
+
+VAR site_district = 7
+
+|countries  |
+|:----------|
+|Nigeria    |
+|Bangladesh |
+|Ethiopia   |
+|Haiti      |
+|Peru       |
+|Nepal      |
+|Ecuador    |
+
+
+VAR site_electricty = 2
+
+|countries  |
+|:----------|
+|Haiti      |
+|Bangladesh |
+
+
+VAR site_est_close = 1
+
+|countries |
+|:---------|
+|Peru      |
+
+
+VAR site_gps_prec = 2
+
+|countries  |
+|:----------|
+|Bangladesh |
+|Ecuador    |
+
+
+VAR site_hazard = 2
+
+|countries |
+|:---------|
+|Nigeria   |
+|Peru      |
+
+
+VAR site_id = 8
+
+|countries  |
+|:----------|
+|Nigeria    |
+|Bangladesh |
+|Ecuador    |
+|Ethiopia   |
+|Haiti      |
+|Malawi     |
+|Peru       |
+|Nepal      |
+
+
+VAR site_idp_first = 1
+
+|countries |
+|:---------|
+|Peru      |
+
+
+VAR site_idp_last = 3
+
+|countries  |
+|:----------|
+|Peru       |
+|Bangladesh |
+|Nepal      |
+
+
+VAR site_lat_man = 1
+
+|countries |
+|:---------|
+|Ecuador   |
+
+
+VAR site_latitude = 7
+
+|countries  |
+|:----------|
+|Nigeria    |
+|Bangladesh |
+|Ecuador    |
+|Ethiopia   |
+|Haiti      |
+|Malawi     |
+|Nepal      |
+
+
+VAR site_lighting = 5
+
+|countries |
+|:---------|
+|Ethiopia  |
+|Haiti     |
+|Peru      |
+|Nigeria   |
+|Nepal     |
+
+
+VAR site_location = 3
+
+|countries  |
+|:----------|
+|Bangladesh |
+|Haiti      |
+|Nepal      |
+
+
+VAR site_long_man = 2
+
+|countries  |
+|:----------|
+|Bangladesh |
+|Ecuador    |
+
+
+VAR site_longitude = 7
+
+|countries  |
+|:----------|
+|Nigeria    |
+|Bangladesh |
+|Ecuador    |
+|Ethiopia   |
+|Haiti      |
+|Malawi     |
+|Nepal      |
+
+
+VAR site_management = 1
+
+|countries  |
+|:----------|
+|Bangladesh |
+
+
+VAR site_management_fem = 1
+
+|countries  |
+|:----------|
+|Bangladesh |
+
+
+VAR site_management_type = 2
+
+|countries  |
+|:----------|
+|Haiti      |
+|Bangladesh |
+
+
+VAR site_municipality = 4
+
+|countries  |
+|:----------|
+|Bangladesh |
+|Ethiopia   |
+|Haiti      |
+|Nepal      |
+
+
+VAR site_munipality = 2
+
+|countries |
+|:---------|
+|Haiti     |
+|Nepal     |
+
+
+VAR site_name = 6
+
+|countries  |
+|:----------|
+|Nigeria    |
+|Bangladesh |
+|Ethiopia   |
+|Haiti      |
+|Nepal      |
+|Ecuador    |
+
+
+VAR site_name_alt = 5
+
+|countries  |
+|:----------|
+|Haiti      |
+|Peru       |
+|Bangladesh |
+|Ethiopia   |
+|Ecuador    |
+
+
+VAR site_open = 5
+
+|countries |
+|:---------|
+|Ethiopia  |
+|Haiti     |
+|Peru      |
+|Nepal     |
+|Ecuador   |
+
+
+VAR site_owner = 6
+
+|countries  |
+|:----------|
+|Nigeria    |
+|Ethiopia   |
+|Haiti      |
+|Peru       |
+|Bangladesh |
+|Nepal      |
+
+
+VAR site_ownership = 2
+
+|countries  |
+|:----------|
+|Haiti      |
+|Bangladesh |
+
+
+VAR site_provence = 4
+
+|countries  |
+|:----------|
+|Haiti      |
+|Peru       |
+|Bangladesh |
+|Ethiopia   |
+
+
+VAR site_province = 5
+
+|countries  |
+|:----------|
+|Nigeria    |
+|Bangladesh |
+|Haiti      |
+|Peru       |
+|Ecuador    |
+
+
+VAR site_region = 5
+
+|countries |
+|:---------|
+|Nigeria   |
+|Ethiopia  |
+|Haiti     |
+|Peru      |
+|Nepal     |
+
+
+VAR site_repair = 2
+
+|countries |
+|:---------|
+|Nigeria   |
+|Haiti     |
+
+
+VAR site_shelter = 6
+
+|countries  |
+|:----------|
+|Nigeria    |
+|Ethiopia   |
+|Haiti      |
+|Nepal      |
+|Bangladesh |
+|Ecuador    |
+
+
+VAR site_status = 2
+
+|countries |
+|:---------|
+|Haiti     |
+|Peru      |
+
+
+VAR site_type = 7
+
+|countries  |
+|:----------|
+|Nigeria    |
+|Bangladesh |
+|Ethiopia   |
+|Haiti      |
+|Malawi     |
+|Peru       |
+|Nepal      |
+
+
+VAR site_type_desc = 2
+
+|countries |
+|:---------|
+|Haiti     |
+|Peru      |
+
+
+VAR site_unsafe_child = 2
+
+|countries  |
+|:----------|
+|Bangladesh |
+|Nepal      |
+
+
+VAR site_unsafe_female = 2
+
+|countries  |
+|:----------|
+|Bangladesh |
+|Nepal      |
+
+
+VAR site_unsafe_male = 4
+
+|countries  |
+|:----------|
+|Haiti      |
+|Peru       |
+|Bangladesh |
+|Nepal      |
+
+
+VAR site_urban = 3
+
+|countries |
+|:---------|
+|Ecuador   |
+|Haiti     |
+|Peru      |
+
+
+VAR site_use = 3
+
+|countries |
+|:---------|
+|Haiti     |
+|Ethiopia  |
+|Ecuador   |
+
+
+VAR site_use_alt = 3
+
+|countries |
+|:---------|
+|Haiti     |
+|Ethiopia  |
+|Ecuador   |
+
+
+VAR site_zone = 4
+
+|countries |
+|:---------|
+|Ethiopia  |
+|Nepal     |
+|Ecuador   |
+|Haiti     |
+
+
+VAR sma_exist = 5
+
+|countries  |
+|:----------|
+| Nigeria   |
+| Ethiopia  |
+| Haiti     |
+| Peru      |
+| Nepal     |
+
+
+VAR sma_exist.1 = 2
+
+|countries |
+|:---------|
+| Haiti    |
+| Nigeria  |
+
+
+VAR sma_name = 7
+
+|countries    |
+|:------------|
+| Nigeria     |
+| Peru        |
+| Bangladesh  |
+| Ethiopia    |
+| Nepal       |
+| Ecuador     |
+| Haiti       |
+
+
+VAR sma_name_alt = 4
+
+|countries    |
+|:------------|
+| Bangladesh  |
+| Ethiopia    |
+| Haiti       |
+| Ecuador     |
+
+
+VAR sma_type = 5
+
+|countries  |
+|:----------|
+| Nigeria   |
+| Ethiopia  |
+| Haiti     |
+| Peru      |
+| Nepal     |
+
+
+VAR smc_community = 5
+
+|countries  |
+|:----------|
+| Ethiopia  |
+| Haiti     |
+| Peru      |
+| Nigeria   |
+| Nepal     |
+
+
+VAR smc_exist = 5
+
+|countries  |
+|:----------|
+| Ethiopia  |
+| Haiti     |
+| Peru      |
+| Nigeria   |
+| Nepal     |
+
+
+VAR smc_female = 1
+
+|countries  |
+|:----------|
+| Ethiopia  |
+
+
+VAR smc_number = 1
+
+|countries  |
+|:----------|
+| Ethiopia  |
+
+
+VAR smc_per_female = 2
+
+|countries  |
+|:----------|
+| Ethiopia  |
+| Nepal     |
+
+
+VAR snfi_priority = 1
+
+|countries    |
+|:------------|
+| Bangladesh  |
+
+
+VAR social_worker = 1
+
+|countries  |
+|:----------|
+| Ethiopia  |
+
+
+VAR space_child = 1
+
+|countries    |
+|:------------|
+| Bangladesh  |
+
+
+VAR space_female = 1
+
+|countries    |
+|:------------|
+| Bangladesh  |
+
+
+VAR support_edu = 1
+
+|countries |
+|:---------|
+| Nigeria  |
+
+
+VAR support_education = 1
+
+|countries |
+|:---------|
+| Peru     |
+
+
+VAR support_fights = 1
+
+|countries |
+|:---------|
+| Peru     |
+
+
+VAR support_food = 2
+
+|countries |
+|:---------|
+| Peru     |
+| Nigeria  |
+
+
+VAR support_health = 2
+
+|countries |
+|:---------|
+| Peru     |
+| Nigeria  |
+
+
+VAR support_interference = 1
+
+|countries |
+|:---------|
+| Peru     |
+
+
+VA ive = 2
+
+|countries |
+|:---------|
+| Peru     |
+| Nigeria  |
+
+
+VAR support_no_choh = 1
+
+|countries |
+|:---------|
+| Peru     |
+
+
+VAR support_no_document = 1
+
+|countries |
+|:---------|
+| Peru     |
+
+
+VAR support_no_fhoh = 1
+
+|countries |
+|:---------|
+| Peru     |
+
+
+VAR support_no_issue = 1
+
+|countries |
+|:---------|
+| Peru     |
+
+
+VAR support_no_unknown = 1
+
+|countries |
+|:---------|
+| Peru     |
+
+
+VAR support_no_vuln = 1
+
+|countries |
+|:---------|
+| Peru     |
+
+
+VAR support_non_affect = 2
+
+|countries    |
+|:------------|
+| Peru        |
+| Bangladesh  |
+
+
+VAR support_not_fit = 1
+
+|countries |
+|:---------|
+| Peru     |
+
+
+VAR support_not_met = 2
+
+|countries |
+|:---------|
+| Haiti    |
+| Peru     |
+
+
+VAR support_other = 1
+
+|countries |
+|:---------|
+| Peru     |
+
+
+VAR support_problem = 2
+
+|countries |
+|:---------|
+| Peru     |
+| Nepal    |
+
+
+VAR support_protect = 3
+
+|countries |
+|:---------|
+| Haiti    |
+| Peru     |
+| Nigeria  |
+
+
+VAR support_protection = 1
+
+|countries |
+|:---------|
+| Nigeria  |
+
+
+VAR support_rehab = 1
+
+|countries    |
+|:------------|
+| Bangladesh  |
+
+
+VAR support_shelter = 4
+
+|countries  |
+|:----------|
+| Haiti     |
+| Peru      |
+| Nigeria   |
+| Ethiopia  |
+
+
+VAR support_wash = 2
+
+|countries |
+|:---------|
+| Peru     |
+| Nigeria  |
+
+
+VAR survey_date = 8
+
+|countries    |
+|:------------|
+| Nigeria     |
+| Bangladesh  |
+| Ecuador     |
+| Ethiopia    |
+| Haiti       |
+| Malawi      |
+| Peru        |
+| Nepal       |
+
+
+VAR survey_date.1 = 1
+
+|countries |
+|:---------|
+| Peru     |
+
+
+VAR survey_template = 1
+
+|countries |
+|:---------|
+| Nigeria  |
+
+
+VAR tents_capac = 1
+
+|countries |
+|:---------|
+| Ecuador  |
+
+
+VAR tents_shared = 1
+
+|countries |
+|:---------|
+| Ecuador  |
+
+
+VAR trave_what_marriage = 1
+
+|countries  |
+|:----------|
+| Ethiopia  |
+
+
+VAR travel_abr = 1
+
+|countries  |
+|:----------|
+| Ethiopia  |
+
+
+VAR travel_abr_ad = 1
+
+|countries  |
+|:----------|
+| Ethiopia  |
+
+
+VAR travel_abr_ad_flier = 1
+
+|countries  |
+|:----------|
+| Ethiopia  |
+
+
+VAR travel_abr_ad_internet = 1
+
+|countries  |
+|:----------|
+| Ethiopia  |
+
+
+VAR travel_abr_ad_mouth = 1
+
+|countries  |
+|:----------|
+| Ethiopia  |
+
+
+VAR travel_abr_ad_none = 1
+
+|countries  |
+|:----------|
+| Ethiopia  |
+
+
+VAR travel_abr_ad_phone = 1
+
+|countries  |
+|:----------|
+| Ethiopia  |
+
+
+VAR travel_abr_in = 1
+
+|countries  |
+|:----------|
+| Ethiopia  |
+
+
+VAR travel_dom = 1
+
+|countries  |
+|:----------|
+| Ethiopia  |
+
+
+VAR travel_dom_in = 1
+
+|countries  |
+|:----------|
+| Ethiopia  |
+
+
+VAR travel_how = 1
+
+|countries  |
+|:----------|
+| Ethiopia  |
+
+
+VAR travel_how_brokers = 1
+
+|countries  |
+|:----------|
+| Ethiopia  |
+
+
+VAR travel_how_fliers = 1
+
+|countries  |
+|:----------|
+| Ethiopia  |
+
+
+VAR travel_how_friends = 1
+
+|countries  |
+|:----------|
+| Ethiopia  |
+
+
+VAR travel_how_internet = 1
+
+|countries  |
+|:----------|
+| Ethiopia  |
+
+
+VAR travel_how_other = 1
+
+|countries  |
+|:----------|
+| Ethiopia  |
+
+
+VAR travel_how_phone = 1
+
+|countries  |
+|:----------|
+| Ethiopia  |
+
+
+VAR travel_how_relatives = 1
+
+|countries  |
+|:----------|
+| Ethiopia  |
+
+
+VAR travel_how_word = 1
+
+|countries  |
+|:----------|
+| Ethiopia  |
+
+
+VAR travel_info = 2
+
+|countries  |
+|:----------|
+| Ecuador   |
+| Ethiopia  |
+
+
+VAR travel_opp = 1
+
+|countries  |
+|:----------|
+| Ethiopia  |
+
+
+VAR travel_opp_in = 1
+
+|countries  |
+|:----------|
+| Ethiopia  |
+
+
+VAR travel_what = 1
+
+|countries  |
+|:----------|
+| Ethiopia  |
+
+
+VAR travel_what_edu = 1
+
+|countries  |
+|:----------|
+| Ethiopia  |
+
+
+VAR travel_what_employ = 1
+
+|countries  |
+|:----------|
+| Ethiopia  |
+
+
+VAR travel_what_living = 1
+
+|countries  |
+|:----------|
+| Ethiopia  |
+
+
+VAR travel_who = 1
+
+|countries  |
+|:----------|
+| Ethiopia  |
+
+
+VAR travel_who_boys = 1
+
+|countries  |
+|:----------|
+| Ethiopia  |
+
+
+VAR travel_who_girls = 1
+
+|countries  |
+|:----------|
+| Ethiopia  |
+
+
+VAR travel_who_men = 1
+
+|countries  |
+|:----------|
+| Ethiopia  |
+
+
+VAR travel_who_women = 1
+
+|countries  |
+|:----------|
+| Ethiopia  |
+
+
+VAR unsafe_child = 2
+
+|countries |
+|:---------|
+| Peru     |
+| Nigeria  |
+
+
+VAR unsafe_female = 4
+
+|countries    |
+|:------------|
+| Peru        |
+| Nigeria     |
+| Ethiopia    |
+| Bangladesh  |
+
+
+VAR unsafe_male = 3
+
+|countries  |
+|:----------|
+| Peru      |
+| Nigeria   |
+| Ethiopia  |
+
+
+VAR water_avg = 4
+
+|countries  |
+|:----------|
+| Nigeria   |
+| Ethiopia  |
+| Peru      |
+| Nepal     |
+
+
+VAR water_complaint = 4
+
+|countries  |
+|:----------|
+| Nigeria   |
+| Ethiopia  |
+| Haiti     |
+| Peru      |
+
+
+VAR water_cons = 2
+
+|countries |
+|:---------|
+| Nepal    |
+| Nigeria  |
+
+
+VAR water_container = 1
+
+|countries  |
+|:----------|
+| Ethiopia  |
+
+
+VAR water_container_by = 2
+
+|countries  |
+|:----------|
+| Ethiopia  |
+| Haiti     |
+
+
+VAR water_container_date = 2
+
+|countries  |
+|:----------|
+| Ethiopia  |
+| Haiti     |
+
+
+VAR water_cue = 1
+
+|countries  |
+|:----------|
+| Ethiopia  |
+
+
+VAR water_improved = 2
+
+|countries  |
+|:----------|
+| Peru      |
+| Ethiopia  |
+
+
+VAR water_loc_remark = 2
+
+|countries |
+|:---------|
+| Haiti    |
+| Peru     |
+
+
+VAR water_location = 5
+
+|countries  |
+|:----------|
+| Nigeria   |
+| Ethiopia  |
+| Haiti     |
+| Peru      |
+| Nepal     |
+
+
+VAR water_np_remark = 2
+
+|countries    |
+|:------------|
+| Peru        |
+| Bangladesh  |
+
+
+VAR water_np_why = 3
+
+|countries    |
+|:------------|
+| Haiti       |
+| Peru        |
+| Bangladesh  |
+
+
+VAR water_np_why.1 = 2
+
+|countries    |
+|:------------|
+| Peru        |
+| Bangladesh  |
+
+
+VAR water_operational = 4
+
+|countries  |
+|:----------|
+| Haiti     |
+| Peru      |
+| Nigeria   |
+| Ethiopia  |
+
+
+VAR water_p_remark = 2
+
+|countries  |
+|:----------|
+| Peru      |
+| Ethiopia  |
+
+
+VAR water_pipeline = 1
+
+|countries  |
+|:----------|
+| Ethiopia  |
+
+
+VAR water_potable = 2
+
+|countries  |
+|:----------|
+| Nigeria   |
+| Ethiopia  |
+
+
+VAR water_problem = 1
+
+|countries |
+|:---------|
+| Nigeria  |
+
+
+VAR water_remark = 4
+
+|countries  |
+|:----------|
+| Ethiopia  |
+| Peru      |
+| Nigeria   |
+| Nepal     |
+
+
+VAR water_remark_other = 2
+
+|countries  |
+|:----------|
+| Peru      |
+| Ethiopia  |
+
+
+VAR water_source_np = 5
+
+|countries    |
+|:------------|
+| Nigeria     |
+| Ethiopia    |
+| Peru        |
+| Bangladesh  |
+| Nepal       |
+
+
+VAR water_source_p = 7
+
+|countries    |
+|:------------|
+| Nigeria     |
+| Ecuador     |
+| Ethiopia    |
+| Malawi      |
+| Peru        |
+| Bangladesh  |
+| Nepal       |
+
+
+VAR water_treated = 3
+
+|countries    |
+|:------------|
+| Ethiopia    |
+| Bangladesh  |
+| Nepal       |
+
+
+VAR winter_a = 1
+
+|countries |
+|:---------|
+| Nepal    |
+
+
+VAR winter_b = 1
+
+|countries |
+|:---------|
+| Nepal    |
+
+
+VAR winter_c = 1
+
+|countries |
+|:---------|
+| Nepal    |
+
+
+VAR winter_move = 1
+
+|countries |
+|:---------|
+| Nepal    |
+
+
+VAR winter_shelter = 1
+
+|countries |
+|:---------|
+| Nepal    |
+
+
+
