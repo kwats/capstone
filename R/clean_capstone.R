@@ -190,10 +190,6 @@ write.csv(new_m, "csv/clean/newest_clean.csv", row.names=FALSE, fileEncoding="UT
 m <- read.csv("/Users/Katie/Desktop/capstone/csv/clean/newest_clean.csv", as.is = TRUE)
 
 
-
-
-
-
 list_countries <- split(new_m, as.factor(new_m$country))
 for (i in list_countries) {
   tmp = paste("./csv/clean/countries/", i$country[1], "_dta.csv", sep = "")
