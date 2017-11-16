@@ -2,12 +2,12 @@ knitr::opts_chunk$set(eval = FALSE, tidy = FALSE)
 setwd("/Users/Katie/Desktop/capstone")
 m <- read.csv("/Users/Katie/Desktop/capstone/csv/original/newest_merge.csv", as.is = TRUE)
 
-new_m <- m[ , -which(names(m) %in% c("X.1500", "column1"))]   
+new_m <- m[ , -which(names(m) %in% c("x.1500"))]   
 new_m <- new_m[, -grep("^column", colnames(new_m))]
 names <- names(new_m)
 
 new_m[] <- lapply(new_m, as.character)
-m <- as.data.frame(lapply(m, function(x){
+new_m <- as.data.frame(lapply(new_m, function(x){
   x <- replace(x, x %in% c("NA", "N/A", ".", "", "na","-", "8__unknown", "dont_know", "5__unknown","Do_not_know", "No Response", "no responde","No sabe", "Don't know","no sabe", "no_responde", "Not specified.","", "no answer", "No answer", "sin respuesta", "Sin respuesta", "Sin Informacion", "Unknown", "UNKNOWN", "unknown", "Unkown", "unkown", "Not Specified", "Desconocido","desconocido", "6__unknown", "7__no_answer", "NULL", "Sin respuesta, Por que?", "NO ANSWER"), NA)
   }))
 
@@ -124,12 +124,13 @@ new_m[,1:ncol(new_m)] <- lapply(new_m[,1:ncol(new_m)], gsub, pattern = "Craftsm[
 new_m[,1:ncol(new_m)] <- lapply(new_m[,1:ncol(new_m)], gsub, pattern = "Comercio minorista|^Trade$", replacement = "Petty Trade", ignore.case=TRUE)
 new_m[,1:ncol(new_m)] <- lapply(new_m[,1:ncol(new_m)], gsub, pattern = "Pesca", replacement = "Fishing", ignore.case=TRUE)
 
+
+# Rework date function
 library(stringi)
 new_m <- new_m[order(new_m$country),] 
 new_m <- new_m[order(new_m$round),] 
 round <- ""
 prev_date <- c(0,0)
-library(stringi)
 new_m <- new_m[order(new_m$country),] 
 new_m <- new_m[order(new_m$round),] 
 round <- ""

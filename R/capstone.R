@@ -79,12 +79,13 @@ sapply(z, class)
 
 for (i in 1:ncol(z)) {
   if (is.character(z[,i])) { 
-    if (sum(!is.na(as.numeric(z[,i])))/sum(!is.na(z[,i])) > 0.9) {
+    if (sum(!is.na(as.numeric(z[,i])))/(sum(!is.na(z[,i]))+1) > 0.9) {
       z[,i] <- as.numeric(z[,i])
       cat("column", i, "changed to numeric.\n")
     }
   }
 }
+
 
 list_countries <- split(z, as.factor(z$country))
 
