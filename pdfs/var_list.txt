@@ -1,43 +1,38 @@
-[1] "access_constraint_vul"[1] 2
-
-|countries  |
-|:----------|
-|"Ethiopia" |
-|NA         |
-
-
-[1] "arrival_date"[1] 2
-
-|countries  |
-|:----------|
-|"Ethiopia" |
-|NA         |
-
-
-[1] "asset_lost"[1] 1
+*access_constraint_vul* 1
 
 |countries  |
 |:----------|
 |"Ethiopia" |
 
 
-[1] "avoid_female"[1] 2
+*arrival_date* 1
 
 |countries  |
 |:----------|
 |"Ethiopia" |
-|NA         |
 
 
-[1] "avoid_female_where"[1] 2
+*asset_lost* 1
 
 |countries  |
 |:----------|
 |"Ethiopia" |
-|NA         |
 
 
-[1] "bathing_gender"[1] 7
+*avoid_female* 1
+
+|countries  |
+|:----------|
+|"Ethiopia" |
+
+
+*avoid_female_where* 2
+
+|countries  |
+|:----------|
+|"Ethiopia" |
+
+*bathing_gender* 7
 
 |countries    |
 |:------------|
@@ -50,57 +45,56 @@
 |"Peru"       |
 
 
-[1] "child_leaving"[1] 1
+*child_leaving* 1
 
 |countries  |
 |:----------|
 |"Ethiopia" |
 
 
-[1] "child_protect"[1] 1
+*child_protect* 1
 
 |countries  |
 |:----------|
 |"Ethiopia" |
 
 
-[1] "child_protect_identify"[1] 2
-
-|countries  |
-|:----------|
-|"Ethiopia" |
-|NA         |
-
-
-[1] "child_protect_none"[1] 1
+*child_protect_identify* 1
 
 |countries  |
 |:----------|
 |"Ethiopia" |
 
 
-[1] "child_protect_refer"[1] 1
+*child_protect_none* 1
 
 |countries  |
 |:----------|
 |"Ethiopia" |
 
 
-[1] "child_protect_reunify"[1] 1
+*child_protect_refer* 1
 
 |countries  |
 |:----------|
 |"Ethiopia" |
 
 
-[1] "child_protect_tracing"[1] 1
+*child_protect_reunify* 1
 
 |countries  |
 |:----------|
 |"Ethiopia" |
 
 
-[1] "country"[1] 8
+*child_protect_tracing* 1
+
+|countries  |
+|:----------|
+|"Ethiopia" |
+
+
+*country* 8
 
 |countries    |
 |:------------|
@@ -114,14 +108,14 @@
 |"Peru"       |
 
 
-[1] "displace_reason"[1] 1
+*displace_reason* 1
 
 |countries  |
 |:----------|
 |"Ethiopia" |
 
 
-[1] "edu_access"[1] 6
+*edu_access* 6
 
 |countries  |
 |:----------|
@@ -133,7 +127,7 @@
 |"Peru"     |
 
 
-[1] "edu_access_f"[1] 3
+*edu_access_f* 3
 
 |countries    |
 |:------------|
@@ -142,7 +136,7 @@
 |"Nepal"      |
 
 
-[1] "edu_access_i"[1] 3
+*edu_access_i* 3
 
 |countries    |
 |:------------|
@@ -151,14 +145,14 @@
 |"Nepal"      |
 
 
-[1] "edu_adult"[1] 1
+*edu_adult* 1
 
 |countries  |
 |:----------|
 |"Ethiopia" |
 
 
-[1] "edu_distance"[1] 6
+*edu_distance* 6
 
 |countries  |
 |:----------|
@@ -170,7 +164,7 @@
 |"Peru"     |
 
 
-[1] "edu_location"[1] 4
+*edu_location* 4
 
 |countries  |
 |:----------|
@@ -180,28 +174,28 @@
 |"Peru"     |
 
 
-[1] "educ_access_f"[1] 1
+*educ_access_f* 1
 
 |countries    |
 |:------------|
 |"Bangladesh" |
 
 
-[1] "educ_access_i"[1] 1
+*educ_access_i* 1
 
 |countries    |
 |:------------|
 |"Bangladesh" |
 
 
-[1] "enum_name"[1] 1
+*enum_name* 1
 
 |countries |
 |:---------|
 |"Peru"    |
 
 
-[1] "enum_sex"[1] 4
+*enum_sex* 4
 
 |countries  |
 |:----------|
@@ -211,7 +205,7 @@
 |"Peru"     |
 
 
-[1] "food_access"[1] 6
+*food_access* 6
 
 |countries  |
 |:----------|
@@ -223,7 +217,7 @@
 |"Peru"     |
 
 
-[1] "food_freq"[1] 5
+*food_freq* 5
 
 |countries  |
 |:----------|
@@ -234,14 +228,14 @@
 |"Peru"     |
 
 
-[1] "food_fuel"[1] 1
+*food_fuel* 1
 
 |countries |
 |:---------|
 |"Nepal"   |
 
 
-[1] "food_fuel_main"[1] 2
+*food_fuel_main* 2
 
 |countries    |
 |:------------|
@@ -249,28 +243,28 @@
 |"Ethiopia"   |
 
 
-[1] "food_kit"[1] 1
+*food_kit* 1
 
 |countries  |
 |:----------|
 |"Ethiopia" |
 
 
-[1] "food_kit_by"[1] 1
+*food_kit_by* 1
 
 |countries  |
 |:----------|
 |"Ethiopia" |
 
 
-[1] "food_kit_date"[1] 1
+*food_kit_date* 1
 
 |countries  |
 |:----------|
 |"Ethiopia" |
 
 
-[1] "food_land"[1] 3
+*food_land* 3
 
 |countries |
 |:---------|
@@ -279,7 +273,7 @@
 |"Peru"    |
 
 
-[1] "food_market"[1] 6
+*food_market* 6
 
 |countries    |
 |:------------|
@@ -291,14 +285,14 @@
 |"Peru"       |
 
 
-[1] "food_school"[1] 1
+*food_school* 1
 
 |countries  |
 |:----------|
 |"Ethiopia" |
 
 
-[1] "food_source"[1] 7
+*food_source* 7
 
 |countries    |
 |:------------|
@@ -311,7 +305,7 @@
 |"Peru"       |
 
 
-[1] "food_sup_child"[1] 7
+*food_sup_child* 7
 
 |countries    |
 |:------------|
@@ -324,7 +318,7 @@
 |"Peru"       |
 
 
-[1] "food_sup_lac"[1] 7
+*food_sup_lac* 7
 
 |countries    |
 |:------------|
@@ -337,21 +331,21 @@
 |"Peru"       |
 
 
-[1] "friction"[1] 1
+*friction* 1
 
 |countries    |
 |:------------|
 |"Bangladesh" |
 
 
-[1] "garbage_manage"[1] 1
+*garbage_manage* 1
 
 |countries    |
 |:------------|
 |"Bangladesh" |
 
 
-[1] "garbage_problem"[1] 3
+*garbage_problem* 3
 
 |countries  |
 |:----------|
@@ -360,14 +354,14 @@
 |"Nigeria"  |
 
 
-[1] "gbv_exist"[1] 1
+*gbv_exist* 1
 
 |countries |
 |:---------|
 |"Peru"    |
 
 
-[1] "gbv_issue"[1] 2
+*gbv_issue* 2
 
 |countries  |
 |:----------|
@@ -375,56 +369,56 @@
 |"Malawi"   |
 
 
-[1] "gbv_issue_denial"[1] 1
+*gbv_issue_denial* 1
 
 |countries  |
 |:----------|
 |"Ethiopia" |
 
 
-[1] "gbv_issue_marriage"[1] 1
+*gbv_issue_marriage* 1
 
 |countries  |
 |:----------|
 |"Ethiopia" |
 
 
-[1] "gbv_issue_none"[1] 1
+*gbv_issue_none* 1
 
 |countries  |
 |:----------|
 |"Ethiopia" |
 
 
-[1] "gbv_issue_phys"[1] 1
+*gbv_issue_phys* 1
 
 |countries  |
 |:----------|
 |"Ethiopia" |
 
 
-[1] "gbv_issue_pysc"[1] 1
+*gbv_issue_pysc* 1
 
 |countries  |
 |:----------|
 |"Ethiopia" |
 
 
-[1] "gbv_issue_rape"[1] 1
+*gbv_issue_rape* 1
 
 |countries  |
 |:----------|
 |"Ethiopia" |
 
 
-[1] "gbv_issue_sex"[1] 1
+*gbv_issue_sex* 1
 
 |countries  |
 |:----------|
 |"Ethiopia" |
 
 
-[1] "gbv_report"[1] 6
+*gbv_report* 6
 
 |countries    |
 |:------------|
@@ -436,7 +430,7 @@
 |"Peru"       |
 
 
-[1] "has_id"[1] 3
+*has_id* 3
 
 |countries  |
 |:----------|
@@ -445,14 +439,14 @@
 |"Peru"     |
 
 
-[1] "health_antenat"[1] 1
+*health_antenat* 1
 
 |countries |
 |:---------|
 |"Nepal"   |
 
 
-[1] "health_center"[1] 6
+*health_center* 6
 
 |countries    |
 |:------------|
@@ -464,7 +458,7 @@
 |"Peru"       |
 
 
-[1] "health_center_dist"[1] 3
+*health_center_dist* 3
 
 |countries  |
 |:----------|
@@ -473,28 +467,28 @@
 |"Peru"     |
 
 
-[1] "health_cmr"[1] 1
+*health_cmr* 1
 
 |countries  |
 |:----------|
 |"Ethiopia" |
 
 
-[1] "health_delivery"[1] 1
+*health_delivery* 1
 
 |countries  |
 |:----------|
 |"Ethiopia" |
 
 
-[1] "health_gbv"[1] 1
+*health_gbv* 1
 
 |countries  |
 |:----------|
 |"Ethiopia" |
 
 
-[1] "health_issue"[1] 7
+*health_issue* 7
 
 |countries    |
 |:------------|
@@ -507,7 +501,7 @@
 |"Peru"       |
 
 
-[1] "health_issue_b"[1] 6
+*health_issue_b* 6
 
 |countries  |
 |:----------|
@@ -519,7 +513,7 @@
 |"Peru"     |
 
 
-[1] "health_issue_c"[1] 5
+*health_issue_c* 5
 
 |countries  |
 |:----------|
@@ -530,14 +524,14 @@
 |"Peru"     |
 
 
-[1] "health_issue_other"[1] 1
+*health_issue_other* 1
 
 |countries |
 |:---------|
 |"Peru"    |
 
 
-[1] "health_location"[1] 3
+*health_location* 3
 
 |countries    |
 |:------------|
@@ -546,7 +540,7 @@
 |"Nigeria"    |
 
 
-[1] "health_medicine"[1] 4
+*health_medicine* 4
 
 |countries  |
 |:----------|
@@ -556,49 +550,49 @@
 |"Nigeria"  |
 
 
-[1] "health_medicine.1"[1] 1
+*health_medicine.1* 1
 
 |countries |
 |:---------|
 |"Nigeria" |
 
 
-[1] "health_net"[1] 1
+*health_net* 1
 
 |countries  |
 |:----------|
 |"Ethiopia" |
 
 
-[1] "health_net_by"[1] 1
+*health_net_by* 1
 
 |countries  |
 |:----------|
 |"Ethiopia" |
 
 
-[1] "health_net_date"[1] 1
+*health_net_date* 1
 
 |countries  |
 |:----------|
 |"Ethiopia" |
 
 
-[1] "health_net.1"[1] 1
+*health_net.1* 1
 
 |countries  |
 |:----------|
 |"Ethiopia" |
 
 
-[1] "health_pfa"[1] 1
+*health_pfa* 1
 
 |countries  |
 |:----------|
 |"Ethiopia" |
 
 
-[1] "health_provider"[1] 5
+*health_provider* 5
 
 |countries  |
 |:----------|
@@ -609,7 +603,7 @@
 |"Peru"     |
 
 
-[1] "health_psych"[1] 2
+*health_psych* 2
 
 |countries    |
 |:------------|
@@ -617,28 +611,28 @@
 |"Nepal"      |
 
 
-[1] "health_psych_rem"[1] 1
+*health_psych_rem* 1
 
 |countries |
 |:---------|
 |"Nepal"   |
 
 
-[1] "health_pwd"[1] 1
+*health_pwd* 1
 
 |countries    |
 |:------------|
 |"Bangladesh" |
 
 
-[1] "health_referral"[1] 1
+*health_referral* 1
 
 |countries |
 |:---------|
 |"Nigeria" |
 
 
-[1] "health_screen"[1] 4
+*health_screen* 4
 
 |countries  |
 |:----------|
@@ -648,21 +642,21 @@
 |"Peru"     |
 
 
-[1] "health_srh"[1] 1
+*health_srh* 1
 
 |countries  |
 |:----------|
 |"Ethiopia" |
 
 
-[1] "health_support"[1] 1
+*health_support* 1
 
 |countries |
 |:---------|
 |"Nigeria" |
 
 
-[1] "health.issue"[1] 0
+*health.issue* 0
 
 ||
 ||
@@ -670,7 +664,7 @@
 ||
 
 
-[1] "helath_issue_c"[1] 0
+*helath_issue_c* 0
 
 ||
 ||
@@ -678,14 +672,14 @@
 ||
 
 
-[1] "hyg_drainage"[1] 1
+*hyg_drainage* 1
 
 |countries |
 |:---------|
 |"Nigeria" |
 
 
-[1] "hyg_evidence"[1] 5
+*hyg_evidence* 5
 
 |countries  |
 |:----------|
@@ -696,7 +690,7 @@
 |"Peru"     |
 
 
-[1] "hyg_f_product"[1] 4
+*hyg_f_product* 4
 
 |countries    |
 |:------------|
@@ -706,28 +700,28 @@
 |"Peru"       |
 
 
-[1] "hyg_f_product_by"[1] 1
+*hyg_f_product_by* 1
 
 |countries  |
 |:----------|
 |"Ethiopia" |
 
 
-[1] "hyg_f_product_date"[1] 1
+*hyg_f_product_date* 1
 
 |countries  |
 |:----------|
 |"Ethiopia" |
 
 
-[1] "hyg_f_remark"[1] 1
+*hyg_f_remark* 1
 
 |countries |
 |:---------|
 |"Peru"    |
 
 
-[1] "hyg_kit_soap"[1] 2
+*hyg_kit_soap* 2
 
 |countries    |
 |:------------|
@@ -735,21 +729,21 @@
 |"Ethiopia"   |
 
 
-[1] "hyg_kit_soap_by"[1] 1
+*hyg_kit_soap_by* 1
 
 |countries  |
 |:----------|
 |"Ethiopia" |
 
 
-[1] "hyg_kit_soap_date"[1] 1
+*hyg_kit_soap_date* 1
 
 |countries  |
 |:----------|
 |"Ethiopia" |
 
 
-[1] "hyg_open_def"[1] 5
+*hyg_open_def* 5
 
 |countries  |
 |:----------|
@@ -760,7 +754,7 @@
 |"Peru"     |
 
 
-[1] "hyg_promotion"[1] 4
+*hyg_promotion* 4
 
 |countries  |
 |:----------|
@@ -770,7 +764,7 @@
 |"Peru"     |
 
 
-[1] "hyg_station"[1] 4
+*hyg_station* 4
 
 |countries |
 |:---------|
@@ -780,7 +774,7 @@
 |"Peru"    |
 
 
-[1] "hyg_waste"[1] 5
+*hyg_waste* 5
 
 |countries  |
 |:----------|
@@ -791,133 +785,133 @@
 |"Peru"     |
 
 
-[1] "hyg_waste_remark"[1] 1
+*hyg_waste_remark* 1
 
 |countries |
 |:---------|
 |"Peru"    |
 
 
-[1] "idp_leaving"[1] 1
+*idp_leaving* 1
 
 |countries |
 |:---------|
 |"Haiti"   |
 
 
-[1] "inc_source_1"[1] 1
+*inc_source_1* 1
 
 |countries    |
 |:------------|
 |"Bangladesh" |
 
 
-[1] "inc_source_2"[1] 1
+*inc_source_2* 1
 
 |countries    |
 |:------------|
 |"Bangladesh" |
 
 
-[1] "inc_source_3"[1] 1
+*inc_source_3* 1
 
 |countries    |
 |:------------|
 |"Bangladesh" |
 
 
-[1] "info_add"[1] 1
+*info_add* 1
 
 |countries  |
 |:----------|
 |"Ethiopia" |
 
 
-[1] "info_add_distribute"[1] 1
+*info_add_distribute* 1
 
 |countries  |
 |:----------|
 |"Ethiopia" |
 
 
-[1] "info_add_how"[1] 1
+*info_add_how* 1
 
 |countries  |
 |:----------|
 |"Ethiopia" |
 
 
-[1] "info_add_none"[1] 1
+*info_add_none* 1
 
 |countries  |
 |:----------|
 |"Ethiopia" |
 
 
-[1] "info_add_origin"[1] 1
+*info_add_origin* 1
 
 |countries  |
 |:----------|
 |"Ethiopia" |
 
 
-[1] "info_add_register"[1] 1
+*info_add_register* 1
 
 |countries  |
 |:----------|
 |"Ethiopia" |
 
 
-[1] "info_add_relief"[1] 1
+*info_add_relief* 1
 
 |countries  |
 |:----------|
 |"Ethiopia" |
 
 
-[1] "info_add_sec"[1] 1
+*info_add_sec* 1
 
 |countries  |
 |:----------|
 |"Ethiopia" |
 
 
-[1] "info_add_services"[1] 1
+*info_add_services* 1
 
 |countries  |
 |:----------|
 |"Ethiopia" |
 
 
-[1] "info_add_shelter"[1] 1
+*info_add_shelter* 1
 
 |countries  |
 |:----------|
 |"Ethiopia" |
 
 
-[1] "info_complaint"[1] 1
+*info_complaint* 1
 
 |countries |
 |:---------|
 |"Nepal"   |
 
 
-[1] "info_credibility"[1] 1
+*info_credibility* 1
 
 |countries    |
 |:------------|
 |"Bangladesh" |
 
 
-[1] "info_doc"[1] 1
+*info_doc* 1
 
 |countries    |
 |:------------|
 |"Bangladesh" |
 
 
-[1] "info_free"[1] 2
+*info_free* 2
 
 |countries    |
 |:------------|
@@ -925,21 +919,21 @@
 |"Nepal"      |
 
 
-[1] "info_gbv"[1] 1
+*info_gbv* 1
 
 |countries    |
 |:------------|
 |"Bangladesh" |
 
 
-[1] "info_live"[1] 1
+*info_live* 1
 
 |countries    |
 |:------------|
 |"Bangladesh" |
 
 
-[1] "info_main"[1] 5
+*info_main* 5
 
 |countries    |
 |:------------|
@@ -950,14 +944,14 @@
 |"Peru"       |
 
 
-[1] "info_pt_origin"[1] 1
+*info_pt_origin* 1
 
 |countries    |
 |:------------|
 |"Bangladesh" |
 
 
-[1] "info_src"[1] 6
+*info_src* 6
 
 |countries    |
 |:------------|
@@ -969,56 +963,56 @@
 |"Peru"       |
 
 
-[1] "info_src_authority"[1] 1
+*info_src_authority* 1
 
 |countries |
 |:---------|
 |"Peru"    |
 
 
-[1] "info_src_cell"[1] 1
+*info_src_cell* 1
 
 |countries |
 |:---------|
 |"Peru"    |
 
 
-[1] "info_src_fam_friend"[1] 1
+*info_src_fam_friend* 1
 
 |countries |
 |:---------|
 |"Peru"    |
 
 
-[1] "info_src_female"[1] 1
+*info_src_female* 1
 
 |countries |
 |:---------|
 |"Nepal"   |
 
 
-[1] "info_src_leaders"[1] 1
+*info_src_leaders* 1
 
 |countries |
 |:---------|
 |"Peru"    |
 
 
-[1] "info_src_male"[1] 1
+*info_src_male* 1
 
 |countries |
 |:---------|
 |"Nepal"   |
 
 
-[1] "info_src_televison"[1] 1
+*info_src_televison* 1
 
 |countries |
 |:---------|
 |"Peru"    |
 
 
-[1] "job_abr"[1] 4
+*job_abr* 4
 
 |countries |
 |:---------|
@@ -1028,14 +1022,14 @@
 |"Nigeria" |
 
 
-[1] "job_abr_family"[1] 1
+*job_abr_family* 1
 
 |countries |
 |:---------|
 |"Nepal"   |
 
 
-[1] "job_abr_in"[1] 3
+*job_abr_in* 3
 
 |countries |
 |:---------|
@@ -1044,14 +1038,14 @@
 |"Peru"    |
 
 
-[1] "job_abr_prom"[1] 1
+*job_abr_prom* 1
 
 |countries |
 |:---------|
 |"Nigeria" |
 
 
-[1] "job_access"[1] 5
+*job_access* 5
 
 |countries  |
 |:----------|
@@ -1062,21 +1056,21 @@
 |"Peru"     |
 
 
-[1] "job_business"[1] 1
+*job_business* 1
 
 |countries |
 |:---------|
 |"Haiti"   |
 
 
-[1] "job_cattle"[1] 1
+*job_cattle* 1
 
 |countries |
 |:---------|
 |"Haiti"   |
 
 
-[1] "job_cattle_site"[1] 5
+*job_cattle_site* 5
 
 |countries  |
 |:----------|
@@ -1087,21 +1081,21 @@
 |"Peru"     |
 
 
-[1] "job_farm"[1] 1
+*job_farm* 1
 
 |countries  |
 |:----------|
 |"Ethiopia" |
 
 
-[1] "job_fishing"[1] 1
+*job_fishing* 1
 
 |countries |
 |:---------|
 |"Haiti"   |
 
 
-[1] "job_main"[1] 4
+*job_main* 4
 
 |countries  |
 |:----------|
@@ -1111,7 +1105,7 @@
 |"Peru"     |
 
 
-[1] "job_main_other"[1] 2
+*job_main_other* 2
 
 |countries |
 |:---------|
@@ -1119,7 +1113,7 @@
 |"Peru"    |
 
 
-[1] "job_offer"[1] 2
+*job_offer* 2
 
 |countries |
 |:---------|
@@ -1127,7 +1121,7 @@
 |"Peru"    |
 
 
-[1] "job_offer_how"[1] 2
+*job_offer_how* 2
 
 |countries |
 |:---------|
@@ -1135,35 +1129,35 @@
 |"Peru"    |
 
 
-[1] "job_offer_to"[1] 1
+*job_offer_to* 1
 
 |countries |
 |:---------|
 |"Nepal"   |
 
 
-[1] "job_offer_where"[1] 1
+*job_offer_where* 1
 
 |countries |
 |:---------|
 |"Peru"    |
 
 
-[1] "job_recruit"[1] 1
+*job_recruit* 1
 
 |countries |
 |:---------|
 |"Nepal"   |
 
 
-[1] "last_arrival_date"[1] 1
+*last_arrival_date* 1
 
 |countries  |
 |:----------|
 |"Ethiopia" |
 
 
-[1] "latrine_cond"[1] 5
+*latrine_cond* 5
 
 |countries  |
 |:----------|
@@ -1174,21 +1168,21 @@
 |"Peru"     |
 
 
-[1] "latrine_cond_remark"[1] 1
+*latrine_cond_remark* 1
 
 |countries |
 |:---------|
 |"Peru"    |
 
 
-[1] "latrine_condition"[1] 1
+*latrine_condition* 1
 
 |countries |
 |:---------|
 |"Nigeria" |
 
 
-[1] "latrine_gender"[1] 8
+*latrine_gender* 8
 
 |countries    |
 |:------------|
@@ -1202,14 +1196,14 @@
 |"Peru"       |
 
 
-[1] "latrine_install"[1] 1
+*latrine_install* 1
 
 |countries |
 |:---------|
 |"Nepal"   |
 
 
-[1] "latrine_light"[1] 5
+*latrine_light* 5
 
 |countries    |
 |:------------|
@@ -1220,14 +1214,14 @@
 |"Peru"       |
 
 
-[1] "latrine_light_remark"[1] 1
+*latrine_light_remark* 1
 
 |countries |
 |:---------|
 |"Peru"    |
 
 
-[1] "latrine_lock"[1] 5
+*latrine_lock* 5
 
 |countries  |
 |:----------|
@@ -1238,35 +1232,35 @@
 |"Peru"     |
 
 
-[1] "latrine_lock_remark"[1] 1
+*latrine_lock_remark* 1
 
 |countries |
 |:---------|
 |"Peru"    |
 
 
-[1] "latrine_site"[1] 1
+*latrine_site* 1
 
 |countries |
 |:---------|
 |"Nepal"   |
 
 
-[1] "latrine_time"[1] 1
+*latrine_time* 1
 
 |countries |
 |:---------|
 |"Nepal"   |
 
 
-[1] "multi_roof"[1] 1
+*multi_roof* 1
 
 |countries |
 |:---------|
 |"Peru"    |
 
 
-[1] "n_18to59yr_female"[1] 2
+*n_18to59yr_female* 2
 
 |countries    |
 |:------------|
@@ -1274,7 +1268,7 @@
 |"Malawi"     |
 
 
-[1] "n_18to59yr_male"[1] 2
+*n_18to59yr_male* 2
 
 |countries    |
 |:------------|
@@ -1282,7 +1276,7 @@
 |"Malawi"     |
 
 
-[1] "n_1to5yr_female"[1] 2
+*n_1to5yr_female* 2
 
 |countries    |
 |:------------|
@@ -1290,7 +1284,7 @@
 |"Malawi"     |
 
 
-[1] "n_1to5yr_male"[1] 2
+*n_1to5yr_male* 2
 
 |countries    |
 |:------------|
@@ -1298,7 +1292,7 @@
 |"Malawi"     |
 
 
-[1] "n_1yr_female"[1] 2
+*n_1yr_female* 2
 
 |countries    |
 |:------------|
@@ -1306,7 +1300,7 @@
 |"Malawi"     |
 
 
-[1] "n_1yr_male"[1] 2
+*n_1yr_male* 2
 
 |countries    |
 |:------------|
@@ -1314,7 +1308,7 @@
 |"Malawi"     |
 
 
-[1] "n_60plusyr_female"[1] 2
+*n_60plusyr_female* 2
 
 |countries    |
 |:------------|
@@ -1322,7 +1316,7 @@
 |"Malawi"     |
 
 
-[1] "n_60plusyr_male"[1] 2
+*n_60plusyr_male* 2
 
 |countries    |
 |:------------|
@@ -1330,7 +1324,7 @@
 |"Malawi"     |
 
 
-[1] "n_6to17yr_female"[1] 2
+*n_6to17yr_female* 2
 
 |countries    |
 |:------------|
@@ -1338,7 +1332,7 @@
 |"Malawi"     |
 
 
-[1] "n_6to17yr_male"[1] 2
+*n_6to17yr_male* 2
 
 |countries    |
 |:------------|
@@ -1346,7 +1340,7 @@
 |"Malawi"     |
 
 
-[1] "n_adult"[1] 3
+*n_adult* 3
 
 |countries  |
 |:----------|
@@ -1355,7 +1349,7 @@
 |"Nigeria"  |
 
 
-[1] "n_adult_female"[1] 5
+*n_adult_female* 5
 
 |countries  |
 |:----------|
@@ -1366,7 +1360,7 @@
 |"Nigeria"  |
 
 
-[1] "n_adult_male"[1] 5
+*n_adult_male* 5
 
 |countries  |
 |:----------|
@@ -1377,49 +1371,49 @@
 |"Nigeria"  |
 
 
-[1] "n_adult_single"[1] 1
+*n_adult_single* 1
 
 |countries |
 |:---------|
 |"Peru"    |
 
 
-[1] "n_bath"[1] 1
+*n_bath* 1
 
 |countries    |
 |:------------|
 |"Bangladesh" |
 
 
-[1] "n_bath_female"[1] 1
+*n_bath_female* 1
 
 |countries    |
 |:------------|
 |"Bangladesh" |
 
 
-[1] "n_bath_male"[1] 1
+*n_bath_male* 1
 
 |countries    |
 |:------------|
 |"Bangladesh" |
 
 
-[1] "n_boy_sep"[1] 1
+*n_boy_sep* 1
 
 |countries |
 |:---------|
 |"Ecuador" |
 
 
-[1] "n_boy_unacc"[1] 1
+*n_boy_unacc* 1
 
 |countries |
 |:---------|
 |"Ecuador" |
 
 
-[1] "n_child"[1] 5
+*n_child* 5
 
 |countries    |
 |:------------|
@@ -1430,7 +1424,7 @@
 |"Nigeria"    |
 
 
-[1] "n_child_a_none"[1] 2
+*n_child_a_none* 2
 
 |countries |
 |:---------|
@@ -1438,14 +1432,14 @@
 |"Peru"    |
 
 
-[1] "n_child_a_unrel"[1] 1
+*n_child_a_unrel* 1
 
 |countries |
 |:---------|
 |"Peru"    |
 
 
-[1] "n_child_female"[1] 5
+*n_child_female* 5
 
 |countries  |
 |:----------|
@@ -1456,7 +1450,7 @@
 |"Nigeria"  |
 
 
-[1] "n_child_male"[1] 5
+*n_child_male* 5
 
 |countries  |
 |:----------|
@@ -1467,7 +1461,7 @@
 |"Nigeria"  |
 
 
-[1] "n_child_sep"[1] 4
+*n_child_sep* 4
 
 |countries  |
 |:----------|
@@ -1477,7 +1471,7 @@
 |"Nigeria"  |
 
 
-[1] "n_child_unacc"[1] 3
+*n_child_unacc* 3
 
 |countries  |
 |:----------|
@@ -1486,42 +1480,42 @@
 |"Nigeria"  |
 
 
-[1] "n_child.1"[1] 1
+*n_child.1* 1
 
 |countries  |
 |:----------|
 |"Ethiopia" |
 
 
-[1] "n_chron_b"[1] 1
+*n_chron_b* 1
 
 |countries |
 |:---------|
 |"Ecuador" |
 
 
-[1] "n_chron_g"[1] 1
+*n_chron_g* 1
 
 |countries |
 |:---------|
 |"Ecuador" |
 
 
-[1] "n_chron_m"[1] 1
+*n_chron_m* 1
 
 |countries |
 |:---------|
 |"Ecuador" |
 
 
-[1] "n_chron_w"[1] 1
+*n_chron_w* 1
 
 |countries |
 |:---------|
 |"Ecuador" |
 
 
-[1] "n_chronic_ill"[1] 6
+*n_chronic_ill* 6
 
 |countries  |
 |:----------|
@@ -1533,14 +1527,14 @@
 |"Peru"     |
 
 
-[1] "n_depart"[1] 1
+*n_depart* 1
 
 |countries    |
 |:------------|
 |"Bangladesh" |
 
 
-[1] "n_elder"[1] 5
+*n_elder* 5
 
 |countries    |
 |:------------|
@@ -1551,21 +1545,21 @@
 |"Nigeria"    |
 
 
-[1] "n_elder_a_none"[1] 1
+*n_elder_a_none* 1
 
 |countries |
 |:---------|
 |"Malawi"  |
 
 
-[1] "n_elder_f_alone"[1] 1
+*n_elder_f_alone* 1
 
 |countries |
 |:---------|
 |"Ecuador" |
 
 
-[1] "n_elder_female"[1] 6
+*n_elder_female* 6
 
 |countries  |
 |:----------|
@@ -1577,14 +1571,14 @@
 |"Nigeria"  |
 
 
-[1] "n_elder_m_alone"[1] 1
+*n_elder_m_alone* 1
 
 |countries |
 |:---------|
 |"Ecuador" |
 
 
-[1] "n_elder_male"[1] 6
+*n_elder_male* 6
 
 |countries  |
 |:----------|
@@ -1596,42 +1590,42 @@
 |"Nigeria"  |
 
 
-[1] "n_ethnicmin_b"[1] 1
+*n_ethnicmin_b* 1
 
 |countries |
 |:---------|
 |"Ecuador" |
 
 
-[1] "n_ethnicmin_g"[1] 1
+*n_ethnicmin_g* 1
 
 |countries |
 |:---------|
 |"Ecuador" |
 
 
-[1] "n_ethnicmin_m"[1] 1
+*n_ethnicmin_m* 1
 
 |countries |
 |:---------|
 |"Ecuador" |
 
 
-[1] "n_ethnicmin_w"[1] 1
+*n_ethnicmin_w* 1
 
 |countries |
 |:---------|
 |"Ecuador" |
 
 
-[1] "n_fam_depart"[1] 1
+*n_fam_depart* 1
 
 |countries    |
 |:------------|
 |"Bangladesh" |
 
 
-[1] "n_family"[1] 7
+*n_family* 7
 
 |countries    |
 |:------------|
@@ -1644,7 +1638,7 @@
 |"Nigeria"    |
 
 
-[1] "n_female"[1] 8
+*n_female* 8
 
 |countries    |
 |:------------|
@@ -1658,7 +1652,7 @@
 |"Peru"       |
 
 
-[1] "n_garbage"[1] 3
+*n_garbage* 3
 
 |countries  |
 |:----------|
@@ -1667,21 +1661,21 @@
 |"Nigeria"  |
 
 
-[1] "n_girl_sep"[1] 1
+*n_girl_sep* 1
 
 |countries |
 |:---------|
 |"Ecuador" |
 
 
-[1] "n_girl_unacc"[1] 1
+*n_girl_unacc* 1
 
 |countries |
 |:---------|
 |"Ecuador" |
 
 
-[1] "n_hh_income"[1] 4
+*n_hh_income* 4
 
 |countries |
 |:---------|
@@ -1691,14 +1685,14 @@
 |"Peru"    |
 
 
-[1] "n_hoh_boy"[1] 1
+*n_hoh_boy* 1
 
 |countries |
 |:---------|
 |"Ecuador" |
 
 
-[1] "n_hoh_child"[1] 7
+*n_hoh_child* 7
 
 |countries    |
 |:------------|
@@ -1711,21 +1705,21 @@
 |"Peru"       |
 
 
-[1] "n_hoh_elder"[1] 1
+*n_hoh_elder* 1
 
 |countries |
 |:---------|
 |"Nepal"   |
 
 
-[1] "n_hoh_elderly"[1] 1
+*n_hoh_elderly* 1
 
 |countries    |
 |:------------|
 |"Bangladesh" |
 
 
-[1] "n_hoh_female"[1] 7
+*n_hoh_female* 7
 
 |countries    |
 |:------------|
@@ -1738,14 +1732,14 @@
 |"Peru"       |
 
 
-[1] "n_hoh_girl"[1] 1
+*n_hoh_girl* 1
 
 |countries |
 |:---------|
 |"Ecuador" |
 
 
-[1] "n_hoh_male"[1] 5
+*n_hoh_male* 5
 
 |countries  |
 |:----------|
@@ -1756,14 +1750,14 @@
 |"Peru"     |
 
 
-[1] "n_hyg_station"[1] 1
+*n_hyg_station* 1
 
 |countries    |
 |:------------|
 |"Bangladesh" |
 
 
-[1] "n_infants"[1] 4
+*n_infants* 4
 
 |countries  |
 |:----------|
@@ -1773,18 +1767,7 @@
 |"Nigeria"  |
 
 
-[1] "n_infants_female"[1] 5
-
-|countries  |
-|:----------|
-|"Ethiopia" |
-|"Haiti"    |
-|"Malawi"   |
-|"Nepal"    |
-|"Nigeria"  |
-
-
-[1] "n_infants_male"[1] 5
+*n_infants_female* 5
 
 |countries  |
 |:----------|
@@ -1795,7 +1778,18 @@
 |"Nigeria"  |
 
 
-[1] "n_lactating"[1] 7
+*n_infants_male* 5
+
+|countries  |
+|:----------|
+|"Ethiopia" |
+|"Haiti"    |
+|"Malawi"   |
+|"Nepal"    |
+|"Nigeria"  |
+
+
+*n_lactating* 7
 
 |countries    |
 |:------------|
@@ -1808,7 +1802,7 @@
 |"Nigeria"    |
 
 
-[1] "n_latrine"[1] 7
+*n_latrine* 7
 
 |countries    |
 |:------------|
@@ -1821,21 +1815,21 @@
 |"Peru"       |
 
 
-[1] "n_latrine_child"[1] 1
+*n_latrine_child* 1
 
 |countries  |
 |:----------|
 |"Ethiopia" |
 
 
-[1] "n_latrine_disability"[1] 1
+*n_latrine_disability* 1
 
 |countries  |
 |:----------|
 |"Ethiopia" |
 
 
-[1] "n_latrine_disable"[1] 2
+*n_latrine_disable* 2
 
 |countries  |
 |:----------|
@@ -1843,7 +1837,7 @@
 |"Nepal"    |
 
 
-[1] "n_latrine_female"[1] 3
+*n_latrine_female* 3
 
 |countries    |
 |:------------|
@@ -1852,7 +1846,7 @@
 |"Nepal"      |
 
 
-[1] "n_latrine_male"[1] 3
+*n_latrine_male* 3
 
 |countries    |
 |:------------|
@@ -1861,7 +1855,7 @@
 |"Nepal"      |
 
 
-[1] "n_male"[1] 8
+*n_male* 8
 
 |countries    |
 |:------------|
@@ -1875,7 +1869,7 @@
 |"Peru"       |
 
 
-[1] "n_mental_dis"[1] 2
+*n_mental_dis* 2
 
 |countries |
 |:---------|
@@ -1883,7 +1877,7 @@
 |"Malawi"  |
 
 
-[1] "n_min_ethnic"[1] 2
+*n_min_ethnic* 2
 
 |countries  |
 |:----------|
@@ -1891,21 +1885,21 @@
 |"Nepal"    |
 
 
-[1] "n_min_religion"[1] 1
+*n_min_religion* 1
 
 |countries  |
 |:----------|
 |"Ethiopia" |
 
 
-[1] "n_multi_roof"[1] 1
+*n_multi_roof* 1
 
 |countries |
 |:---------|
 |"Peru"    |
 
 
-[1] "n_orphan"[1] 5
+*n_orphan* 5
 
 |countries  |
 |:----------|
@@ -1916,21 +1910,21 @@
 |"Peru"     |
 
 
-[1] "n_orphan_b"[1] 1
+*n_orphan_b* 1
 
 |countries |
 |:---------|
 |"Ecuador" |
 
 
-[1] "n_orphan_g"[1] 1
+*n_orphan_g* 1
 
 |countries |
 |:---------|
 |"Ecuador" |
 
 
-[1] "n_physical_dis"[1] 2
+*n_physical_dis* 2
 
 |countries |
 |:---------|
@@ -1938,7 +1932,7 @@
 |"Malawi"  |
 
 
-[1] "n_pregnant"[1] 5
+*n_pregnant* 5
 
 |countries    |
 |:------------|
@@ -1949,7 +1943,7 @@
 |"Nigeria"    |
 
 
-[1] "n_pregnant_adult"[1] 4
+*n_pregnant_adult* 4
 
 |countries  |
 |:----------|
@@ -1959,7 +1953,7 @@
 |"Peru"     |
 
 
-[1] "n_pregnant_youth"[1] 4
+*n_pregnant_youth* 4
 
 |countries  |
 |:----------|
@@ -1969,7 +1963,7 @@
 |"Peru"     |
 
 
-[1] "n_pwd"[1] 3
+*n_pwd* 3
 
 |countries    |
 |:------------|
@@ -1978,161 +1972,161 @@
 |"Nigeria"    |
 
 
-[1] "n_pwd_adult"[1] 1
+*n_pwd_adult* 1
 
 |countries  |
 |:----------|
 |"Ethiopia" |
 
 
-[1] "n_pwd_youth"[1] 1
+*n_pwd_youth* 1
 
 |countries  |
 |:----------|
 |"Ethiopia" |
 
 
-[1] "n_pwmd_b"[1] 1
+*n_pwmd_b* 1
 
 |countries |
 |:---------|
 |"Ecuador" |
 
 
-[1] "n_pwmd_g"[1] 1
+*n_pwmd_g* 1
 
 |countries |
 |:---------|
 |"Ecuador" |
 
 
-[1] "n_pwmd_m"[1] 1
+*n_pwmd_m* 1
 
 |countries |
 |:---------|
 |"Ecuador" |
 
 
-[1] "n_pwmd_w"[1] 1
+*n_pwmd_w* 1
 
 |countries |
 |:---------|
 |"Ecuador" |
 
 
-[1] "n_pwpd_b"[1] 1
+*n_pwpd_b* 1
 
 |countries |
 |:---------|
 |"Ecuador" |
 
 
-[1] "n_pwpd_g"[1] 1
+*n_pwpd_g* 1
 
 |countries |
 |:---------|
 |"Ecuador" |
 
 
-[1] "n_pwpd_m"[1] 1
+*n_pwpd_m* 1
 
 |countries |
 |:---------|
 |"Ecuador" |
 
 
-[1] "n_pwpd_w"[1] 1
+*n_pwpd_w* 1
 
 |countries |
 |:---------|
 |"Ecuador" |
 
 
-[1] "n_relmin_m"[1] 1
+*n_relmin_m* 1
 
 |countries |
 |:---------|
 |"Ecuador" |
 
 
-[1] "n_relmin_w"[1] 1
+*n_relmin_w* 1
 
 |countries |
 |:---------|
 |"Ecuador" |
 
 
-[1] "n_sec_arm_conflict"[1] 1
+*n_sec_arm_conflict* 1
 
 |countries |
 |:---------|
 |"Peru"    |
 
 
-[1] "n_sec_crime"[1] 1
+*n_sec_crime* 1
 
 |countries |
 |:---------|
 |"Peru"    |
 
 
-[1] "n_sec_host"[1] 1
+*n_sec_host* 1
 
 |countries |
 |:---------|
 |"Peru"    |
 
 
-[1] "n_sec_none"[1] 1
+*n_sec_none* 1
 
 |countries |
 |:---------|
 |"Peru"    |
 
 
-[1] "n_sec_onsite"[1] 1
+*n_sec_onsite* 1
 
 |countries |
 |:---------|
 |"Peru"    |
 
 
-[1] "n_sec_other"[1] 1
+*n_sec_other* 1
 
 |countries |
 |:---------|
 |"Peru"    |
 
 
-[1] "n_sec_substance"[1] 1
+*n_sec_substance* 1
 
 |countries |
 |:---------|
 |"Peru"    |
 
 
-[1] "n_sec_theft"[1] 1
+*n_sec_theft* 1
 
 |countries |
 |:---------|
 |"Peru"    |
 
 
-[1] "n_single_fathers"[1] 1
+*n_single_fathers* 1
 
 |countries |
 |:---------|
 |"Ecuador" |
 
 
-[1] "n_single_mothers"[1] 1
+*n_single_mothers* 1
 
 |countries |
 |:---------|
 |"Ecuador" |
 
 
-[1] "n_space_child"[1] 6
+*n_space_child* 6
 
 |countries    |
 |:------------|
@@ -2144,7 +2138,7 @@
 |"Peru"       |
 
 
-[1] "n_space_female"[1] 6
+*n_space_female* 6
 
 |countries    |
 |:------------|
@@ -2156,14 +2150,14 @@
 |"Peru"       |
 
 
-[1] "n_tents"[1] 1
+*n_tents* 1
 
 |countries |
 |:---------|
 |"Ecuador" |
 
 
-[1] "n_total"[1] 8
+*n_total* 8
 
 |countries    |
 |:------------|
@@ -2177,7 +2171,7 @@
 |"Peru"       |
 
 
-[1] "n_water_operational"[1] 2
+*n_water_operational* 2
 
 |countries    |
 |:------------|
@@ -2185,7 +2179,7 @@
 |"Peru"       |
 
 
-[1] "n_youth"[1] 4
+*n_youth* 4
 
 |countries  |
 |:----------|
@@ -2195,18 +2189,7 @@
 |"Nigeria"  |
 
 
-[1] "n_youth_female"[1] 5
-
-|countries  |
-|:----------|
-|"Ethiopia" |
-|"Haiti"    |
-|"Malawi"   |
-|"Nepal"    |
-|"Nigeria"  |
-
-
-[1] "n_youth_male"[1] 5
+*n_youth_female* 5
 
 |countries  |
 |:----------|
@@ -2217,7 +2200,18 @@
 |"Nigeria"  |
 
 
-[1] "need_edu"[1] 2
+*n_youth_male* 5
+
+|countries  |
+|:----------|
+|"Ethiopia" |
+|"Haiti"    |
+|"Malawi"   |
+|"Nepal"    |
+|"Nigeria"  |
+
+
+*need_edu* 2
 
 |countries    |
 |:------------|
@@ -2225,7 +2219,7 @@
 |"Ethiopia"   |
 
 
-[1] "need_food"[1] 2
+*need_food* 2
 
 |countries    |
 |:------------|
@@ -2233,7 +2227,7 @@
 |"Ethiopia"   |
 
 
-[1] "need_health"[1] 2
+*need_health* 2
 
 |countries    |
 |:------------|
@@ -2241,29 +2235,14 @@
 |"Ethiopia"   |
 
 
-[1] "need_info"[1] 1
+*need_info* 1
 
 |countries    |
 |:------------|
 |"Bangladesh" |
 
 
-[1] "need_live"[1] 2
-
-|countries    |
-|:------------|
-|"Bangladesh" |
-|"Ethiopia"   |
-
-
-[1] "need_nfi"[1] 1
-
-|countries    |
-|:------------|
-|"Bangladesh" |
-
-
-[1] "need_protect"[1] 2
+*need_live* 2
 
 |countries    |
 |:------------|
@@ -2271,22 +2250,14 @@
 |"Ethiopia"   |
 
 
-[1] "need_psych"[1] 1
+*need_nfi* 1
 
 |countries    |
 |:------------|
 |"Bangladesh" |
 
 
-[1] "need_shelter"[1] 2
-
-|countries    |
-|:------------|
-|"Bangladesh" |
-|"Ethiopia"   |
-
-
-[1] "need_wash"[1] 2
+*need_protect* 2
 
 |countries    |
 |:------------|
@@ -2294,14 +2265,37 @@
 |"Ethiopia"   |
 
 
-[1] "need_water"[1] 1
+*need_psych* 1
 
 |countries    |
 |:------------|
 |"Bangladesh" |
 
 
-[1] "nfi_a"[1] 5
+*need_shelter* 2
+
+|countries    |
+|:------------|
+|"Bangladesh" |
+|"Ethiopia"   |
+
+
+*need_wash* 2
+
+|countries    |
+|:------------|
+|"Bangladesh" |
+|"Ethiopia"   |
+
+
+*need_water* 1
+
+|countries    |
+|:------------|
+|"Bangladesh" |
+
+
+*nfi_a* 5
 
 |countries  |
 |:----------|
@@ -2312,7 +2306,7 @@
 |"Peru"     |
 
 
-[1] "nfi_b"[1] 5
+*nfi_b* 5
 
 |countries  |
 |:----------|
@@ -2323,7 +2317,7 @@
 |"Peru"     |
 
 
-[1] "nfi_c"[1] 5
+*nfi_c* 5
 
 |countries  |
 |:----------|
@@ -2334,7 +2328,7 @@
 |"Peru"     |
 
 
-[1] "nfi_other"[1] 3
+*nfi_other* 3
 
 |countries  |
 |:----------|
@@ -2343,14 +2337,14 @@
 |"Peru"     |
 
 
-[1] "nfo_src_male"[1] 1
+*nfo_src_male* 1
 
 |countries |
 |:---------|
 |"Nepal"   |
 
 
-[1] "origin_district"[1] 6
+*origin_district* 6
 
 |countries    |
 |:------------|
@@ -2362,7 +2356,7 @@
 |"Nigeria"    |
 
 
-[1] "origin_municipality"[1] 4
+*origin_municipality* 4
 
 |countries    |
 |:------------|
@@ -2372,7 +2366,7 @@
 |"Nepal"      |
 
 
-[1] "origin_province"[1] 3
+*origin_province* 3
 
 |countries    |
 |:------------|
@@ -2381,7 +2375,7 @@
 |"Nigeria"    |
 
 
-[1] "origin_region"[1] 5
+*origin_region* 5
 
 |countries  |
 |:----------|
@@ -2392,7 +2386,7 @@
 |"Nigeria"  |
 
 
-[1] "origin_zone"[1] 2
+*origin_zone* 2
 
 |countries  |
 |:----------|
@@ -2400,35 +2394,35 @@
 |"Nepal"    |
 
 
-[1] "pe_hh_tents"[1] 1
+*pe_hh_tents* 1
 
 |countries |
 |:---------|
 |"Nepal"   |
 
 
-[1] "per_child"[1] 1
+*per_child* 1
 
 |countries    |
 |:------------|
 |"Bangladesh" |
 
 
-[1] "per_div_diet"[1] 1
+*per_div_diet* 1
 
 |countries    |
 |:------------|
 |"Bangladesh" |
 
 
-[1] "per_elder"[1] 1
+*per_elder* 1
 
 |countries    |
 |:------------|
 |"Bangladesh" |
 
 
-[1] "per_hh_electricity"[1] 5
+*per_hh_electricity* 5
 
 |countries  |
 |:----------|
@@ -2439,14 +2433,14 @@
 |"Peru"     |
 
 
-[1] "per_hh_eletricity"[1] 1
+*per_hh_eletricity* 1
 
 |countries |
 |:---------|
 |"Nepal"   |
 
 
-[1] "per_hh_income"[1] 3
+*per_hh_income* 3
 
 |countries  |
 |:----------|
@@ -2455,7 +2449,7 @@
 |"Nepal"    |
 
 
-[1] "per_hh_indoors"[1] 6
+*per_hh_indoors* 6
 
 |countries  |
 |:----------|
@@ -2467,7 +2461,7 @@
 |"Peru"     |
 
 
-[1] "per_hh_makeshift"[1] 6
+*per_hh_makeshift* 6
 
 |countries  |
 |:----------|
@@ -2479,7 +2473,7 @@
 |"Peru"     |
 
 
-[1] "per_hh_nets"[1] 4
+*per_hh_nets* 4
 
 |countries  |
 |:----------|
@@ -2489,21 +2483,21 @@
 |"Peru"     |
 
 
-[1] "per_hh_nfi"[1] 1
+*per_hh_nfi* 1
 
 |countries  |
 |:----------|
 |"Ethiopia" |
 
 
-[1] "per_hh_no_shelter"[1] 1
+*per_hh_no_shelter* 1
 
 |countries |
 |:---------|
 |"Nigeria" |
 
 
-[1] "per_hh_outside"[1] 6
+*per_hh_outside* 6
 
 |countries  |
 |:----------|
@@ -2515,7 +2509,7 @@
 |"Peru"     |
 
 
-[1] "per_hh_private"[1] 3
+*per_hh_private* 3
 
 |countries |
 |:---------|
@@ -2524,14 +2518,14 @@
 |"Peru"    |
 
 
-[1] "per_hh_safe_cooking"[1] 1
+*per_hh_safe_cooking* 1
 
 |countries |
 |:---------|
 |"Nigeria" |
 
 
-[1] "per_hh_safecook"[1] 4
+*per_hh_safecook* 4
 
 |countries |
 |:---------|
@@ -2541,7 +2535,7 @@
 |"Peru"    |
 
 
-[1] "per_hh_tents"[1] 6
+*per_hh_tents* 6
 
 |countries  |
 |:----------|
@@ -2553,35 +2547,35 @@
 |"Peru"     |
 
 
-[1] "per_hh_tentsmakeshift"[1] 1
+*per_hh_tentsmakeshift* 1
 
 |countries |
 |:---------|
 |"Nigeria" |
 
 
-[1] "per_hoh_child"[1] 1
+*per_hoh_child* 1
 
 |countries    |
 |:------------|
 |"Bangladesh" |
 
 
-[1] "per_hoh_female"[1] 1
+*per_hoh_female* 1
 
 |countries    |
 |:------------|
 |"Bangladesh" |
 
 
-[1] "per_one_meal"[1] 1
+*per_one_meal* 1
 
 |countries    |
 |:------------|
 |"Bangladesh" |
 
 
-[1] "per_sch"[1] 4
+*per_sch* 4
 
 |countries  |
 |:----------|
@@ -2591,7 +2585,7 @@
 |"Nigeria"  |
 
 
-[1] "per_sch_female"[1] 3
+*per_sch_female* 3
 
 |countries  |
 |:----------|
@@ -2600,7 +2594,7 @@
 |"Peru"     |
 
 
-[1] "per_sch_male"[1] 2
+*per_sch_male* 2
 
 |countries |
 |:---------|
@@ -2608,14 +2602,14 @@
 |"Peru"    |
 
 
-[1] "per_school"[1] 1
+*per_school* 1
 
 |countries |
 |:---------|
 |"Nigeria" |
 
 
-[1] "per_sleep_site"[1] 2
+*per_sleep_site* 2
 
 |countries |
 |:---------|
@@ -2623,21 +2617,21 @@
 |"Nepal"   |
 
 
-[1] "per_two_meal"[1] 1
+*per_two_meal* 1
 
 |countries    |
 |:------------|
 |"Bangladesh" |
 
 
-[1] "pre_displaced"[1] 1
+*pre_displaced* 1
 
 |countries |
 |:---------|
 |"Nigeria" |
 
 
-[1] "prev_displaced"[1] 4
+*prev_displaced* 4
 
 |countries  |
 |:----------|
@@ -2647,14 +2641,14 @@
 |"Peru"     |
 
 
-[1] "prev_own"[1] 1
+*prev_own* 1
 
 |countries |
 |:---------|
 |"Nepal"   |
 
 
-[1] "regist_activity"[1] 5
+*regist_activity* 5
 
 |countries    |
 |:------------|
@@ -2665,7 +2659,7 @@
 |"Nigeria"    |
 
 
-[1] "rel_com"[1] 2
+*rel_com* 2
 
 |countries  |
 |:----------|
@@ -2673,14 +2667,14 @@
 |"Malawi"   |
 
 
-[1] "rel_host"[1] 1
+*rel_host* 1
 
 |countries |
 |:---------|
 |"Peru"    |
 
 
-[1] "rel_idp"[1] 3
+*rel_idp* 3
 
 |countries  |
 |:----------|
@@ -2689,7 +2683,7 @@
 |"Peru"     |
 
 
-[1] "repair_need"[1] 3
+*repair_need* 3
 
 |countries  |
 |:----------|
@@ -2698,7 +2692,7 @@
 |"Peru"     |
 
 
-[1] "return_area"[1] 5
+*return_area* 5
 
 |countries  |
 |:----------|
@@ -2709,42 +2703,42 @@
 |"Peru"     |
 
 
-[1] "return_area_child"[1] 1
+*return_area_child* 1
 
 |countries  |
 |:----------|
 |"Ethiopia" |
 
 
-[1] "return_district"[1] 1
+*return_district* 1
 
 |countries |
 |:---------|
 |"Peru"    |
 
 
-[1] "return_plan"[1] 1
+*return_plan* 1
 
 |countries |
 |:---------|
 |"Peru"    |
 
 
-[1] "return_plan_place"[1] 1
+*return_plan_place* 1
 
 |countries |
 |:---------|
 |"Peru"    |
 
 
-[1] "return_pop_area"[1] 1
+*return_pop_area* 1
 
 |countries |
 |:---------|
 |"Peru"    |
 
 
-[1] "return_prevent"[1] 4
+*return_prevent* 4
 
 |countries  |
 |:----------|
@@ -2754,175 +2748,175 @@
 |"Peru"     |
 
 
-[1] "return_prevent_access"[1] 1
+*return_prevent_access* 1
 
 |countries  |
 |:----------|
 |"Ethiopia" |
 
 
-[1] "return_prevent_food"[1] 1
+*return_prevent_food* 1
 
 |countries  |
 |:----------|
 |"Ethiopia" |
 
 
-[1] "return_prevent_house"[1] 1
+*return_prevent_house* 1
 
 |countries  |
 |:----------|
 |"Ethiopia" |
 
 
-[1] "return_prevent_infra"[1] 1
+*return_prevent_infra* 1
 
 |countries  |
 |:----------|
 |"Ethiopia" |
 
 
-[1] "return_prevent_live"[1] 1
+*return_prevent_live* 1
 
 |countries  |
 |:----------|
 |"Ethiopia" |
 
 
-[1] "return_prevent_none"[1] 1
+*return_prevent_none* 1
 
 |countries  |
 |:----------|
 |"Ethiopia" |
 
 
-[1] "return_prevent_sec"[1] 1
+*return_prevent_sec* 1
 
 |countries  |
 |:----------|
 |"Ethiopia" |
 
 
-[1] "return_province"[1] 1
+*return_province* 1
 
 |countries |
 |:---------|
 |"Peru"    |
 
 
-[1] "return_region"[1] 1
+*return_region* 1
 
 |countries |
 |:---------|
 |"Peru"    |
 
 
-[1] "risk_access"[1] 1
+*risk_access* 1
 
 |countries  |
 |:----------|
 |"Ethiopia" |
 
 
-[1] "risk_access_edu"[1] 1
+*risk_access_edu* 1
 
 |countries  |
 |:----------|
 |"Ethiopia" |
 
 
-[1] "risk_access_food"[1] 1
+*risk_access_food* 1
 
 |countries  |
 |:----------|
 |"Ethiopia" |
 
 
-[1] "risk_access_health"[1] 1
+*risk_access_health* 1
 
 |countries  |
 |:----------|
 |"Ethiopia" |
 
 
-[1] "risk_access_live"[1] 1
+*risk_access_live* 1
 
 |countries  |
 |:----------|
 |"Ethiopia" |
 
 
-[1] "risk_access_nfi"[1] 1
+*risk_access_nfi* 1
 
 |countries  |
 |:----------|
 |"Ethiopia" |
 
 
-[1] "risk_access_none"[1] 1
+*risk_access_none* 1
 
 |countries  |
 |:----------|
 |"Ethiopia" |
 
 
-[1] "risk_access_wash"[1] 1
+*risk_access_wash* 1
 
 |countries  |
 |:----------|
 |"Ethiopia" |
 
 
-[1] "risk_factor"[1] 1
+*risk_factor* 1
 
 |countries  |
 |:----------|
 |"Ethiopia" |
 
 
-[1] "risk_factor_design"[1] 1
+*risk_factor_design* 1
 
 |countries  |
 |:----------|
 |"Ethiopia" |
 
 
-[1] "risk_factor_dist"[1] 1
+*risk_factor_dist* 1
 
 |countries  |
 |:----------|
 |"Ethiopia" |
 
 
-[1] "risk_factor_lighting"[1] 1
+*risk_factor_lighting* 1
 
 |countries  |
 |:----------|
 |"Ethiopia" |
 
 
-[1] "risk_factor_mines"[1] 1
+*risk_factor_mines* 1
 
 |countries  |
 |:----------|
 |"Ethiopia" |
 
 
-[1] "risk_factor_safety"[1] 1
+*risk_factor_safety* 1
 
 |countries  |
 |:----------|
 |"Ethiopia" |
 
 
-[1] "risk_factor_sep_access"[1] 1
+*risk_factor_sep_access* 1
 
 |countries  |
 |:----------|
 |"Ethiopia" |
 
 
-[1] "round"[1] 8
+*round* 8
 
 |countries    |
 |:------------|
@@ -2936,14 +2930,14 @@
 |"Peru"       |
 
 
-[1] "safe_boy"[1] 1
+*safe_boy* 1
 
 |countries  |
 |:----------|
 |"Ethiopia" |
 
 
-[1] "safe_child"[1] 3
+*safe_child* 3
 
 |countries    |
 |:------------|
@@ -2952,7 +2946,7 @@
 |"Nepal"      |
 
 
-[1] "safe_female"[1] 3
+*safe_female* 3
 
 |countries    |
 |:------------|
@@ -2961,14 +2955,14 @@
 |"Nepal"      |
 
 
-[1] "safe_girl"[1] 1
+*safe_girl* 1
 
 |countries  |
 |:----------|
 |"Ethiopia" |
 
 
-[1] "safe_male"[1] 3
+*safe_male* 3
 
 |countries    |
 |:------------|
@@ -2977,28 +2971,28 @@
 |"Nepal"      |
 
 
-[1] "sch_shelter"[1] 1
+*sch_shelter* 1
 
 |countries |
 |:---------|
 |"Peru"    |
 
 
-[1] "sec_address"[1] 1
+*sec_address* 1
 
 |countries    |
 |:------------|
 |"Bangladesh" |
 
 
-[1] "sec_child_abandon"[1] 1
+*sec_child_abandon* 1
 
 |countries  |
 |:----------|
 |"Ethiopia" |
 
 
-[1] "sec_child_issue"[1] 3
+*sec_child_issue* 3
 
 |countries  |
 |:----------|
@@ -3007,154 +3001,154 @@
 |"Nigeria"  |
 
 
-[1] "sec_child_issue_abduct"[1] 1
+*sec_child_issue_abduct* 1
 
 |countries  |
 |:----------|
 |"Ethiopia" |
 
 
-[1] "sec_child_issue_abuse"[1] 1
+*sec_child_issue_abuse* 1
 
 |countries  |
 |:----------|
 |"Ethiopia" |
 
 
-[1] "sec_child_issue_labor"[1] 1
+*sec_child_issue_labor* 1
 
 |countries  |
 |:----------|
 |"Ethiopia" |
 
 
-[1] "sec_child_issue_none"[1] 1
+*sec_child_issue_none* 1
 
 |countries  |
 |:----------|
 |"Ethiopia" |
 
 
-[1] "sec_child_issue_psyc"[1] 1
+*sec_child_issue_psyc* 1
 
 |countries  |
 |:----------|
 |"Ethiopia" |
 
 
-[1] "sec_child_issue_recruit"[1] 1
+*sec_child_issue_recruit* 1
 
 |countries  |
 |:----------|
 |"Ethiopia" |
 
 
-[1] "sec_child_issue_sep"[1] 1
+*sec_child_issue_sep* 1
 
 |countries  |
 |:----------|
 |"Ethiopia" |
 
 
-[1] "sec_child_issue_sex"[1] 1
+*sec_child_issue_sex* 1
 
 |countries  |
 |:----------|
 |"Ethiopia" |
 
 
-[1] "sec_child_issues"[1] 1
+*sec_child_issues* 1
 
 |countries |
 |:---------|
 |"Nigeria" |
 
 
-[1] "sec_child_marriage"[1] 1
+*sec_child_marriage* 1
 
 |countries  |
 |:----------|
 |"Ethiopia" |
 
 
-[1] "sec_child_missing"[1] 1
+*sec_child_missing* 1
 
 |countries  |
 |:----------|
 |"Ethiopia" |
 
 
-[1] "sec_concern_accident"[1] 1
+*sec_concern_accident* 1
 
 |countries    |
 |:------------|
 |"Bangladesh" |
 
 
-[1] "sec_concern_friction"[1] 1
+*sec_concern_friction* 1
 
 |countries    |
 |:------------|
 |"Bangladesh" |
 
 
-[1] "sec_concern_kidnapping"[1] 1
+*sec_concern_kidnapping* 1
 
 |countries    |
 |:------------|
 |"Bangladesh" |
 
 
-[1] "sec_concern_missing_fam"[1] 1
+*sec_concern_missing_fam* 1
 
 |countries    |
 |:------------|
 |"Bangladesh" |
 
 
-[1] "sec_concern_sex"[1] 1
+*sec_concern_sex* 1
 
 |countries    |
 |:------------|
 |"Bangladesh" |
 
 
-[1] "sec_concern_theft"[1] 1
+*sec_concern_theft* 1
 
 |countries    |
 |:------------|
 |"Bangladesh" |
 
 
-[1] "sec_concern_trafficking"[1] 1
+*sec_concern_trafficking* 1
 
 |countries    |
 |:------------|
 |"Bangladesh" |
 
 
-[1] "sec_concern_work"[1] 1
+*sec_concern_work* 1
 
 |countries    |
 |:------------|
 |"Bangladesh" |
 
 
-[1] "sec_concerns"[1] 1
+*sec_concerns* 1
 
 |countries    |
 |:------------|
 |"Bangladesh" |
 
 
-[1] "sec_gbv"[1] 1
+*sec_gbv* 1
 
 |countries |
 |:---------|
 |"Nigeria" |
 
 
-[1] "sec_issue"[1] 5
+*sec_issue* 5
 
 |countries  |
 |:----------|
@@ -3165,112 +3159,112 @@
 |"Peru"     |
 
 
-[1] "sec_issue_alc"[1] 1
+*sec_issue_alc* 1
 
 |countries  |
 |:----------|
 |"Ethiopia" |
 
 
-[1] "sec_issue_armed"[1] 1
+*sec_issue_armed* 1
 
 |countries  |
 |:----------|
 |"Ethiopia" |
 
 
-[1] "sec_issue_assault"[1] 1
+*sec_issue_assault* 1
 
 |countries  |
 |:----------|
 |"Ethiopia" |
 
 
-[1] "sec_issue_host"[1] 1
+*sec_issue_host* 1
 
 |countries  |
 |:----------|
 |"Ethiopia" |
 
 
-[1] "sec_issue_none"[1] 1
+*sec_issue_none* 1
 
 |countries  |
 |:----------|
 |"Ethiopia" |
 
 
-[1] "sec_issue_res"[1] 1
+*sec_issue_res* 1
 
 |countries  |
 |:----------|
 |"Ethiopia" |
 
 
-[1] "sec_issue_theft"[1] 1
+*sec_issue_theft* 1
 
 |countries  |
 |:----------|
 |"Ethiopia" |
 
 
-[1] "sec_mech"[1] 1
+*sec_mech* 1
 
 |countries    |
 |:------------|
 |"Bangladesh" |
 
 
-[1] "sec_mens_seg"[1] 1
+*sec_mens_seg* 1
 
 |countries |
 |:---------|
 |"Nepal"   |
 
 
-[1] "sec_min_discriminate"[1] 1
+*sec_min_discriminate* 1
 
 |countries |
 |:---------|
 |"Nepal"   |
 
 
-[1] "sec_missing"[1] 1
+*sec_missing* 1
 
 |countries  |
 |:----------|
 |"Ethiopia" |
 
 
-[1] "sec_missing_report"[1] 1
+*sec_missing_report* 1
 
 |countries  |
 |:----------|
 |"Ethiopia" |
 
 
-[1] "sec_missing_service"[1] 1
+*sec_missing_service* 1
 
 |countries  |
 |:----------|
 |"Ethiopia" |
 
 
-[1] "sec_phys_violence"[1] 1
+*sec_phys_violence* 1
 
 |countries |
 |:---------|
 |"Nigeria" |
 
 
-[1] "sec_pol_court"[1] 1
+*sec_pol_court* 1
 
 |countries    |
 |:------------|
 |"Bangladesh" |
 
 
-[1] "sec_provided"[1] 8
+*sec_provided* 8
 
 |countries    |
 |:------------|
@@ -3284,7 +3278,7 @@
 |"Peru"       |
 
 
-[1] "sec_provider"[1] 6
+*sec_provider* 6
 
 |countries    |
 |:------------|
@@ -3296,35 +3290,35 @@
 |"Peru"       |
 
 
-[1] "sec_report_to"[1] 1
+*sec_report_to* 1
 
 |countries  |
 |:----------|
 |"Ethiopia" |
 
 
-[1] "sec_report_to_auth"[1] 1
+*sec_report_to_auth* 1
 
 |countries  |
 |:----------|
 |"Ethiopia" |
 
 
-[1] "sec_report_to_ngo"[1] 1
+*sec_report_to_ngo* 1
 
 |countries  |
 |:----------|
 |"Ethiopia" |
 
 
-[1] "sec_report_to_site"[1] 1
+*sec_report_to_site* 1
 
 |countries  |
 |:----------|
 |"Ethiopia" |
 
 
-[1] "sec_reported"[1] 6
+*sec_reported* 6
 
 |countries    |
 |:------------|
@@ -3336,14 +3330,14 @@
 |"Peru"       |
 
 
-[1] "sec_restrict"[1] 1
+*sec_restrict* 1
 
 |countries    |
 |:------------|
 |"Bangladesh" |
 
 
-[1] "sec_tradition"[1] 3
+*sec_tradition* 3
 
 |countries  |
 |:----------|
@@ -3352,112 +3346,112 @@
 |"Nigeria"  |
 
 
-[1] "sec_tradition_childmar"[1] 1
+*sec_tradition_childmar* 1
 
 |countries  |
 |:----------|
 |"Ethiopia" |
 
 
-[1] "sec_tradition_exploit"[1] 1
+*sec_tradition_exploit* 1
 
 |countries  |
 |:----------|
 |"Ethiopia" |
 
 
-[1] "sec_tradition_famsep"[1] 1
+*sec_tradition_famsep* 1
 
 |countries  |
 |:----------|
 |"Ethiopia" |
 
 
-[1] "sec_tradition_fgm"[1] 1
+*sec_tradition_fgm* 1
 
 |countries  |
 |:----------|
 |"Ethiopia" |
 
 
-[1] "sec_tradition_forcedmar"[1] 1
+*sec_tradition_forcedmar* 1
 
 |countries  |
 |:----------|
 |"Ethiopia" |
 
 
-[1] "sec_vul_group"[1] 1
+*sec_vul_group* 1
 
 |countries    |
 |:------------|
 |"Bangladesh" |
 
 
-[1] "sec_vul_help"[1] 1
+*sec_vul_help* 1
 
 |countries    |
 |:------------|
 |"Bangladesh" |
 
 
-[1] "security_provider"[1] 1
+*security_provider* 1
 
 |countries |
 |:---------|
 |"Nigeria" |
 
 
-[1] "shelter_concern"[1] 1
+*shelter_concern* 1
 
 |countries  |
 |:----------|
 |"Ethiopia" |
 
 
-[1] "shelter_concern_breakin"[1] 1
+*shelter_concern_breakin* 1
 
 |countries  |
 |:----------|
 |"Ethiopia" |
 
 
-[1] "shelter_concern_door"[1] 1
+*shelter_concern_door* 1
 
 |countries  |
 |:----------|
 |"Ethiopia" |
 
 
-[1] "shelter_concern_light"[1] 1
+*shelter_concern_light* 1
 
 |countries  |
 |:----------|
 |"Ethiopia" |
 
 
-[1] "shelter_concern_lock"[1] 1
+*shelter_concern_lock* 1
 
 |countries  |
 |:----------|
 |"Ethiopia" |
 
 
-[1] "shelter_concern_sharing"[1] 1
+*shelter_concern_sharing* 1
 
 |countries  |
 |:----------|
 |"Ethiopia" |
 
 
-[1] "shelter_concern_weather"[1] 1
+*shelter_concern_weather* 1
 
 |countries  |
 |:----------|
 |"Ethiopia" |
 
 
-[1] "shelter_kit"[1] 2
+*shelter_kit* 2
 
 |countries    |
 |:------------|
@@ -3465,42 +3459,42 @@
 |"Ethiopia"   |
 
 
-[1] "shelter_kit_by"[1] 1
+*shelter_kit_by* 1
 
 |countries  |
 |:----------|
 |"Ethiopia" |
 
 
-[1] "shelter_kit_date"[1] 1
+*shelter_kit_date* 1
 
 |countries  |
 |:----------|
 |"Ethiopia" |
 
 
-[1] "shelter_lock"[1] 1
+*shelter_lock* 1
 
 |countries |
 |:---------|
 |"Peru"    |
 
 
-[1] "shelter_rem"[1] 1
+*shelter_rem* 1
 
 |countries |
 |:---------|
 |"Haiti"   |
 
 
-[1] "sight_lighting"[1] 1
+*sight_lighting* 1
 
 |countries |
 |:---------|
 |"Nepal"   |
 
 
-[1] "site_access"[1] 6
+*site_access* 6
 
 |countries    |
 |:------------|
@@ -3512,7 +3506,7 @@
 |"Peru"       |
 
 
-[1] "site_altitude"[1] 2
+*site_altitude* 2
 
 |countries    |
 |:------------|
@@ -3520,7 +3514,7 @@
 |"Ecuador"    |
 
 
-[1] "site_area"[1] 5
+*site_area* 5
 
 |countries  |
 |:----------|
@@ -3531,49 +3525,49 @@
 |"Peru"     |
 
 
-[1] "site_area_unit"[1] 1
+*site_area_unit* 1
 
 |countries |
 |:---------|
 |"Ecuador" |
 
 
-[1] "site_block"[1] 1
+*site_block* 1
 
 |countries    |
 |:------------|
 |"Bangladesh" |
 
 
-[1] "site_block_id"[1] 1
+*site_block_id* 1
 
 |countries    |
 |:------------|
 |"Bangladesh" |
 
 
-[1] "site_cardinal"[1] 1
+*site_cardinal* 1
 
 |countries |
 |:---------|
 |"Nigeria" |
 
 
-[1] "site_census"[1] 1
+*site_census* 1
 
 |countries |
 |:---------|
 |"Peru"    |
 
 
-[1] "site_center"[1] 1
+*site_center* 1
 
 |countries |
 |:---------|
 |"Peru"    |
 
 
-[1] "site_class"[1] 4
+*site_class* 4
 
 |countries |
 |:---------|
@@ -3583,28 +3577,28 @@
 |"Nigeria" |
 
 
-[1] "site_classification"[1] 1
+*site_classification* 1
 
 |countries  |
 |:----------|
 |"Ethiopia" |
 
 
-[1] "site_cmc"[1] 1
+*site_cmc* 1
 
 |countries |
 |:---------|
 |"Nigeria" |
 
 
-[1] "site_community"[1] 1
+*site_community* 1
 
 |countries |
 |:---------|
 |"Nepal"   |
 
 
-[1] "site_date_close"[1] 3
+*site_date_close* 3
 
 |countries |
 |:---------|
@@ -3613,7 +3607,7 @@
 |"Peru"    |
 
 
-[1] "site_date_close_exp"[1] 2
+*site_date_close_exp* 2
 
 |countries  |
 |:----------|
@@ -3621,7 +3615,7 @@
 |"Nepal"    |
 
 
-[1] "site_date_open"[1] 6
+*site_date_open* 6
 
 |countries  |
 |:----------|
@@ -3633,21 +3627,21 @@
 |"Peru"     |
 
 
-[1] "site_debris"[1] 1
+*site_debris* 1
 
 |countries |
 |:---------|
 |"Nigeria" |
 
 
-[1] "site_dist_origin"[1] 1
+*site_dist_origin* 1
 
 |countries |
 |:---------|
 |"Nepal"   |
 
 
-[1] "site_district"[1] 8
+*site_district* 8
 
 |countries    |
 |:------------|
@@ -3661,21 +3655,21 @@
 |"Peru"       |
 
 
-[1] "site_electricty"[1] 1
+*site_electricty* 1
 
 |countries |
 |:---------|
 |"Haiti"   |
 
 
-[1] "site_est_close"[1] 1
+*site_est_close* 1
 
 |countries |
 |:---------|
 |"Peru"    |
 
 
-[1] "site_gps_prec"[1] 2
+*site_gps_prec* 2
 
 |countries    |
 |:------------|
@@ -3683,14 +3677,14 @@
 |"Ecuador"    |
 
 
-[1] "site_hazard"[1] 1
+*site_hazard* 1
 
 |countries |
 |:---------|
 |"Nigeria" |
 
 
-[1] "site_id"[1] 8
+*site_id* 8
 
 |countries    |
 |:------------|
@@ -3704,14 +3698,14 @@
 |"Peru"       |
 
 
-[1] "site_idp_first"[1] 1
+*site_idp_first* 1
 
 |countries |
 |:---------|
 |"Peru"    |
 
 
-[1] "site_idp_last"[1] 2
+*site_idp_last* 2
 
 |countries |
 |:---------|
@@ -3719,14 +3713,14 @@
 |"Peru"    |
 
 
-[1] "site_lat_man"[1] 1
+*site_lat_man* 1
 
 |countries |
 |:---------|
 |"Ecuador" |
 
 
-[1] "site_latitude"[1] 7
+*site_latitude* 7
 
 |countries    |
 |:------------|
@@ -3739,7 +3733,7 @@
 |"Nigeria"    |
 
 
-[1] "site_lighting"[1] 6
+*site_lighting* 6
 
 |countries  |
 |:----------|
@@ -3751,7 +3745,7 @@
 |"Peru"     |
 
 
-[1] "site_location"[1] 3
+*site_location* 3
 
 |countries    |
 |:------------|
@@ -3760,7 +3754,7 @@
 |"Nepal"      |
 
 
-[1] "site_long_man"[1] 2
+*site_long_man* 2
 
 |countries |
 |:---------|
@@ -3768,7 +3762,7 @@
 |"Haiti"   |
 
 
-[1] "site_longitude"[1] 7
+*site_longitude* 7
 
 |countries    |
 |:------------|
@@ -3781,7 +3775,7 @@
 |"Nigeria"    |
 
 
-[1] "site_management"[1] 2
+*site_management* 2
 
 |countries    |
 |:------------|
@@ -3789,7 +3783,7 @@
 |"Haiti"      |
 
 
-[1] "site_management_fem"[1] 2
+*site_management_fem* 2
 
 |countries    |
 |:------------|
@@ -3797,7 +3791,7 @@
 |"Haiti"      |
 
 
-[1] "site_management_type"[1] 2
+*site_management_type* 2
 
 |countries    |
 |:------------|
@@ -3805,7 +3799,7 @@
 |"Haiti"      |
 
 
-[1] "site_municipality"[1] 5
+*site_municipality* 5
 
 |countries    |
 |:------------|
@@ -3816,7 +3810,7 @@
 |"Nepal"      |
 
 
-[1] "site_munipality"[1] 2
+*site_munipality* 2
 
 |countries |
 |:---------|
@@ -3824,7 +3818,7 @@
 |"Nepal"   |
 
 
-[1] "site_name"[1] 7
+*site_name* 7
 
 |countries    |
 |:------------|
@@ -3837,7 +3831,7 @@
 |"Nigeria"    |
 
 
-[1] "site_name_alt"[1] 2
+*site_name_alt* 2
 
 |countries |
 |:---------|
@@ -3845,7 +3839,7 @@
 |"Haiti"   |
 
 
-[1] "site_open"[1] 5
+*site_open* 5
 
 |countries  |
 |:----------|
@@ -3856,7 +3850,7 @@
 |"Peru"     |
 
 
-[1] "site_owner"[1] 7
+*site_owner* 7
 
 |countries    |
 |:------------|
@@ -3869,7 +3863,7 @@
 |"Peru"       |
 
 
-[1] "site_ownership"[1] 2
+*site_ownership* 2
 
 |countries    |
 |:------------|
@@ -3877,14 +3871,14 @@
 |"Haiti"      |
 
 
-[1] "site_provence"[1] 1
+*site_provence* 1
 
 |countries |
 |:---------|
 |"Haiti"   |
 
 
-[1] "site_province"[1] 5
+*site_province* 5
 
 |countries    |
 |:------------|
@@ -3895,7 +3889,7 @@
 |"Peru"       |
 
 
-[1] "site_region"[1] 6
+*site_region* 6
 
 |countries  |
 |:----------|
@@ -3907,7 +3901,7 @@
 |"Peru"     |
 
 
-[1] "site_repair"[1] 2
+*site_repair* 2
 
 |countries |
 |:---------|
@@ -3915,7 +3909,7 @@
 |"Nigeria" |
 
 
-[1] "site_shelter"[1] 7
+*site_shelter* 7
 
 |countries    |
 |:------------|
@@ -3928,14 +3922,14 @@
 |"Nigeria"    |
 
 
-[1] "site_status"[1] 1
+*site_status* 1
 
 |countries |
 |:---------|
 |"Haiti"   |
 
 
-[1] "site_type"[1] 7
+*site_type* 7
 
 |countries    |
 |:------------|
@@ -3948,7 +3942,7 @@
 |"Peru"       |
 
 
-[1] "site_type_desc"[1] 2
+*site_type_desc* 2
 
 |countries |
 |:---------|
@@ -3956,7 +3950,7 @@
 |"Peru"    |
 
 
-[1] "site_unsafe_child"[1] 3
+*site_unsafe_child* 3
 
 |countries    |
 |:------------|
@@ -3965,7 +3959,7 @@
 |"Nepal"      |
 
 
-[1] "site_unsafe_female"[1] 3
+*site_unsafe_female* 3
 
 |countries    |
 |:------------|
@@ -3974,7 +3968,7 @@
 |"Nepal"      |
 
 
-[1] "site_unsafe_male"[1] 3
+*site_unsafe_male* 3
 
 |countries    |
 |:------------|
@@ -3983,7 +3977,7 @@
 |"Nepal"      |
 
 
-[1] "site_urban"[1] 3
+*site_urban* 3
 
 |countries |
 |:---------|
@@ -3992,7 +3986,7 @@
 |"Peru"    |
 
 
-[1] "site_use"[1] 2
+*site_use* 2
 
 |countries |
 |:---------|
@@ -4000,7 +3994,7 @@
 |"Haiti"   |
 
 
-[1] "site_use_alt"[1] 2
+*site_use_alt* 2
 
 |countries |
 |:---------|
@@ -4008,7 +4002,7 @@
 |"Haiti"   |
 
 
-[1] "site_zone"[1] 4
+*site_zone* 4
 
 |countries  |
 |:----------|
@@ -4018,7 +4012,7 @@
 |"Nepal"    |
 
 
-[1] "sma_exist"[1] 6
+*sma_exist* 6
 
 |countries  |
 |:----------|
@@ -4030,7 +4024,7 @@
 |"Peru"     |
 
 
-[1] "sma_exist.1"[1] 2
+*sma_exist.1* 2
 
 |countries |
 |:---------|
@@ -4038,7 +4032,7 @@
 |"Nigeria" |
 
 
-[1] "sma_name"[1] 6
+*sma_name* 6
 
 |countries |
 |:---------|
@@ -4050,7 +4044,7 @@
 |"Peru"    |
 
 
-[1] "sma_name_alt"[1] 2
+*sma_name_alt* 2
 
 |countries |
 |:---------|
@@ -4058,7 +4052,7 @@
 |"Haiti"   |
 
 
-[1] "sma_type"[1] 6
+*sma_type* 6
 
 |countries  |
 |:----------|
@@ -4070,7 +4064,7 @@
 |"Peru"     |
 
 
-[1] "smc_community"[1] 6
+*smc_community* 6
 
 |countries  |
 |:----------|
@@ -4082,7 +4076,7 @@
 |"Peru"     |
 
 
-[1] "smc_exist"[1] 6
+*smc_exist* 6
 
 |countries  |
 |:----------|
@@ -4094,7 +4088,7 @@
 |"Peru"     |
 
 
-[1] "smc_female"[1] 2
+*smc_female* 2
 
 |countries  |
 |:----------|
@@ -4102,7 +4096,7 @@
 |"Haiti"    |
 
 
-[1] "smc_number"[1] 2
+*smc_number* 2
 
 |countries  |
 |:----------|
@@ -4110,7 +4104,7 @@
 |"Haiti"    |
 
 
-[1] "smc_per_female"[1] 2
+*smc_per_female* 2
 
 |countries |
 |:---------|
@@ -4118,7 +4112,7 @@
 |"Nepal"   |
 
 
-[1] "snfi_priority"[1] 2
+*snfi_priority* 2
 
 |countries    |
 |:------------|
@@ -4126,7 +4120,7 @@
 |"Haiti"      |
 
 
-[1] "social_worker"[1] 2
+*social_worker* 2
 
 |countries  |
 |:----------|
@@ -4134,7 +4128,7 @@
 |"Haiti"    |
 
 
-[1] "space_child"[1] 2
+*space_child* 2
 
 |countries    |
 |:------------|
@@ -4142,7 +4136,7 @@
 |"Haiti"      |
 
 
-[1] "space_female"[1] 2
+*space_female* 2
 
 |countries    |
 |:------------|
@@ -4150,7 +4144,7 @@
 |"Haiti"      |
 
 
-[1] "support_edu"[1] 3
+*support_edu* 3
 
 |countries |
 |:---------|
@@ -4159,7 +4153,7 @@
 |"Nigeria" |
 
 
-[1] "support_education"[1] 2
+*support_education* 2
 
 |countries |
 |:---------|
@@ -4167,7 +4161,7 @@
 |"Peru"    |
 
 
-[1] "support_fights"[1] 2
+*support_fights* 2
 
 |countries |
 |:---------|
@@ -4175,43 +4169,7 @@
 |"Peru"    |
 
 
-[1] "support_food"[1] 4
-
-|countries |
-|:---------|
-|"Haiti"   |
-|"Malawi"  |
-|"Nigeria" |
-|"Peru"    |
-
-
-[1] "support_health"[1] 3
-
-|countries |
-|:---------|
-|"Malawi"  |
-|"Nigeria" |
-|"Peru"    |
-
-
-[1] "support_interference"[1] 2
-
-|countries |
-|:---------|
-|"Haiti"   |
-|"Peru"    |
-
-
-[1] "support_list"[1] 3
-
-|countries |
-|:---------|
-|"Haiti"   |
-|"Malawi"  |
-|"Nigeria" |
-
-
-[1] "support_live"[1] 4
+*support_food* 4
 
 |countries |
 |:---------|
@@ -4221,7 +4179,16 @@
 |"Peru"    |
 
 
-[1] "support_no_choh"[1] 2
+*support_health* 3
+
+|countries |
+|:---------|
+|"Malawi"  |
+|"Nigeria" |
+|"Peru"    |
+
+
+*support_interference* 2
 
 |countries |
 |:---------|
@@ -4229,7 +4196,26 @@
 |"Peru"    |
 
 
-[1] "support_no_document"[1] 2
+*support_list* 3
+
+|countries |
+|:---------|
+|"Haiti"   |
+|"Malawi"  |
+|"Nigeria" |
+
+
+*support_live* 4
+
+|countries |
+|:---------|
+|"Haiti"   |
+|"Malawi"  |
+|"Nigeria" |
+|"Peru"    |
+
+
+*support_no_choh* 2
 
 |countries |
 |:---------|
@@ -4237,7 +4223,7 @@
 |"Peru"    |
 
 
-[1] "support_no_fhoh"[1] 2
+*support_no_document* 2
 
 |countries |
 |:---------|
@@ -4245,7 +4231,7 @@
 |"Peru"    |
 
 
-[1] "support_no_issue"[1] 2
+*support_no_fhoh* 2
 
 |countries |
 |:---------|
@@ -4253,7 +4239,7 @@
 |"Peru"    |
 
 
-[1] "support_no_unknown"[1] 2
+*support_no_issue* 2
 
 |countries |
 |:---------|
@@ -4261,21 +4247,7 @@
 |"Peru"    |
 
 
-[1] "support_no_vuln"[1] 1
-
-|countries |
-|:---------|
-|"Peru"    |
-
-
-[1] "support_non_affect"[1] 1
-
-|countries |
-|:---------|
-|"Peru"    |
-
-
-[1] "support_not_fit"[1] 2
+*support_no_unknown* 2
 
 |countries |
 |:---------|
@@ -4283,7 +4255,21 @@
 |"Peru"    |
 
 
-[1] "support_not_met"[1] 2
+*support_no_vuln* 1
+
+|countries |
+|:---------|
+|"Peru"    |
+
+
+*support_non_affect* 1
+
+|countries |
+|:---------|
+|"Peru"    |
+
+
+*support_not_fit* 2
 
 |countries |
 |:---------|
@@ -4291,14 +4277,22 @@
 |"Peru"    |
 
 
-[1] "support_other"[1] 1
+*support_not_met* 2
+
+|countries |
+|:---------|
+|"Haiti"   |
+|"Peru"    |
+
+
+*support_other* 1
 
 |countries |
 |:---------|
 |"Peru"    |
 
 
-[1] "support_problem"[1] 4
+*support_problem* 4
 
 |countries |
 |:---------|
@@ -4308,7 +4302,7 @@
 |"Peru"    |
 
 
-[1] "support_protect"[1] 4
+*support_protect* 4
 
 |countries |
 |:---------|
@@ -4318,7 +4312,7 @@
 |"Peru"    |
 
 
-[1] "support_protection"[1] 2
+*support_protection* 2
 
 |countries |
 |:---------|
@@ -4326,14 +4320,14 @@
 |"Nigeria" |
 
 
-[1] "support_rehab"[1] 1
+*support_rehab* 1
 
 |countries    |
 |:------------|
 |"Bangladesh" |
 
 
-[1] "support_shelter"[1] 4
+*support_shelter* 4
 
 |countries |
 |:---------|
@@ -4343,7 +4337,7 @@
 |"Peru"    |
 
 
-[1] "support_wash"[1] 3
+*support_wash* 3
 
 |countries |
 |:---------|
@@ -4352,7 +4346,7 @@
 |"Peru"    |
 
 
-[1] "survey_date"[1] 8
+*survey_date* 8
 
 |countries    |
 |:------------|
@@ -4366,7 +4360,7 @@
 |"Peru"       |
 
 
-[1] "survey_date.1"[1] 2
+*survey_date.1* 2
 
 |countries |
 |:---------|
@@ -4374,7 +4368,7 @@
 |"Peru"    |
 
 
-[1] "survey_template"[1] 2
+*survey_template* 2
 
 |countries |
 |:---------|
@@ -4382,7 +4376,7 @@
 |"Nigeria" |
 
 
-[1] "tents_capac"[1] 2
+*tents_capac* 2
 
 |countries |
 |:---------|
@@ -4390,21 +4384,21 @@
 |"Haiti"   |
 
 
-[1] "tents_shared"[1] 1
+*tents_shared* 1
 
 |countries |
 |:---------|
 |"Ecuador" |
 
 
-[1] "trave_what_marriage"[1] 1
+*trave_what_marriage* 1
 
 |countries  |
 |:----------|
 |"Ethiopia" |
 
 
-[1] "travel_abr"[1] 3
+*travel_abr* 3
 
 |countries  |
 |:----------|
@@ -4413,21 +4407,21 @@
 |"Malawi"   |
 
 
-[1] "travel_abr_ad"[1] 1
+*travel_abr_ad* 1
 
 |countries  |
 |:----------|
 |"Ethiopia" |
 
 
-[1] "travel_abr_ad_flier"[1] 1
+*travel_abr_ad_flier* 1
 
 |countries  |
 |:----------|
 |"Ethiopia" |
 
 
-[1] "travel_abr_ad_internet"[1] 2
+*travel_abr_ad_internet* 2
 
 |countries  |
 |:----------|
@@ -4435,28 +4429,28 @@
 |"Haiti"    |
 
 
-[1] "travel_abr_ad_mouth"[1] 1
+*travel_abr_ad_mouth* 1
 
 |countries  |
 |:----------|
 |"Ethiopia" |
 
 
-[1] "travel_abr_ad_none"[1] 1
+*travel_abr_ad_none* 1
 
 |countries  |
 |:----------|
 |"Ethiopia" |
 
 
-[1] "travel_abr_ad_phone"[1] 1
+*travel_abr_ad_phone* 1
 
 |countries  |
 |:----------|
 |"Ethiopia" |
 
 
-[1] "travel_abr_in"[1] 2
+*travel_abr_in* 2
 
 |countries  |
 |:----------|
@@ -4464,29 +4458,21 @@
 |"Malawi"   |
 
 
-[1] "travel_dom"[1] 1
+*travel_dom* 1
 
 |countries  |
 |:----------|
 |"Ethiopia" |
 
 
-[1] "travel_dom_in"[1] 1
+*travel_dom_in* 1
 
 |countries  |
 |:----------|
 |"Ethiopia" |
 
 
-[1] "travel_how"[1] 2
-
-|countries  |
-|:----------|
-|"Ethiopia" |
-|"Haiti"    |
-
-
-[1] "travel_how_brokers"[1] 2
+*travel_how* 2
 
 |countries  |
 |:----------|
@@ -4494,14 +4480,7 @@
 |"Haiti"    |
 
 
-[1] "travel_how_fliers"[1] 1
-
-|countries  |
-|:----------|
-|"Ethiopia" |
-
-
-[1] "travel_how_friends"[1] 2
+*travel_how_brokers* 2
 
 |countries  |
 |:----------|
@@ -4509,7 +4488,14 @@
 |"Haiti"    |
 
 
-[1] "travel_how_internet"[1] 2
+*travel_how_fliers* 1
+
+|countries  |
+|:----------|
+|"Ethiopia" |
+
+
+*travel_how_friends* 2
 
 |countries  |
 |:----------|
@@ -4517,28 +4503,7 @@
 |"Haiti"    |
 
 
-[1] "travel_how_other"[1] 1
-
-|countries  |
-|:----------|
-|"Ethiopia" |
-
-
-[1] "travel_how_phone"[1] 1
-
-|countries  |
-|:----------|
-|"Ethiopia" |
-
-
-[1] "travel_how_relatives"[1] 1
-
-|countries  |
-|:----------|
-|"Ethiopia" |
-
-
-[1] "travel_how_word"[1] 2
+*travel_how_internet* 2
 
 |countries  |
 |:----------|
@@ -4546,91 +4511,120 @@
 |"Haiti"    |
 
 
-[1] "travel_info"[1] 1
+*travel_how_other* 1
+
+|countries  |
+|:----------|
+|"Ethiopia" |
+
+
+*travel_how_phone* 1
+
+|countries  |
+|:----------|
+|"Ethiopia" |
+
+
+*travel_how_relatives* 1
+
+|countries  |
+|:----------|
+|"Ethiopia" |
+
+
+*travel_how_word* 2
+
+|countries  |
+|:----------|
+|"Ethiopia" |
+|"Haiti"    |
+
+
+*travel_info* 1
 
 |countries |
 |:---------|
 |"Ecuador" |
 
 
-[1] "travel_opp"[1] 1
+*travel_opp* 1
 
 |countries  |
 |:----------|
 |"Ethiopia" |
 
 
-[1] "travel_opp_in"[1] 1
+*travel_opp_in* 1
 
 |countries  |
 |:----------|
 |"Ethiopia" |
 
 
-[1] "travel_what"[1] 1
+*travel_what* 1
 
 |countries  |
 |:----------|
 |"Ethiopia" |
 
 
-[1] "travel_what_edu"[1] 1
+*travel_what_edu* 1
 
 |countries  |
 |:----------|
 |"Ethiopia" |
 
 
-[1] "travel_what_employ"[1] 1
+*travel_what_employ* 1
 
 |countries  |
 |:----------|
 |"Ethiopia" |
 
 
-[1] "travel_what_living"[1] 1
+*travel_what_living* 1
 
 |countries  |
 |:----------|
 |"Ethiopia" |
 
 
-[1] "travel_who"[1] 1
+*travel_who* 1
 
 |countries  |
 |:----------|
 |"Ethiopia" |
 
 
-[1] "travel_who_boys"[1] 1
+*travel_who_boys* 1
 
 |countries  |
 |:----------|
 |"Ethiopia" |
 
 
-[1] "travel_who_girls"[1] 1
+*travel_who_girls* 1
 
 |countries  |
 |:----------|
 |"Ethiopia" |
 
 
-[1] "travel_who_men"[1] 1
+*travel_who_men* 1
 
 |countries  |
 |:----------|
 |"Ethiopia" |
 
 
-[1] "travel_who_women"[1] 1
+*travel_who_women* 1
 
 |countries  |
 |:----------|
 |"Ethiopia" |
 
 
-[1] "unsafe_child"[1] 3
+*unsafe_child* 3
 
 |countries |
 |:---------|
@@ -4639,7 +4633,7 @@
 |"Peru"    |
 
 
-[1] "unsafe_female"[1] 4
+*unsafe_female* 4
 
 |countries    |
 |:------------|
@@ -4649,7 +4643,7 @@
 |"Peru"       |
 
 
-[1] "unsafe_male"[1] 3
+*unsafe_male* 3
 
 |countries |
 |:---------|
@@ -4658,7 +4652,7 @@
 |"Peru"    |
 
 
-[1] "water_avg"[1] 5
+*water_avg* 5
 
 |countries  |
 |:----------|
@@ -4669,7 +4663,7 @@
 |"Peru"     |
 
 
-[1] "water_complaint"[1] 4
+*water_complaint* 4
 
 |countries  |
 |:----------|
@@ -4679,7 +4673,7 @@
 |"Peru"     |
 
 
-[1] "water_cons"[1] 2
+*water_cons* 2
 
 |countries |
 |:---------|
@@ -4687,21 +4681,21 @@
 |"Nigeria" |
 
 
-[1] "water_container"[1] 1
+*water_container* 1
 
 |countries  |
 |:----------|
 |"Ethiopia" |
 
 
-[1] "water_container_by"[1] 1
+*water_container_by* 1
 
 |countries  |
 |:----------|
 |"Ethiopia" |
 
 
-[1] "water_container_date"[1] 2
+*water_container_date* 2
 
 |countries  |
 |:----------|
@@ -4709,14 +4703,14 @@
 |"Haiti"    |
 
 
-[1] "water_cue"[1] 1
+*water_cue* 1
 
 |countries  |
 |:----------|
 |"Ethiopia" |
 
 
-[1] "water_improved"[1] 3
+*water_improved* 3
 
 |countries |
 |:---------|
@@ -4725,7 +4719,7 @@
 |"Peru"    |
 
 
-[1] "water_loc_remark"[1] 2
+*water_loc_remark* 2
 
 |countries |
 |:---------|
@@ -4733,7 +4727,7 @@
 |"Peru"    |
 
 
-[1] "water_location"[1] 6
+*water_location* 6
 
 |countries  |
 |:----------|
@@ -4745,14 +4739,14 @@
 |"Peru"     |
 
 
-[1] "water_np_remark"[1] 1
+*water_np_remark* 1
 
 |countries |
 |:---------|
 |"Peru"    |
 
 
-[1] "water_np_why"[1] 2
+*water_np_why* 2
 
 |countries |
 |:---------|
@@ -4760,14 +4754,14 @@
 |"Peru"    |
 
 
-[1] "water_np_why.1"[1] 1
+*water_np_why.1* 1
 
 |countries |
 |:---------|
 |"Peru"    |
 
 
-[1] "water_operational"[1] 3
+*water_operational* 3
 
 |countries |
 |:---------|
@@ -4776,7 +4770,7 @@
 |"Peru"    |
 
 
-[1] "water_p_remark"[1] 2
+*water_p_remark* 2
 
 |countries |
 |:---------|
@@ -4784,7 +4778,7 @@
 |"Peru"    |
 
 
-[1] "water_pipeline"[1] 2
+*water_pipeline* 2
 
 |countries  |
 |:----------|
@@ -4792,7 +4786,7 @@
 |"Haiti"    |
 
 
-[1] "water_potable"[1] 4
+*water_potable* 4
 
 |countries  |
 |:----------|
@@ -4802,14 +4796,14 @@
 |"Nigeria"  |
 
 
-[1] "water_problem"[1] 1
+*water_problem* 1
 
 |countries |
 |:---------|
 |"Nigeria" |
 
 
-[1] "water_remark"[1] 5
+*water_remark* 5
 
 |countries  |
 |:----------|
@@ -4820,7 +4814,7 @@
 |"Peru"     |
 
 
-[1] "water_remark_other"[1] 2
+*water_remark_other* 2
 
 |countries |
 |:---------|
@@ -4828,7 +4822,7 @@
 |"Peru"    |
 
 
-[1] "water_source_np"[1] 6
+*water_source_np* 6
 
 |countries    |
 |:------------|
@@ -4840,7 +4834,7 @@
 |"Peru"       |
 
 
-[1] "water_source_p"[1] 7
+*water_source_p* 7
 
 |countries    |
 |:------------|
@@ -4853,7 +4847,7 @@
 |"Peru"       |
 
 
-[1] "water_treated"[1] 4
+*water_treated* 4
 
 |countries    |
 |:------------|
@@ -4863,38 +4857,42 @@
 |"Nepal"      |
 
 
-[1] "winter_a"[1] 1
+*winter_a* 1
 
 |countries |
 |:---------|
 |"Nepal"   |
 
 
-[1] "winter_b"[1] 1
+*winter_b* 1
 
 |countries |
 |:---------|
 |"Nepal"   |
 
 
-[1] "winter_c"[1] 1
+*winter_c* 1
 
 |countries |
 |:---------|
 |"Nepal"   |
 
 
-[1] "winter_move"[1] 1
+*winter_move* 1
 
 |countries |
 |:---------|
 |"Nepal"   |
 
 
-[1] "winter_shelter"[1] 1
+*winter_shelter* 1
 
 |countries |
 |:---------|
 |"Nepal"   |
+
+
+
+VARIABLE PREVALENCE
 
 

@@ -87,16 +87,7 @@ for (i in 1:ncol(z)) {
 }
 
 
-list_countries <- split(z, as.factor(z$country))
-
-
 write.csv(z, "./csv/original/newest_merge.csv", row.names=FALSE, fileEncoding="UTF-8")
 stop("End of work for now.")
-
-
-# Extract country specific data
-# z <- read.csv("../merged/merged.csv", as.is = TRUE)
-# nepal_dta<-  z[z$country %in% c("Nepal","nepal"),]
-# write.csv(nepal_dta, "merged/nepal_dta.csv", row.names=FALSE, fileEncoding="UTF-8")
 
 

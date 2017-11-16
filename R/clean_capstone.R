@@ -189,34 +189,9 @@ for(j in grep(pattern="(^.*date$)|(^date.*$)", x=colnames(new_m), value=TRUE)) {
 write.csv(new_m, "csv/clean/newest_clean.csv", row.names=FALSE, fileEncoding="UTF-8")
 m <- read.csv("/Users/Katie/Desktop/capstone/csv/clean/newest_clean.csv", as.is = TRUE)
 
-first <- which(names(m)=="site_zone")
-print(first)
 
-'%ni%' <- Negate('%in%')
-i = 1;
-j = 1;
-n = 1;
-for (i in 484:ncol(m)) {
-  out<-capture.output(print(colnames(m)[i]))
-  cat(out,file="/Users/Katie/Desktop/capstone/var_list.txt",sep=",",append=TRUE)
-  countries<-c()
-  for (j in 1:nrow(m)) {
-    if (m[j, i] %ni% c(NA, "NA", "") & !is.na(m[j,i])) {
-      out<-capture.output(print(m[j, 14],  max.levels=0))
-      out <- substr(out, 5, nchar(out))
-      if (out %ni% countries) {
-        countries<-c(countries, out)
-      }
-    }
-  }
-  out<-capture.output(length(countries))
-  cat(out,file="/Users/Katie/Desktop/capstone/var_list.txt",sep="",append=TRUE)
-  countries <- as.matrix(as.data.frame(countries))
-  out<-capture.output(knitr::kable(countries))
-  cat(out,file="/Users/Katie/Desktop/capstone/var_list.txt",sep="\n",append=TRUE)
-  out<-"\n"
-  cat(out,file="/Users/Katie/Desktop/capstone/var_list.txt",sep="\n",append=TRUE)
-}
+
+
 
 
 list_countries <- split(new_m, as.factor(new_m$country))

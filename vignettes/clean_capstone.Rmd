@@ -332,8 +332,7 @@ for(j in grep(pattern="(^.*date$)|(^date.*$)", x=colnames(new_m), value=TRUE)) {
   }
 }
 ```
-
-### Write out cleaned CSV
+### WRITE *cleaned CSV*
 ```{r}
 write.csv(new_m, "csv/clean/newest_clean.csv", row.names=FALSE, fileEncoding="UTF-8")
 
@@ -343,3 +342,39 @@ for (i in list_countries) {
   write.csv(i, tmp, row.names=FALSE, fileEncoding="UTF-8")
 }
 ```
+### WRITE *variable list*
+```{r}
+'%ni%' <- Negate('%in%')
+
+for (i in 1:ncol(new_m)) {
+  out<-capture.output(print(colnames(new_m)[i]))
+  cat(out,file="/Users/Katie/Desktop/capstone/var_list.txt",sep=",",append=TRUE)
+  countries<-c()
+  for (j in 1:nrow(new_m)) {
+    if (new_m[j, i] %ni% c(NA, "NA", "") & !is.na(new_m[j,i])) {
+      out<-capture.output(print(new_m[j, 14],  max.levels=0))
+      out <- substr(out, 5, nchar(out))
+      if (out %ni% countries) {
+        countries<-c(countries, out)
+      }
+    }
+  }
+  out<-capture.output(length(countries))
+  cat(out,file="/Users/Katie/Desktop/capstone/var_list.txt",sep="",append=TRUE)
+  countries <- as.matrix(as.data.frame(countries))
+  out<-capture.output(knitr::kable(countries))
+  cat(out,file="/Users/Katie/Desktop/capstone/var_list.txt",sep="\n",append=TRUE)
+  out<-"\n"
+  cat(out,file="/Users/Katie/Desktop/capstone/var_list.txt",sep="\n",append=TRUE)
+}
+```
+### WRITE *CSV by country*
+```{r}
+list_countries <- split(new_m, as.factor(new_m$country))
+
+for (i in list_countries) {
+  tmp = paste("./csv/clean/countries/", i$country[1], "_dta.csv", sep = "")
+  write.csv(i, tmp, row.names=FALSE, fileEncoding="UTF-8")
+}
+```
+
