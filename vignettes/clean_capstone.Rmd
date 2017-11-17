@@ -29,7 +29,7 @@ new_m <- subset(new_m, !is.na(new_m$country))
 ```{r}
 new_m[] <- lapply(new_m, as.character)
 new_m <- as.data.frame(lapply(new_m, function(x){
-  x <- replace(x, x %in% c("NA", "N/A", "No Answer", ".", "no_sabe", "Unknown", "", "na","-", "8__unknown", "dont_know", "4__no_answer", "5__unknown","Do_not_know", "No Response", "no responde","No sabe", "Don't know","no sabe", "no_responde", "Not specified.","", "no answer", "No answer", "sin respuesta", "Sin respuesta", "Sin Informacion", "Unknown", "UNKNOWN", "unknown", "Unkown", "unkown", "Not Specified", "Desconocido","desconocido", "6__unknown", "7__no_answer", "NULL", "Sin respuesta, Por que?", "NO ANSWER"), NA)
+  x <- replace(x, x %in% c("NA", "N/A", "No Answer", ".", "no_sabe", "Unknown", "", "na","-", "8__unknown", "dont_know", "4__no_answer", "5__unknown","Do_not_know", "No Response", "no responde","No sabe", "Don't know","no sabe", "no_responde", "Not specified.","", "no answer", "No answer", "sin respuesta", "Sin respuesta", "Sin Informacion", "Unknown", "UNKNOWN", "unknown", "Unkown", "unkown", "Not Specified", "Desconocido","desconocido", "6__unknown", "7__no_answer", "NULL", "null", "Sin respuesta, Por que?", "NO ANSWER"), NA)
   }))
 
 new_m[,1:ncol(new_m)] <- lapply(new_m[,1:ncol(new_m)], sub, pattern = "(^[1-9_]+no_*answer$)|(^Unknown$)", replacement = NA, ignore.case=TRUE)
