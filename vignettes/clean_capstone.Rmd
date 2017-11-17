@@ -17,26 +17,22 @@ m <- read.csv("/Users/Katie/Desktop/capstone/merged/newest_merge.csv", as.is = T
 ```
 ### Get rid of "X.1500" and other column errors
 ```{r}
-new_m <- m[ , -which(names(m) %in% c("X.1500", "column1"))]   
+new_m <- m[ , -which(names(m) %in% c("x.1500", "health.issue", "helath_issue_c", "hyg_f_remark"))]   
 new_m <- new_m[, -grep("^column", colnames(new_m))]
+new_m <- new_m[which(new_m$round == 0), ]) # BANGLADESH
 names <- names(new_m)
+new_m <- subset(new_m, !is.na(new_m$country)) 
+
 
 ```
 ### STANDARDIZE *Missing*
 ```{r}
 new_m[] <- lapply(new_m, as.character)
 new_m <- as.data.frame(lapply(new_m, function(x){
-  x <- replace(x, x %in% c("NA", "N/A", ".", "na","-", "8__unknown", "dont_know", 
-                           "5__unknown","Do_not_know", "No Response", "no responde",
-                           "No sabe", "Don't know","no sabe", "no_responde", 
-                           "Not specified.", "", "no answer", "No answer", 
-                           "sin respuesta", "Sin respuesta", "Sin Informacion", 
-                           "Unknown", "UNKNOWN", "unknown", "Unkown", "unkown", 
-                           "Not Specified", "Desconocido","desconocido", 
-                           "6__unknown", "7__no_answer", "NULL", 
-                           "Sin respuesta, Por que?", "NO ANSWER"), NA)
+  x <- replace(x, x %in% c("NA", "N/A", "No Answer", ".", "no_sabe", "Unknown", "", "na","-", "8__unknown", "dont_know", "4__no_answer", "5__unknown","Do_not_know", "No Response", "no responde","No sabe", "Don't know","no sabe", "no_responde", "Not specified.","", "no answer", "No answer", "sin respuesta", "Sin respuesta", "Sin Informacion", "Unknown", "UNKNOWN", "unknown", "Unkown", "unkown", "Not Specified", "Desconocido","desconocido", "6__unknown", "7__no_answer", "NULL", "Sin respuesta, Por que?", "NO ANSWER"), NA)
   }))
 
+new_m[,1:ncol(new_m)] <- lapply(new_m[,1:ncol(new_m)], sub, pattern = "(^[1-9_]+no_*answer$)|(^Unknown$)", replacement = NA, ignore.case=TRUE)
 ```
 ### STANDARDIZE *Yes*
 ```{r}
@@ -55,10 +51,9 @@ new_m[,1:ncol(new_m)] <- lapply(new_m[,1:ncol(new_m)], sub,
 ### STANDARDIZE *None*
 ```{r}
 new_m[,1:ncol(new_m)] <- lapply(new_m[,1:ncol(new_m)], sub,
-                                pattern = "^[35_n]+[oi]n(|guno)*$",
-                                replacement = "No",
+                                pattern = "^[35_n]+[oi]n[|gunoe]*$",
+                                replacement = "None",
                                 ignore.case=TRUE)
-
 ```
 ### STANDARDIZE *Other*
 ```{r}
@@ -134,22 +129,21 @@ new_m$job_farm <- sub(new_m$job_farm, pattern="^[^NY].*", replacement = NA)
 ### STANDARDIZE *Gender*
 ```{r}
 new_m[,1:ncol(new_m)] <- lapply(new_m[,1:ncol(new_m)], sub, 
-                                pattern = "^F.*(emale|emenino)$", replacement = "Female",
-                                ignore.case=TRUE)
+                                pattern = "^[2_F]+.*(emale|emenino)$", 
+                                replacement = "Female", ignore.case=TRUE)
 new_m[,1:ncol(new_m)] <- lapply(new_m[,1:ncol(new_m)], sub, 
-                                pattern = "^M.*(ale|asculino)$", replacement = "Male",
-                                ignore.case=TRUE)
+                                pattern = "^[1_M]+.*(ale|asculino)$", 
+                                replacement = "Male", ignore.case=TRUE)
 new_m[,1:ncol(new_m)] <- lapply(new_m[,1:ncol(new_m)], gsub, 
                                 pattern = "^males$", replacement = "Men")
 new_m[,1:ncol(new_m)] <- lapply(new_m[,1:ncol(new_m)], gsub, 
                                 pattern = "^females$", replacement = "Women")
-
 ```
 ### STANDARDIZE *Intervals*
 ```{r}
 new_m[,1:ncol(new_m)] <- lapply(new_m[,1:ncol(new_m)], sub, pattern = "Diaria|(^[1_E]+veryday$)", replacement = "Everyday", ignore.case=TRUE)
 new_m[,1:ncol(new_m)] <- lapply(new_m[,1:ncol(new_m)], sub, pattern = "(^([_3O]+nce|Una).*(semana|WE+K)$)", replacement = "Once a week", ignore.case=TRUE)
-new_m[,1:ncol(new_m)] <- lapply(new_m[,1:ncol(new_m)], sub, pattern = "^((Una|Once).*M[OE][SN].*$)", replacement = "Once a month", ignore.case=TRUE)
+new_m[,1:ncol(new_m)] <- lapply(new_m[,1:ncol(new_m)], sub, pattern = "^([5_]*(Una|Once).*M[OE][SN].*$)", replacement = "Once a month", ignore.case=TRUE)
 new_m[,1:ncol(new_m)] <- lapply(new_m[,1:ncol(new_m)], sub, pattern = "4__every_2_weeks|(^E.*2.*WE+K$)|(^(Cada|Dos).*semana.*$)", replacement = "Every 2 weeks", ignore.case=TRUE)
 new_m[,1:ncol(new_m)] <- lapply(new_m[,1:ncol(new_m)], sub, pattern = "^[_6Ii]+rregular$", replacement = "Irregular", ignore.case=TRUE)
 new_m[,1:ncol(new_m)] <- lapply(new_m[,1:ncol(new_m)], sub, pattern = "(^[_7N]+.*(unca|ever))$", replacement = "Never", ignore.case=TRUE)
@@ -170,7 +164,7 @@ new_m[,1:ncol(new_m)] <- lapply(new_m[,1:ncol(new_m)], sub, pattern = "^Dysent[e
 ```
 ### Mobile Clinic
 ```{r}
-new_m[,1:ncol(new_m)] <- lapply(new_m[,1:ncol(new_m)], sub, pattern = "^[6_M]+.*clinic$", replacement = "Mobile clinic", ignore.case=TRUE)
+new_m[,1:ncol(new_m)] <- lapply(new_m[,1:ncol(new_m)], sub, pattern = "(^[6_M]+.*clinic$)|(clinicas moviles)", replacement = "Mobile clinic", ignore.case=TRUE)
 
 ```
 ### Fix Health Variable Errors
@@ -224,15 +218,19 @@ new_m[,1:ncol(new_m)] <- lapply(new_m[,1:ncol(new_m)], gsub, pattern = "^high", 
 new_m[,1:ncol(new_m)] <- lapply(new_m[,1:ncol(new_m)], gsub, pattern = "^very.*high", replacement = "Very high", ignore.case=TRUE)
 new_m[,1:ncol(new_m)] <- lapply(new_m[,1:ncol(new_m)], gsub, pattern = "^low$", replacement = "Low", ignore.case=TRUE)
 new_m[,1:ncol(new_m)] <- lapply(new_m[,1:ncol(new_m)], gsub, pattern = "^V.*low$", replacement = "Very low", ignore.case=TRUE)
-new_m[,1:ncol(new_m)] <- lapply(new_m[,1:ncol(new_m)], gsub, pattern = "^[1G_]+ood$", replacement = "Good", ignore.case=TRUE)
+new_m[,1:ncol(new_m)] <- lapply(new_m[,1:ncol(new_m)], gsub, pattern = "^(Buenas(\\s\\(Higienica\\)))$|([1-9G_]+ood(\\s[\\(]*Hygienic[\\)]*)*)|(Buena)$", replacement = "Good", ignore.case=TRUE)
+
+new_m[,1:ncol(new_m)] <- lapply(new_m[,1:ncol(new_m)], gsub, pattern = "(^[1-9_]*excel+en[te]+$)", replacement = "Excellent", ignore.case=TRUE)
+
+
 new_m[,1:ncol(new_m)] <- lapply(new_m[,1:ncol(new_m)], gsub, pattern = "^Buenas(\\s\\(Higienica\\))$|^[1G_]+ood(\\s[\\(]*Hygienic[\\)]*)*$", replacement = "Good", ignore.case=TRUE)
-new_m[,1:ncol(new_m)] <- lapply(new_m[,1:ncol(new_m)], gsub, pattern = "Regular\\s\\(No\\smuy\\shigienicas\\)$|not_so_good|^Not\\sso\\sgood(\\s\\(Not\\shygienic\\)*)$", replacement = "Not so good", ignore.case=TRUE)
-new_m[,1:ncol(new_m)] <- lapply(new_m[,1:ncol(new_m)], gsub, pattern = "[3_N]+o[n_]+usable$", replacement = "Non_usable", ignore.case=TRUE)
-new_m[,1:ncol(new_m)] <- lapply(new_m[,1:ncol(new_m)], gsub, pattern = "Malas\\s\\(No\\shay\\shigiene\\)", replacement = "Bad", ignore.case=TRUE)
+new_m[,1:ncol(new_m)] <- lapply(new_m[,1:ncol(new_m)], gsub, pattern = "^(Malas\\s\\(No\\shay\\shigiene\\))|(^[1-9_]*poor)|(Mala)$", replacement = "Bad", ignore.case=TRUE)
+new_m[,1:ncol(new_m)] <- lapply(new_m[,1:ncol(new_m)], gsub, pattern = "[1-9_N]+o[n_]+\\s*usable$", replacement = "Non_usable", ignore.case=TRUE)
+new_m[,1:ncol(new_m)] <- lapply(new_m[,1:ncol(new_m)], gsub, pattern = "Malas\\s\\(No\\shay\\shigiene\\)|(^[1-9_]*Not so good$)", replacement = "Bad", ignore.case=TRUE)
 new_m[,1:ncol(new_m)] <- lapply(new_m[,1:ncol(new_m)], gsub, pattern = "Latrines|toilets$", replacement = "latrines", ignore.case=TRUE)
 new_m[,1:ncol(new_m)] <- lapply(new_m[,1:ncol(new_m)], gsub, pattern = "No Sabe|No_answer|^unknown$", replacement = NA)
 new_m[,1:ncol(new_m)] <- lapply(new_m[,1:ncol(new_m)], gsub, pattern = "^No hay$", replacement = "No")
-new_m[,1:ncol(new_m)] <- lapply(new_m[,1:ncol(new_m)], gsub, pattern = "HWS", replacement = " Hand Washing Station", ignore.case=TRUE)
+new_m[,1:ncol(new_m)] <- lapply(new_m[,1:ncol(new_m)], gsub, pattern = "HWS", replacement = "Hand Washing Station", ignore.case=TRUE)
 
 ```
 ### STANDARDIZE *Info Source*
@@ -332,6 +330,15 @@ for(j in grep(pattern="(^.*date$)|(^date.*$)", x=colnames(new_m), value=TRUE)) {
   }
 }
 ```
+## CLEAN *variable-specific fixes*
+```{r}
+new_m[,1:ncol(new_m)] <- lapply(new_m[,1:ncol(new_m)], sub, pattern = "^Cerrado$", replacement = "Closed", ignore.case=TRUE)
+new_m$edu_access <-  sub(new_m$edu_access, pattern = "^Closed$", replacement = "No", ignore.case=TRUE)
+new_m$bathing_gender <- sub(new_m$bathing_gender, pattern = "^NGO$", replacement = NA, ignore.case=TRUE)
+
+```
+
+
 ### WRITE *cleaned CSV*
 ```{r}
 write.csv(new_m, "csv/clean/newest_clean.csv", row.names=FALSE, fileEncoding="UTF-8")

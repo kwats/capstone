@@ -6,7 +6,7 @@ country <- gsub(".+/+|_.*.csv", "", files)
 
 roundcode <- gsub(".*_+(.*).csv$", "\\1", files)
 
-firstup <- function(x) {                          # Capitalize first letter of Country code
+firstup <- function(x) {                          # Capitalize first letter of country code
   substr(x, 1, 1) <- toupper(substr(x, 1, 1))
   x
 }
