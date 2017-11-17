@@ -1,6 +1,6 @@
 knitr::opts_chunk$set(eval = FALSE, tidy = FALSE)
 setwd("/Users/Katie/Desktop/capstone")
-m <- read.csv("/Users/Katie/Desktop/capstone/csv/original/newest_merge.csv", as.is = TRUE)
+m <- read.csv("csv/original/newest_merge2.csv", as.is = TRUE)
 
 new_m <- m[ , -which(names(m) %in% c("x.1500", "health.issue", "helath_issue_c", "info_src_authority"))]   
 new_m <- new_m[, -grep("^column", colnames(new_m))]
@@ -133,66 +133,66 @@ new_m[,1:ncol(new_m)] <- lapply(new_m[,1:ncol(new_m)], gsub, pattern = "Comercio
 new_m[,1:ncol(new_m)] <- lapply(new_m[,1:ncol(new_m)], gsub, pattern = "Pesca", replacement = "Fishing", ignore.case=TRUE)
 
 
-# TO DO Rework date function
-library(stringi)
-new_m <- new_m[order(new_m$country),] 
-new_m <- new_m[order(new_m$round),] 
-round <- ""
-prev_date <- c(0,0)
-new_m <- new_m[order(new_m$country),] 
-new_m <- new_m[order(new_m$round),] 
-round <- ""
-prev_date <- c(0,0)
-for(j in grep(pattern="(^.*date$)|(^date.*$)", x=colnames(new_m), value=TRUE)) {
-  for (col in which(colnames(new_m)==j)) {
-    for (i in 1:(nrow(new_m)-1)) {
-      if (!is.na(new_m[i,col])) {
-        date <- as.character(new_m[i,col])
-        date <-unlist(strsplit(date,"\\/|-"))
-        date[2][1] <- sub("Jan","01", date[2][1])               # fix written months
-        date[2][1] <- sub("Feb","02", date[2][1])
-        date[2][1] <- sub("Mar","03", date[2][1])
-        date[2][1] <- sub("Apr","04", date[2][1])
-        date[2][1] <- sub("May","05", date[2][1])
-        date[2][1] <- sub("Jun","06", date[2][1])
-        date[2][1] <- sub("Jul","07", date[2][1])
-        date[2][1] <- sub("Aug","08", date[2][1])
-        date[2][1] <- sub("Sep","09", date[2][1])
-        date[2][1] <- sub("Oct","10", date[2][1])
-        date[2][1] <- sub("Nov","11", date[2][1])
-        date[2][1] <- sub("Dec","12", date[2][1])
-        if (nchar(date[1][1])>3) {
-          temp <- date[1]
-          date[1] <- date[3]
-          date[3] <- date[1]
-        }
-        if (nchar(date[2][1])<2) stri_sub(date[2][1], 1, 0) <- 0 # padding
-        if (nchar(date[1][1])<2) stri_sub(date[1][1], 1, 0) <- 0 # padding
-        if (nchar(date[3][1])>2) date[3][1] <- stri_sub(date[3][1], 3, 4)
-        if (new_m$round[i] == round) {
-          dm <- as.integer(date[1][1]) - as.integer(prev_date[1])
-          md <- as.integer(date[2][1]) - as.integer(prev_date[2])
-          if (abs(dm) < abs(md)) {
-            temp <- date[1]
-            date[1] <- date[2]
-            date[2] <- temp
-          }
-        }
-        if (as.integer(date[2][1]) > 12) {
-          temp <- date[1]
-          date[1] <- date[2]
-          date[2] <- temp
-        }
-        round <- new_m$round[i]
-        prev_date[1] <- date[1][1]
-        prev_date[2] <- date[2][1]
-        date_new<-paste(date, collapse = '/')
-        print(date_new)
-        new_m[i,col] <- date_new
-      }
-    }
-  }
-}
+# # TO DO Rework date function
+# library(stringi)
+# new_m <- new_m[order(new_m$country),] 
+# new_m <- new_m[order(new_m$round),] 
+# round <- ""
+# prev_date <- c(0,0)
+# new_m <- new_m[order(new_m$country),] 
+# new_m <- new_m[order(new_m$round),] 
+# round <- ""
+# prev_date <- c(0,0)
+# for(j in grep(pattern="(^.*date$)|(^date.*$)", x=colnames(new_m), value=TRUE)) {
+#   for (col in which(colnames(new_m)==j)) {
+#     for (i in 1:(nrow(new_m)-1)) {
+#       if (!is.na(new_m[i,col])) {
+#         date <- as.character(new_m[i,col])
+#         date <-unlist(strsplit(date,"\\/|-"))
+#         date[2][1] <- sub("Jan","01", date[2][1])               # fix written months
+#         date[2][1] <- sub("Feb","02", date[2][1])
+#         date[2][1] <- sub("Mar","03", date[2][1])
+#         date[2][1] <- sub("Apr","04", date[2][1])
+#         date[2][1] <- sub("May","05", date[2][1])
+#         date[2][1] <- sub("Jun","06", date[2][1])
+#         date[2][1] <- sub("Jul","07", date[2][1])
+#         date[2][1] <- sub("Aug","08", date[2][1])
+#         date[2][1] <- sub("Sep","09", date[2][1])
+#         date[2][1] <- sub("Oct","10", date[2][1])
+#         date[2][1] <- sub("Nov","11", date[2][1])
+#         date[2][1] <- sub("Dec","12", date[2][1])
+#         if (nchar(date[1][1])>3) {
+#           temp <- date[1]
+#           date[1] <- date[3]
+#           date[3] <- date[1]
+#         }
+#         if (nchar(date[2][1])<2) stri_sub(date[2][1], 1, 0) <- 0 # padding
+#         if (nchar(date[1][1])<2) stri_sub(date[1][1], 1, 0) <- 0 # padding
+#         if (nchar(date[3][1])>2) date[3][1] <- stri_sub(date[3][1], 3, 4)
+#         if (new_m$round[i] == round) {
+#           dm <- as.integer(date[1][1]) - as.integer(prev_date[1])
+#           md <- as.integer(date[2][1]) - as.integer(prev_date[2])
+#           if (abs(dm) < abs(md)) {
+#             temp <- date[1]
+#             date[1] <- date[2]
+#             date[2] <- temp
+#           }
+#         }
+#         if (as.integer(date[2][1]) > 12) {
+#           temp <- date[1]
+#           date[1] <- date[2]
+#           date[2] <- temp
+#         }
+#         round <- new_m$round[i]
+#         prev_date[1] <- date[1][1]
+#         prev_date[2] <- date[2][1]
+#         date_new<-paste(date, collapse = '/')
+#         print(date_new)
+#         new_m[i,col] <- date_new
+#       }
+#     }
+#   }
+# }
 
 # NEW
 

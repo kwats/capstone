@@ -1,5 +1,5 @@
 
-setwd("/Users/Katie/Desktop/capstone")
+# setwd("/Users/Katie/Desktop/capstone")
 files <- dir("./data", pattern=".csv$", full.names = TRUE, recursive= TRUE)
 
 country <- gsub(".+/+|_.*.csv", "", files) 
